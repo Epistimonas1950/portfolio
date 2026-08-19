@@ -1,0 +1,122 @@
+---
+layout: layouts/page.njk
+title: Πρόγραμμα
+eyebrow: ΕΒΔΟΜΑΔΙΑΙΟ ΠΡΟΓΡΑΜΜΑ
+lead: >-
+  Τριάντα έξι ώρες μαθημάτων την εβδομάδα, σε δύο αίθουσες. Διάλεξε είδος ή
+  επίπεδο για να δεις μόνο ό,τι σε αφορά.
+eleventyNavigation:
+  key: Πρόγραμμα
+  order: 2
+---
+
+{#
+  Ολόκληρο το πρόγραμμα βγαίνει από το _data/schedule.js.
+  Το φιλτράρισμα γίνεται στον browser (assets/js/site.js): τα κουμπιά
+  ενημερώνουν το data-group/data-value και κρύβονται όσες ώρες δεν ταιριάζουν.
+  Χωρίς JavaScript, εμφανίζονται απλώς όλες οι ώρες.
+#}
+<section class="section">
+  <div class="wrap" data-schedule>
+    <div class="filters">
+      <div class="filters__group">
+        <span class="filters__legend">ΕΙΔΟΣ</span>
+        <button class="chip" type="button" data-group="class" data-value="all" aria-pressed="true">
+          Όλα
+        </button>
+        {%- for item in collections.classes %}
+          <button
+            class="chip"
+            type="button"
+            data-group="class"
+            data-value="{{ item.data.slug }}"
+            aria-pressed="false"
+          >{{ item.data.title }}</button>
+        {%- endfor %}
+      </div>
+
+      <div class="filters__group">
+        <span class="filters__legend">ΕΠΙΠΕΔΟ</span>
+        <button class="chip" type="button" data-group="level" data-value="all" aria-pressed="true">
+          Όλα
+        </button>
+        {%- for key, label in schedule.levels %}
+          <button
+            class="chip"
+            type="button"
+            data-group="level"
+            data-value="{{ key }}"
+            aria-pressed="false"
+          >{{ label }}</button>
+        {%- endfor %}
+      </div>
+    </div>
+
+    <div class="schedule">
+      {%- for day in schedule.days %}
+        <section class="day" data-day="{{ day.key }}">
+          <h2 class="day__name">{{ day.label }}</h2>
+
+          <ul class="day__list">
+            {%- for session in schedule.sessions | filterBy("day", day.key) %}
+              {% set item = collections.classBySlug[session.class] %}
+              {% set teacher = collections.teacherBySlug[session.teacher] %}
+              <li data-class="{{ session.class }}" data-level="{{ session.level }}">
+                <a class="session" href="{{ item.url }}">
+                  <span class="session__time">{{ session.start }} – {{ session.end }}</span>
+                  <span class="session__title">{{ item.data.title }}</span>
+                  <span class="session__meta">
+                    {{ schedule.levels[session.level] }} · {{ teacher.data.title }}<br />
+                    Αίθουσα {{ session.room }}{% if session.note %} · {{ session.note }}{% endif %}
+                  </span>
+                </a>
+              </li>
+            {%- endfor %}
+
+            {# Εμφανίζεται μόνο όταν τα φίλτρα αδειάσουν τη μέρα. #}
+            <li class="day__empty" hidden>Καμία ώρα</li>
+          </ul>
+        </section>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight section--ruled">
+  <div class="wrap split">
+    <div>
+      <p class="eyebrow">ΚΑΛΟ ΝΑ ΞΕΡΕΙΣ</p>
+      <h2>Πώς διαβάζεται το πρόγραμμα</h2>
+    </div>
+    <ul class="info-list">
+      <li class="info-list__item">
+        <span class="info-list__label">ΑΙΘΟΥΣΕΣ</span>
+        <span>
+          Η αίθουσα Α είναι η μεγάλη, με τις μπάρες και τον καθρέφτη σε δύο
+          πλευρές. Η Β είναι μικρότερη και πιο ζεστή τον χειμώνα.
+        </span>
+      </li>
+      <li class="info-list__item">
+        <span class="info-list__label">ΔΙΑΡΚΕΙΑ</span>
+        <span>
+          Τα τμήματα ενηλίκων διαρκούν 75΄, τα παιδικά 60΄ και η πρακτική
+          τάνγκο της Παρασκευής 90΄.
+        </span>
+      </li>
+      <li class="info-list__item">
+        <span class="info-list__label">ΑΡΓΙΕΣ</span>
+        <span>
+          Δεν λειτουργούμε τις επίσημες αργίες και τις δύο εβδομάδες των
+          Χριστουγέννων. Τα μαθήματα αναπληρώνονται μέσα στον ίδιο μήνα.
+        </span>
+      </li>
+      <li class="info-list__item">
+        <span class="info-list__label">ΑΛΛΑΓΕΣ</span>
+        <span>
+          Οι έκτακτες αλλαγές ανακοινώνονται στην είσοδο της σχολής και στα
+          <a href="/nea/">νέα</a>.
+        </span>
+      </li>
+    </ul>
+  </div>
+</section>

@@ -1,0 +1,18 @@
+# Every CSV in results/ is produced with numpy alone, and the whole test suite passes
+# with numpy alone. Nothing below is needed to reproduce a single number in the README.
+#
+#   python3 -m venv .venv
+#   .venv/bin/pip install -r requirements.txt
+#
+# The system interpreter on this machine is PEP-668 externally managed; installing into
+# it will fail. Use the venv.
+
+numpy>=1.26            # the only hard requirement
+matplotlib>=3.7        # analysis/plot_results.py only
+
+# --- for the real-model extension (see STATUS.md) ---
+# torch>=2.2
+# diffusers>=0.27      # a pretrained DDPM to take the sampler off
+# torchvision>=0.17    # CIFAR-10 / MNIST for the FID reference statistics
+# scipy>=1.11          # sqrtm for the Frechet distance
+# clean-fid>=0.1.35    # FID, which needs an Inception network and a GPU to be quick

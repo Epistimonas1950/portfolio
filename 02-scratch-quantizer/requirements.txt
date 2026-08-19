@@ -1,0 +1,18 @@
+# The results in results/*.csv are produced with numpy alone, and the test suite
+# passes with numpy alone. Everything below is for the parts of the brief that reach
+# beyond synthetic layers to a real model, plus the plotting.
+#
+#   python3 -m venv .venv
+#   .venv/bin/pip install -r requirements.txt
+#
+# The system interpreter on this machine is PEP-668 externally managed; installing
+# into it will fail. Use the venv.
+
+numpy>=1.26            # the only hard requirement
+matplotlib>=3.7        # analysis/plot_results.py only
+
+# --- for the real-model extension (see STATUS.md) ---
+# torch>=2.2
+# transformers>=4.40
+# datasets>=2.18       # WikiText-2 calibration set
+# lm-eval>=0.4         # perplexity + downstream tasks

@@ -1,0 +1,20 @@
+---
+layout: layouts/page.njk
+title: Νέα
+eyebrow: ΑΝΑΚΟΙΝΩΣΕΙΣ
+lead: >-
+  Εγγραφές, σεμινάρια, παραστάσεις και αλλαγές στο πρόγραμμα.
+eleventyNavigation:
+  key: Νέα
+  order: 7
+---
+
+<section class="section">
+  <div class="wrap">
+    <div class="grid grid--3">
+      {%- for post in collections.news %}
+        {% include "partials/post-card.njk" %}
+      {%- endfor %}
+    </div>
+  </div>
+</section>

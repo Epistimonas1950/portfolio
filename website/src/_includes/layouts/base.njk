@@ -1,0 +1,51 @@
+{#
+  Βασικό layout — το «κέλυφος» κάθε σελίδας.
+  Όλα τα υπόλοιπα layouts (page, class, teacher, post) χτίζουν πάνω σε αυτό.
+
+  Front matter που διαβάζει:
+    title       → τίτλος σελίδας (υποχρεωτικός)
+    description → meta description· αν λείπει, μπαίνει αυτή του site
+    bodyClass   → προαιρετική κλάση στο <body>, για ρυθμίσεις ανά σελίδα
+#}
+<!doctype html>
+<html lang="el">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>
+      {%- if page.url == "/" -%}
+        {{ site.fullName }} — {{ site.contact.area }}, {{ site.contact.city }}
+      {%- else -%}
+        {{ title }} · {{ site.name }}
+      {%- endif -%}
+    </title>
+
+    <meta name="description" content="{{ description or site.description }}" />
+
+    {# Open Graph — για όταν μοιράζεται ο σύνδεσμος σε social/μηνύματα. #}
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="{{ site.fullName }}" />
+    <meta property="og:title" content="{{ title }}" />
+    <meta property="og:description" content="{{ description or site.description }}" />
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+    <meta property="og:locale" content="el_GR" />
+
+    <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+  </head>
+
+  <body{% if bodyClass %} class="{{ bodyClass }}"{% endif %}>
+    {# Σύνδεσμος παράκαμψης: εμφανίζεται μόνο με πληκτρολόγιο (Tab). #}
+    <a class="skip-link" href="#main">Μετάβαση στο περιεχόμενο</a>
+
+    {% include "partials/header.njk" %}
+
+    <main id="main">{{ content | safe }}</main>
+
+    {% include "partials/footer.njk" %}
+
+    {# defer: το script τρέχει αφού φορτώσει το HTML, χωρίς να το μπλοκάρει. #}
+    <script src="/assets/js/site.js" defer></script>
+  </body>
+</html>

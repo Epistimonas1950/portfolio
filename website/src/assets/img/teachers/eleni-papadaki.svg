@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" role="img">
+  <title>eleni-papadaki</title>
+  <defs>
+    <linearGradient id="bg-7884" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2E1D38"/>
+      <stop offset="70%" stop-color="#17101C"/>
+      <stop offset="100%" stop-color="#17101C"/>
+    </linearGradient>
+    <radialGradient id="spot-7884" cx="400" cy="506.1290322580645" r="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#7FA8C9" stop-opacity="0.42"/>
+      <stop offset="55%" stop-color="#7FA8C9" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#7FA8C9" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Ο κόκκος φτιάχνεται μία φορά σε μικρό πλακίδιο και επαναλαμβάνεται,
+         ώστε το φίλτρο να μην τρέχει σε ολόκληρη την εικόνα. -->
+    <filter id="noise-7884" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7884"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+    <pattern id="grain-7884" width="140" height="140" patternUnits="userSpaceOnUse">
+      <rect width="140" height="140" filter="url(#noise-7884)" opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg-7884)"/>
+  <rect width="800" height="1000" fill="url(#spot-7884)"/>
+  <path d="M 320 0 L 480 0 L 736 900 L 64 900 Z"
+           fill="#7FA8C9" opacity="0.07"/>
+  <ellipse cx="400" cy="900" rx="272" ry="35" fill="#7FA8C9" opacity="0.12"/>
+  <ellipse cx="400" cy="900" rx="112.00000000000001" ry="16" fill="#17101C" opacity="0.6"/>
+  <g transform="translate(400 665.8) scale(5.323)"><g opacity="0.930">
+      <line x1="0" y1="0" x2="-6.9" y2="-39.4" stroke="#F5F1EC" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <circle cx="-9.0" cy="-51.2" r="7" fill="#F5F1EC"/>
+      <polyline points="-6.9,-39.4 9.2,-44.6 25.7,-48.8" stroke="#F5F1EC" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <polyline points="-6.9,-39.4 -14.9,-24.4 -27.9,-13.5" stroke="#F5F1EC" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <polyline points="0.0,0.0 -6.0,24.3 -10.4,48.9" stroke="#F5F1EC" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <polyline points="0.0,0.0 6.0,24.3 8.7,49.1" stroke="#F5F1EC" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    </g></g>
+  <g opacity="0.5">
+    <rect x="0" y="900" width="800" height="1.5" fill="#7FA8C9" opacity="0.35"/>
+    <rect x="0" y="901.5" width="800" height="60" fill="#17101C" opacity="0.35"/>
+  </g>
+  <rect width="800" height="1000" fill="url(#grain-7884)" opacity="0.07" style="mix-blend-mode:overlay"/>
+</svg>

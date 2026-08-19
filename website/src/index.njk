@@ -1,0 +1,275 @@
+---
+layout: layouts/base.njk
+title: Σχολή χορού στο Κουκάκι
+description: >-
+  Σχολή χορού ΟΚΤΩ στο Κουκάκι: μπαλέτο, σύγχρονος, hip hop, latin, τάνγκο,
+  παραδοσιακοί, oriental και παιδικά τμήματα. Πρώτο μάθημα δωρεάν.
+---
+
+{# =====================================================================
+   HERO — το «μέτρημα» πριν από κάθε χορογραφία
+   ================================================================== #}
+<section class="hero">
+  <div class="wrap hero__inner">
+    <div>
+      <p class="hero__eyebrow">ΣΧΟΛΗ ΧΟΡΟΥ · ΚΟΥΚΑΚΙ, ΑΘΗΝΑ</p>
+
+      <h1 class="hero__title">Κάθε χορός ξεκινάει από το ίδιο μέτρημα.</h1>
+
+      {#
+        Η λωρίδα των οκτώ μετρημάτων. Είναι διακοσμητική για τον αναγνώστη
+        οθόνης (aria-hidden), αλλά για όποιον βλέπει είναι το σήμα της σχολής:
+        τα τέσσερα τελευταία νούμερα είναι αυτά που φωνάζει ο δάσκαλος.
+      #}
+      <p class="count" aria-hidden="true">
+        {%- for n in range(1, 9) -%}
+          <span
+            class="count__beat{% if n >= 5 %} count__beat--loud{% endif %}"
+            style="--i: {{ n - 1 }}"
+          >{{ n }}</span>
+        {%- endfor -%}
+      </p>
+
+      <p class="hero__text">
+        Οκτώ μετρήματα κρατάει η εισαγωγή. Ό,τι έρχεται μετά — μπαλέτο,
+        σύγχρονος, hip hop, latin, τάνγκο, παραδοσιακοί — το μαθαίνεις εδώ,
+        σε δύο αίθουσες στο Κουκάκι, από το {{ site.founded }}.
+      </p>
+
+      <div class="btn-row">
+        <a class="btn btn--accent" href="/epikoinonia/#dokimastiko">{{ site.cta.label }}</a>
+        <a class="btn btn--ghost" href="/programma/"><span>Δες το πρόγραμμα</span></a>
+      </div>
+    </div>
+
+    <div class="hero__figure">
+      <img
+        class="hero__image"
+        src="/assets/img/hero.svg"
+        alt="Χορεύτρια σε διαδοχικές στιγμές μιας κίνησης, στην αίθουσα της σχολής"
+        width="1400"
+        height="1000"
+      />
+    </div>
+  </div>
+</section>
+
+{# =====================================================================
+   ΜΑΘΗΜΑΤΑ
+   ================================================================== #}
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-head__text">
+        <p class="eyebrow">ΤΑ ΜΑΘΗΜΑΤΑ</p>
+        <h2>Οκτώ είδη, ένα μέτρημα</h2>
+        <p class="lead">
+          Κάθε χορός έχει το δικό του μετρικό. Ο καλαματιανός πατάει στα 7/8,
+          η σάλσα στα οκτώ, τα παιδικά τραγούδια στα δύο. Από εκεί ξεκινάμε.
+        </p>
+      </div>
+      <a class="arrow-link" href="/mathimata/">Όλα τα μαθήματα</a>
+    </div>
+
+    <div class="grid grid--4">
+      {%- for item in collections.classes %}
+        {% include "partials/class-card.njk" %}
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+{# =====================================================================
+   ΣΗΜΕΡΑ — καρτέλες ημερών
+
+   Οι καρτέλες είναι radio buttons: δουλεύουν χωρίς JavaScript, με ποντίκι
+   και με πληκτρολόγιο. Το site.js κάνει ένα μόνο πράγμα — τσεκάρει τη
+   σημερινή μέρα όταν φορτώσει η σελίδα.
+   ================================================================== #}
+<section class="section section--dark section--tight">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-head__text">
+        <p class="eyebrow">ΤΟ ΠΡΟΓΡΑΜΜΑ</p>
+        <h2>Τι γίνεται σήμερα</h2>
+      </div>
+      <a class="arrow-link" href="/programma/">Όλη η εβδομάδα</a>
+    </div>
+
+    <div class="today" data-today>
+      {#
+        Κάθε καρτέλα είναι ένα <label> που περιέχει το radio της. Έτσι το CSS
+        μπορεί να βρει την επιλεγμένη καρτέλα με :has(:checked), χωρίς να
+        χρειάζεται JavaScript για την εναλλαγή.
+      #}
+      <div class="today__tabs">
+        {%- for day in schedule.days %}
+          <label class="today__tab" data-day-label="{{ day.key }}">
+            <input
+              class="visually-hidden"
+              type="radio"
+              name="today-day"
+              value="{{ day.key }}"
+              {% if loop.first %}checked{% endif %}
+            />
+            <span>{{ day.short }}</span>
+          </label>
+        {%- endfor %}
+      </div>
+
+      <div class="today__panels">
+        {%- for day in schedule.days %}
+          <div class="today__panel" data-panel="{{ day.key }}">
+            <h3 class="today__day">{{ day.label }}</h3>
+            <ul class="times">
+              {%- for session in schedule.sessions | filterBy("day", day.key) %}
+                {% set item = collections.classBySlug[session.class] %}
+                {% set teacher = collections.teacherBySlug[session.teacher] %}
+                <li class="times__row">
+                  <span class="times__hours">{{ session.start }} – {{ session.end }}</span>
+                  <span class="times__day">
+                    <a href="{{ item.url }}">{{ item.data.title }}</a>
+                  </span>
+                  <span class="times__level">
+                    {{ schedule.levels[session.level] }} · {{ teacher.data.title }} · Αίθουσα {{ session.room }}
+                  </span>
+                </li>
+              {%- endfor %}
+            </ul>
+          </div>
+        {%- endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{# =====================================================================
+   Η ΣΧΟΛΗ
+   ================================================================== #}
+<section class="section">
+  <div class="wrap split split--wide-right">
+    <img
+      class="feature-image"
+      src="/assets/img/studio.svg"
+      alt="Η αίθουσα Α με τον καθρέφτη και τη μπάρα"
+      width="1400"
+      height="900"
+      loading="lazy"
+    />
+
+    <div>
+      <p class="eyebrow">Η ΣΧΟΛΗ</p>
+      <h2>Δύο αίθουσες, δώδεκα άτομα το πολύ σε κάθε τμήμα</h2>
+      <p>
+        Ανοίξαμε το {{ site.founded }} σε ένα ισόγειο που ήταν αποθήκη επίπλων.
+        Σήμερα έχουμε δύο αίθουσες με ξύλινο αιωρούμενο δάπεδο, αποδυτήρια με
+        ντουζιέρες, και έναν κανόνα που δεν έχουμε σπάσει ποτέ: κανένα τμήμα
+        πάνω από δώδεκα άτομα.
+      </p>
+      <p>
+        Δεν κάνουμε εξετάσεις και δεν δίνουμε πτυχία. Κάνουμε μία παράσταση
+        τον Ιούνιο, όπου ανεβαίνει όποιος θέλει — και μένει κάτω όποιος δεν
+        θέλει, χωρίς να του το θυμίσει κανείς.
+      </p>
+      <p>
+        <a class="arrow-link" href="/i-sxoli/">Περισσότερα για εμάς</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+{# =====================================================================
+   ΚΑΘΗΓΗΤΕΣ
+   ================================================================== #}
+<section class="section section--tint">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-head__text">
+        <p class="eyebrow">ΟΙ ΑΝΘΡΩΠΟΙ</p>
+        <h2>Έξι δάσκαλοι που θα σε θυμούνται με το όνομά σου</h2>
+      </div>
+      <a class="arrow-link" href="/kathigites/">Γνώρισέ τους</a>
+    </div>
+
+    <div class="grid grid--3">
+      {%- for person in collections.teachers %}
+        {% include "partials/teacher-card.njk" %}
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+{# =====================================================================
+   ΣΥΝΔΡΟΜΕΣ (σύντομη μορφή — ο πλήρης τιμοκατάλογος είναι στο /syndromes/)
+   ================================================================== #}
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-head__text">
+        <p class="eyebrow">ΣΥΝΔΡΟΜΕΣ</p>
+        <h2>Καθαρές τιμές, χωρίς αστερίσκους</h2>
+      </div>
+      <a class="arrow-link" href="/syndromes/">Αναλυτικός τιμοκατάλογος</a>
+    </div>
+
+    <div class="grid grid--3">
+      {%- for plan in pricing.plans %}
+        <div class="plan{% if plan.highlight %} plan--highlight{% endif %}">
+          {% if plan.badge %}<p class="plan__badge">{{ plan.badge }}</p>{% endif %}
+          <h3 class="plan__name">{{ plan.name }}</h3>
+          <p class="plan__per">{{ plan.per }}</p>
+          <p class="plan__price">
+            {{ plan.price }}€ <span class="plan__unit">{{ plan.unit }}</span>
+          </p>
+          <ul class="plan__list">
+            {%- for line in plan.includes %}
+              <li>{{ line }}</li>
+            {%- endfor %}
+          </ul>
+          <a class="btn btn--ghost plan__cta" href="/syndromes/"><span>Λεπτομέρειες</span></a>
+        </div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+{# =====================================================================
+   ΝΕΑ
+   ================================================================== #}
+<section class="section section--tint">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-head__text">
+        <p class="eyebrow">ΝΕΑ</p>
+        <h2>Τι τρέχει στη σχολή</h2>
+      </div>
+      <a class="arrow-link" href="/nea/">Όλες οι ανακοινώσεις</a>
+    </div>
+
+    <div class="grid grid--3">
+      {%- for post in collections.news | limit(3) %}
+        {% include "partials/post-card.njk" %}
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+{# =====================================================================
+   ΚΛΕΙΣΙΜΟ — δωρεάν δοκιμαστικό
+   ================================================================== #}
+<section class="section section--dark section--tight">
+  <div class="wrap cta-band">
+    <div>
+      <p class="eyebrow">ΤΟ ΠΡΩΤΟ ΒΗΜΑ</p>
+      <h2>Έλα μία φορά. Μετά το συζητάμε.</h2>
+      <p class="lead">{{ site.cta.note }}</p>
+    </div>
+
+    <div class="btn-row">
+      <a class="btn btn--accent" href="/epikoinonia/#dokimastiko">{{ site.cta.label }}</a>
+      <a class="btn btn--ghost" href="tel:{{ site.contact.phoneHref }}">
+        <span>{{ site.contact.phone }}</span>
+      </a>
+    </div>
+  </div>
+</section>

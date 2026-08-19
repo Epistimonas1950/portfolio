@@ -1,0 +1,7 @@
+method,updates,reorth_tol,initial_drift,final_drift,max_drift,n_reorth,growth_final_over_initial
+"C double, reorth",22200,2.220e-14,4.645e-15,1.743e-14,2.863e-14,35,3.8
+"C double, no reorth",22200,2.220e-14,4.645e-15,1.241e-13,1.459e-13,0,26.7
+"C float32, reorth",22200,1.192e-05,4.213e-07,7.810e-06,1.398e-05,84,18.5
+"C float32, no reorth",22200,1.192e-05,4.213e-07,2.633e-04,2.639e-04,0,624.9
+"numpy double, reorth",22200,2.220e-14,1.560e-15,9.664e-15,3.364e-14,153,6.2
+"numpy double, no reorth",22200,2.220e-14,1.560e-15,1.111e-12,1.112e-12,0,712.2

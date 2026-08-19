@@ -1,0 +1,43 @@
+# Fleet specification: the arms a real deployment would serve.
+#
+# NOTHING IN THIS FILE IS RUNNABLE ON THIS MACHINE. There are no weights, no server
+# and no network here; every number this repo reports comes from the simulated fleet in
+# src/fleet/simulator.py. This file exists so that the swap to a real fleet is a config
+# change, and so the selection criterion is written down.
+#
+# Selection criterion (from BRIEF.md): pick arms at build time from the Berkeley
+# Function Calling Leaderboard, choosing a capability ladder wide enough that routing
+# is non-trivial. Specific checkpoints age in months; the ladder does not. The names
+# below are placeholders for whatever is current when you build, deliberately left
+# generic rather than pinned to a model this repo never ran.
+
+config: B            # B = CPU-only, three arms in the 1-8B range (see BRIEF.md).
+                     # Set to A for a >=24 GB GPU and swap the large arm for a
+                     # quantized ~30B checkpoint.
+runtime: ollama      # ollama | llamacpp | vllm -- see src/fleet/client.py
+host: http://localhost:11434
+
+arms:
+  - name: small
+    tier: small
+    model: "<1-4B instruct checkpoint with tool-calling support>"
+    quantization: Q4_K_M
+    context: 8192
+    serving_flags: ["--n-gpu-layers", "0"]
+  - name: mid
+    tier: mid
+    model: "<7-8B instruct checkpoint with tool-calling support>"
+    quantization: Q4_K_M
+    context: 8192
+    serving_flags: ["--n-gpu-layers", "0"]
+  - name: large
+    tier: large
+    model: "<~30B instruct checkpoint, quantized; Config A only>"
+    quantization: Q4_K_M
+    context: 8192
+    serving_flags: ["--n-gpu-layers", "999"]
+
+instrumentation:
+  wall_clock: client-side perf_counter around the request
+  peak_memory: server-reported resident size; NaN if the server will not report it
+  tokens: server-reported prompt/completion counts

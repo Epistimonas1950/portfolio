@@ -1,0 +1,55 @@
+seed,regime,rank,bits,method,detail,effective_bits,compression,relative_error
+0,rounding-limited (99.9% of error from rounding),252,4,"low-rank -> quantize (aware, refit)","aware, refit",7.999,2.0002,0.211452
+0,rounding-limited (99.9% of error from rounding),252,4,"low-rank -> quantize (aware, no refit)","aware, no refit",7.999,2.0002,0.211337
+0,rounding-limited (99.9% of error from rounding),252,4,"low-rank -> quantize (RTN, refit)","RTN, refit",7.999,2.0002,0.231023
+0,rounding-limited (99.9% of error from rounding),252,4,"low-rank -> quantize (RTN, no refit)","RTN, no refit",7.999,2.0002,0.233272
+0,rounding-limited (99.9% of error from rounding),252,4,quantize -> low-rank (fp16 factors),quantization bought no storage,31.5,0.5079,0.024241
+0,rounding-limited (99.9% of error from rounding),252,4,quantize -> low-rank -> requantize,rounded twice,7.999,2.0002,0.212559
+0,balanced (33% rounding),32,4,"low-rank -> quantize (aware, refit)","aware, refit",1.0703,14.9489,0.223379
+0,balanced (33% rounding),32,4,"low-rank -> quantize (aware, no refit)","aware, no refit",1.0703,14.9489,0.223643
+0,balanced (33% rounding),32,4,"low-rank -> quantize (RTN, refit)","RTN, refit",1.0703,14.9489,0.228808
+0,balanced (33% rounding),32,4,"low-rank -> quantize (RTN, no refit)","RTN, no refit",1.0703,14.9489,0.239812
+0,balanced (33% rounding),32,4,quantize -> low-rank (fp16 factors),quantization bought no storage,4.0,4.0,0.150727
+0,balanced (33% rounding),32,4,quantize -> low-rank -> requantize,rounded twice,1.0703,14.9489,0.224332
+0,truncation-limited (3.8% rounding),8,4,"low-rank -> quantize (aware, refit)","aware, refit",0.3145,50.882,0.30817
+0,truncation-limited (3.8% rounding),8,4,"low-rank -> quantize (aware, no refit)","aware, no refit",0.3145,50.882,0.308223
+0,truncation-limited (3.8% rounding),8,4,"low-rank -> quantize (RTN, refit)","RTN, refit",0.3145,50.882,0.309316
+0,truncation-limited (3.8% rounding),8,4,"low-rank -> quantize (RTN, no refit)","RTN, no refit",0.3145,50.882,0.314193
+0,truncation-limited (3.8% rounding),8,4,quantize -> low-rank (fp16 factors),quantization bought no storage,1.0,16.0,0.296752
+0,truncation-limited (3.8% rounding),8,4,quantize -> low-rank -> requantize,rounded twice,0.3145,50.882,0.308259
+1,rounding-limited (99.9% of error from rounding),252,4,"low-rank -> quantize (aware, refit)","aware, refit",7.999,2.0002,0.211149
+1,rounding-limited (99.9% of error from rounding),252,4,"low-rank -> quantize (aware, no refit)","aware, no refit",7.999,2.0002,0.211474
+1,rounding-limited (99.9% of error from rounding),252,4,"low-rank -> quantize (RTN, refit)","RTN, refit",7.999,2.0002,0.225379
+1,rounding-limited (99.9% of error from rounding),252,4,"low-rank -> quantize (RTN, no refit)","RTN, no refit",7.999,2.0002,0.231752
+1,rounding-limited (99.9% of error from rounding),252,4,quantize -> low-rank (fp16 factors),quantization bought no storage,31.5,0.5079,0.024066
+1,rounding-limited (99.9% of error from rounding),252,4,quantize -> low-rank -> requantize,rounded twice,7.999,2.0002,0.212268
+1,balanced (33% rounding),32,4,"low-rank -> quantize (aware, refit)","aware, refit",1.0703,14.9489,0.224563
+1,balanced (33% rounding),32,4,"low-rank -> quantize (aware, no refit)","aware, no refit",1.0703,14.9489,0.224795
+1,balanced (33% rounding),32,4,"low-rank -> quantize (RTN, refit)","RTN, refit",1.0703,14.9489,0.226631
+1,balanced (33% rounding),32,4,"low-rank -> quantize (RTN, no refit)","RTN, no refit",1.0703,14.9489,0.23854
+1,balanced (33% rounding),32,4,quantize -> low-rank (fp16 factors),quantization bought no storage,4.0,4.0,0.154762
+1,balanced (33% rounding),32,4,quantize -> low-rank -> requantize,rounded twice,1.0703,14.9489,0.225391
+1,truncation-limited (3.8% rounding),8,4,"low-rank -> quantize (aware, refit)","aware, refit",0.3145,50.882,0.317717
+1,truncation-limited (3.8% rounding),8,4,"low-rank -> quantize (aware, no refit)","aware, no refit",0.3145,50.882,0.317753
+1,truncation-limited (3.8% rounding),8,4,"low-rank -> quantize (RTN, refit)","RTN, refit",0.3145,50.882,0.31844
+1,truncation-limited (3.8% rounding),8,4,"low-rank -> quantize (RTN, no refit)","RTN, no refit",0.3145,50.882,0.323317
+1,truncation-limited (3.8% rounding),8,4,quantize -> low-rank (fp16 factors),quantization bought no storage,1.0,16.0,0.307021
+1,truncation-limited (3.8% rounding),8,4,quantize -> low-rank -> requantize,rounded twice,0.3145,50.882,0.31786
+2,rounding-limited (99.9% of error from rounding),252,4,"low-rank -> quantize (aware, refit)","aware, refit",7.999,2.0002,0.213562
+2,rounding-limited (99.9% of error from rounding),252,4,"low-rank -> quantize (aware, no refit)","aware, no refit",7.999,2.0002,0.213383
+2,rounding-limited (99.9% of error from rounding),252,4,"low-rank -> quantize (RTN, refit)","RTN, refit",7.999,2.0002,0.228198
+2,rounding-limited (99.9% of error from rounding),252,4,"low-rank -> quantize (RTN, no refit)","RTN, no refit",7.999,2.0002,0.233251
+2,rounding-limited (99.9% of error from rounding),252,4,quantize -> low-rank (fp16 factors),quantization bought no storage,31.5,0.5079,0.023173
+2,rounding-limited (99.9% of error from rounding),252,4,quantize -> low-rank -> requantize,rounded twice,7.999,2.0002,0.214248
+2,balanced (33% rounding),32,4,"low-rank -> quantize (aware, refit)","aware, refit",1.0703,14.9489,0.226273
+2,balanced (33% rounding),32,4,"low-rank -> quantize (aware, no refit)","aware, no refit",1.0703,14.9489,0.226597
+2,balanced (33% rounding),32,4,"low-rank -> quantize (RTN, refit)","RTN, refit",1.0703,14.9489,0.228561
+2,balanced (33% rounding),32,4,"low-rank -> quantize (RTN, no refit)","RTN, no refit",1.0703,14.9489,0.242118
+2,balanced (33% rounding),32,4,quantize -> low-rank (fp16 factors),quantization bought no storage,4.0,4.0,0.154329
+2,balanced (33% rounding),32,4,quantize -> low-rank -> requantize,rounded twice,1.0703,14.9489,0.226971
+2,truncation-limited (3.8% rounding),8,4,"low-rank -> quantize (aware, refit)","aware, refit",0.3145,50.882,0.321328
+2,truncation-limited (3.8% rounding),8,4,"low-rank -> quantize (aware, no refit)","aware, no refit",0.3145,50.882,0.321404
+2,truncation-limited (3.8% rounding),8,4,"low-rank -> quantize (RTN, refit)","RTN, refit",0.3145,50.882,0.321637
+2,truncation-limited (3.8% rounding),8,4,"low-rank -> quantize (RTN, no refit)","RTN, no refit",0.3145,50.882,0.32825
+2,truncation-limited (3.8% rounding),8,4,quantize -> low-rank (fp16 factors),quantization bought no storage,1.0,16.0,0.310185
+2,truncation-limited (3.8% rounding),8,4,quantize -> low-rank -> requantize,rounded twice,0.3145,50.882,0.321364

@@ -1,0 +1,64 @@
+{#
+  Υποσέλιδο: επικοινωνία, ωράριο, γρήγοροι σύνδεσμοι.
+  Όλα τα στοιχεία έρχονται από το _data/site.js — δεν γράφονται εδώ με το χέρι.
+#}
+<footer class="site-footer">
+  {# Η λωρίδα των οκτώ μετρημάτων κλείνει τη σελίδα όπως άνοιξε. #}
+  <div class="count-rule" aria-hidden="true">
+    {%- for n in [1, 2, 3, 4, 5, 6, 7, 8] -%}
+      <span class="count-rule__tick">{{ n }}</span>
+    {%- endfor -%}
+  </div>
+
+  <div class="wrap site-footer__grid">
+    <div class="site-footer__col site-footer__col--brand">
+      <p class="site-footer__name">{{ site.fullName }}</p>
+      <p class="site-footer__tagline">{{ site.tagline }}</p>
+      <p class="site-footer__since">Χορεύουμε στο {{ site.contact.area }} από το {{ site.founded }}.</p>
+    </div>
+
+    <div class="site-footer__col">
+      <h2 class="site-footer__heading">ΠΟΥ ΕΙΜΑΣΤΕ</h2>
+      <address class="site-footer__address">
+        {{ site.contact.street }}<br />
+        {{ site.contact.area }}, {{ site.contact.postal }} {{ site.contact.city }}<br />
+        <span class="site-footer__muted">{{ site.contact.transport }}</span>
+      </address>
+    </div>
+
+    <div class="site-footer__col">
+      <h2 class="site-footer__heading">ΕΠΙΚΟΙΝΩΝΙΑ</h2>
+      <ul class="site-footer__list">
+        <li><a href="tel:{{ site.contact.phoneHref }}">{{ site.contact.phone }}</a></li>
+        <li><a href="tel:{{ site.contact.mobileHref }}">{{ site.contact.mobile }}</a></li>
+        <li><a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></li>
+      </ul>
+      <ul class="site-footer__list site-footer__list--social">
+        {%- for channel in site.social %}
+          <li>
+            <a href="{{ channel.url }}" rel="noopener">{{ channel.name }}</a>
+          </li>
+        {%- endfor %}
+      </ul>
+    </div>
+
+    <div class="site-footer__col">
+      <h2 class="site-footer__heading">ΓΡΑΜΜΑΤΕΙΑ</h2>
+      <ul class="site-footer__list">
+        {%- for slot in site.hours %}
+          <li>
+            <span class="site-footer__muted">{{ slot.days }}</span><br />
+            {{ slot.time }}
+          </li>
+        {%- endfor %}
+      </ul>
+    </div>
+  </div>
+
+  <div class="wrap site-footer__bottom">
+    <p>© {% year %} {{ site.fullName }}. Όλα τα δικαιώματα διατηρούνται.</p>
+    <p class="site-footer__demo">
+      Ιστότοπος επίδειξης — τα κείμενα, οι εικόνες και τα στοιχεία επικοινωνίας είναι εικονικά.
+    </p>
+  </div>
+</footer>

@@ -1,0 +1,2151 @@
+/* =====================================================================
+   ΟΚΤΩ · Σχολή Χορού — φύλλο στυλ
+   ---------------------------------------------------------------------
+   Ένα αρχείο, χωρισμένο σε αριθμημένες ενότητες. Γράφτηκε στο χέρι: δεν
+   υπάρχει framework, ούτε βήμα μεταγλώττισης — ό,τι βλέπεις εδώ φτάνει
+   αυτούσιο στον browser.
+
+   ΠΕΡΙΕΧΟΜΕΝΑ
+     1.  Σχεδιαστικά tokens (χρώματα, γραμματοσειρές, αποστάσεις)
+     2.  Επαναφορά και βάση
+     3.  Τυπογραφία
+     4.  Σκελετός σελίδας (wrap, section, grid)
+     5.  Κουμπιά και σύνδεσμοι
+     6.  Κεφαλίδα και μενού
+     7.  Hero και η λωρίδα των οκτώ μετρημάτων
+     8.  Επικεφαλίδες ενοτήτων
+     9.  Κάρτες: μαθήματα, καθηγητές, νέα
+     10. Εβδομαδιαίο πρόγραμμα
+     11. Συνδρομές
+     12. Γκαλερί και lightbox
+     13. Φόρμα, FAQ, πληροφορίες επικοινωνίας
+     14. Κείμενο άρθρων (.prose)
+     15. Υποσέλιδο
+     16. Επιμέρους στοιχεία σελίδων (καρτέλες «σήμερα», ταμπελάκια, πλαϊνά)
+     17. Βοηθητικές κλάσεις και προτίμηση για λιγότερη κίνηση
+
+   ΣΗΜΕΙΩΣΗ ΓΙΑ ΤΗ ΣΕΙΡΑ: οι «παραλλαγές» (π.χ. .section--dark) γράφονται
+   πάντα μετά τη βασική κλάση τους. Έχουν ίδια βαρύτητα, οπότε κερδίζει
+   όποια δηλωθεί τελευταία.
+   ================================================================== */
+
+/* =====================================================================
+   1. TOKENS
+   ================================================================== */
+
+:root {
+  /* --- Χρώματα -----------------------------------------------------
+     Η παλέτα βγαίνει από μια αίθουσα χορού με σβηστά φώτα: βαθύ δαμασκηνί
+     για το σκοτάδι, κιμωλία για το φως, και το κεχριμπάρι της ζελατίνας
+     του προβολέα. */
+  --ink: #17101c; /* το βαθύ φόντο */
+  --ink-2: #211729; /* ένα σκαλί πιο πάνω, για κάρτες σε σκούρο */
+  --plum: #2e1d38;
+  --plum-line: #46304f; /* περιγράμματα πάνω σε σκούρο */
+
+  --chalk: #f5f1ec; /* το ανοιχτό φόντο */
+  --chalk-2: #ebe4db; /* διαχωριστικά και ήπια γεμίσματα */
+  --chalk-line: #ddd3c7;
+
+  --amber: #e9a13b; /* ο προβολέας — μόνο πάνω σε σκούρο */
+  --amber-ink: #8f5613; /* το ίδιο χρώμα, αναγνώσιμο πάνω σε ανοιχτό */
+  --rose: #c64c6e; /* δεύτερος τόνος, με φειδώ */
+
+  --text: #241a2b; /* κείμενο σε ανοιχτό φόντο */
+  --text-muted: #6b5e73;
+  --on-dark: #f5f1ec; /* κείμενο σε σκούρο φόντο */
+  --on-dark-muted: #b7a9bf;
+
+  /* --- Γραμματοσειρές ----------------------------------------------
+     Δουλεύουμε χωρίς webfonts: τίποτα δεν κατεβαίνει από το δίκτυο. Άρα
+     κάθε στοίβα ξεκινά από «ωραίες αν υπάρχουν» και καταλήγει σε
+     γραμματοσειρές συστήματος. ΚΡΙΤΗΡΙΟ ΕΠΙΛΟΓΗΣ: να έχουν ελληνικά.
+     (Π.χ. η Futura ή η Avenir θα έσπαγαν σε ελληνικό κείμενο.)
+
+     Το Didot δεν είναι διακοσμητική επιλογή: τα ελληνικά στοιχεία του
+     Didot είναι η βάση της νεοελληνικής τυπογραφίας — και ταιριάζουν με
+     την αφίσα μιας σχολής χορού. */
+  --font-display: Didot, "Bodoni 72", "Noto Serif Display", "Playfair Display",
+    P052, "Palatino Linotype", Palatino, "Noto Serif", Georgia, serif;
+  --font-body: "Noto Sans", "Ubuntu Sans", Ubuntu, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  /* Το monospace δεν είναι για κώδικα: κρατά τις ώρες του προγράμματος
+     στοιχισμένες σε στήλες και δίνει στις ετικέτες ύφος «φύλλου πρόβας». */
+  --font-mono: "Noto Sans Mono", "DejaVu Sans Mono", ui-monospace,
+    SFMono-Regular, Menlo, Consolas, monospace;
+
+  /* --- Κλίμακα μεγεθών (clamp: μικρό σε κινητό, μεγάλο σε οθόνη) --- */
+  --size-hero: clamp(2.7rem, 6.4vw, 4.9rem);
+  --size-h1: clamp(2.1rem, 4.6vw, 3.5rem);
+  --size-h2: clamp(1.65rem, 3.1vw, 2.4rem);
+  --size-h3: clamp(1.2rem, 1.9vw, 1.5rem);
+  --size-lead: clamp(1.05rem, 1.5vw, 1.25rem);
+  --size-body: 1rem;
+  --size-small: 0.875rem;
+  --size-label: 0.75rem; /* ετικέτες σε monospace */
+
+  /* --- Αποστάσεις --------------------------------------------------- */
+  --space-2xs: 0.35rem;
+  --space-xs: 0.6rem;
+  --space-sm: 1rem;
+  --space-md: 1.6rem;
+  --space-lg: 2.6rem;
+  --space-xl: 4rem;
+  --space-section: clamp(3.5rem, 8vw, 6.5rem);
+
+  --gutter: clamp(1.15rem, 4vw, 2.5rem);
+  --wrap: 1180px;
+
+  --radius: 3px; /* ελάχιστη στρογγύλεψη — αφίσα, όχι εφαρμογή */
+  --line: 1px solid var(--chalk-line);
+  --line-dark: 1px solid var(--plum-line);
+
+  --transition: 180ms ease;
+}
+
+/* =====================================================================
+   2. ΕΠΑΝΑΦΟΡΑ ΚΑΙ ΒΑΣΗ
+   ================================================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* Ώστε τα #άγκιστρα να μη χώνονται κάτω από τη σταθερή κεφαλίδα. */
+  scroll-padding-top: 6rem;
+}
+
+body {
+  margin: 0;
+  background: var(--chalk);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: var(--size-body);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Οι εικόνες κρατούν πάντα τις αναλογίες τους και γεμίζουν το πλαίσιο,
+   ώστε η αντικατάσταση των SVG με πραγματικές φωτογραφίες να μην αλλάξει
+   ούτε ένα pixel στη διάταξη. */
+img {
+  height: auto;
+  object-fit: cover;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+}
+
+/* Εμφανής δείκτης εστίασης — απαραίτητος για πλοήγηση με πληκτρολόγιο. */
+:focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.skip-link {
+  position: absolute;
+  left: var(--space-sm);
+  top: -4rem;
+  z-index: 100;
+  padding: 0.7rem 1.1rem;
+  background: var(--amber);
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: var(--size-small);
+  text-decoration: none;
+  transition: top var(--transition);
+}
+
+.skip-link:focus {
+  top: var(--space-sm);
+}
+
+/* =====================================================================
+   3. ΤΥΠΟΓΡΑΦΙΑ
+   ================================================================== */
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: -0.015em;
+  margin: 0 0 var(--space-sm);
+  text-wrap: balance; /* αποφεύγει τη μονή «ορφανή» λέξη στην τελευταία σειρά */
+}
+
+h1 {
+  font-size: var(--size-h1);
+}
+h2 {
+  font-size: var(--size-h2);
+}
+h3 {
+  font-size: var(--size-h3);
+  line-height: 1.2;
+}
+
+p {
+  margin: 0 0 var(--space-sm);
+}
+
+/* Η εισαγωγική παράγραφος κάθε ενότητας. */
+.lead {
+  font-size: var(--size-lead);
+  line-height: 1.6;
+  color: var(--text-muted);
+  max-width: 58ch;
+}
+
+/* Μικρές ετικέτες σε monospace: ώρες, επίπεδα, μετρικά, κατηγορίες.
+   Γράφονται ΚΕΦΑΛΑΙΑ απευθείας στο HTML, χωρίς text-transform, ώστε να
+   φεύγουν οι τόνοι όπως ορίζει η ελληνική τυπογραφία (ΜΑΘΗΜΑΤΑ, όχι
+   ΜΆΘΗΜΑΤΑ) με βεβαιότητα σε κάθε browser. */
+.label {
+  font-family: var(--font-mono);
+  font-size: var(--size-label);
+  letter-spacing: 0.14em;
+  color: var(--text-muted);
+}
+
+.mono {
+  font-family: var(--font-mono);
+  font-size: var(--size-small);
+  letter-spacing: 0.02em;
+}
+
+/* =====================================================================
+   4. ΣΚΕΛΕΤΟΣ ΣΕΛΙΔΑΣ
+   ================================================================== */
+
+.wrap {
+  width: min(100% - var(--gutter) * 2, var(--wrap));
+  margin-inline: auto;
+}
+
+.wrap--narrow {
+  width: min(100% - var(--gutter) * 2, 760px);
+}
+
+.section {
+  padding-block: var(--space-section);
+}
+
+.section--tight {
+  padding-block: calc(var(--space-section) * 0.6);
+}
+
+.section--dark {
+  background: var(--ink);
+  color: var(--on-dark);
+}
+
+.section--tint {
+  background: var(--chalk-2);
+}
+
+/* Λεπτή γραμμή ανάμεσα σε δύο ανοιχτές ενότητες. */
+.section--ruled {
+  border-top: var(--line);
+}
+
+/* Πλέγμα γενικής χρήσης. Ο αριθμός στηλών δηλώνεται ρητά ανά μέγεθος οθόνης
+   (αντί για auto-fit), ώστε να ξέρουμε ακριβώς τι βλέπει ο καθένας:
+   οι κάρτες μαθημάτων μπαίνουν δύο-δύο ακόμη και στο κινητό, ενώ τα άρθρα,
+   που έχουν κείμενο, μένουν ένα-ένα. */
+.grid {
+  display: grid;
+  gap: var(--space-md);
+}
+
+.grid--2 {
+  grid-template-columns: 1fr;
+}
+
+.grid--3 {
+  grid-template-columns: 1fr;
+}
+
+.grid--4 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 34rem) {
+  .grid--3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 40rem) {
+  .grid--4 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 48rem) {
+  .grid--2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 56rem) {
+  .grid--3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 62rem) {
+  .grid--4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* =====================================================================
+   5. ΚΟΥΜΠΙΑ ΚΑΙ ΣΥΝΔΕΣΜΟΙ
+   ================================================================== */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1.5rem;
+  border: 1px solid currentColor;
+  border-radius: var(--radius);
+  background: none;
+  font-family: var(--font-mono);
+  font-size: var(--size-small);
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    background-color var(--transition),
+    color var(--transition),
+    border-color var(--transition);
+}
+
+/* Γεμάτο κεχριμπαρένιο κουμπί — η κύρια ενέργεια της σελίδας. */
+.btn--accent {
+  background: var(--amber);
+  border-color: var(--amber);
+  color: var(--ink);
+}
+
+.btn--accent:hover,
+.btn--accent:focus-visible {
+  background: var(--chalk);
+  border-color: var(--chalk);
+  color: var(--ink);
+}
+
+/* Διάφανο κουμπί για δευτερεύουσα ενέργεια.
+   Στο hover αντιστρέφεται: πάνω σε ανοιχτό φόντο γεμίζει σκούρο, πάνω σε
+   σκούρο γεμίζει ανοιχτό. Τα χρώματα δηλώνονται ρητά και στις δύο περιπτώσεις,
+   ώστε το κουμπί να μη «χαθεί» αν αλλάξει κάποτε η δομή του HTML. */
+.btn--ghost {
+  border-color: currentColor;
+  color: inherit;
+}
+
+.btn--ghost:hover,
+.btn--ghost:focus-visible {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--chalk);
+}
+
+.hero .btn--ghost:hover,
+.hero .btn--ghost:focus-visible,
+.page-head .btn--ghost:hover,
+.page-head .btn--ghost:focus-visible,
+.section--dark .btn--ghost:hover,
+.section--dark .btn--ghost:focus-visible,
+.plan--highlight .btn--ghost:hover,
+.plan--highlight .btn--ghost:focus-visible {
+  background: var(--chalk);
+  border-color: var(--chalk);
+  color: var(--ink);
+}
+
+/* Σύνδεσμος «διάβασε περισσότερα» με βέλος που μετακινείται στο hover. */
+.arrow-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: var(--size-small);
+  text-decoration: none;
+  border-bottom: 1px solid var(--amber);
+  padding-bottom: 2px;
+}
+
+.arrow-link::after {
+  content: "→";
+  transition: transform var(--transition);
+}
+
+.arrow-link:hover::after,
+.arrow-link:focus-visible::after {
+  transform: translateX(4px);
+}
+
+.btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+}
+
+/* =====================================================================
+   6. ΚΕΦΑΛΙΔΑ ΚΑΙ ΜΕΝΟΥ
+   ================================================================== */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--ink);
+  color: var(--on-dark);
+  border-bottom: var(--line-dark);
+}
+
+.site-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  min-height: 4.5rem;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  text-decoration: none;
+  color: var(--chalk);
+}
+
+.brand__mark {
+  color: var(--amber);
+  flex: none;
+}
+
+.brand__text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.brand__name {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  letter-spacing: 0.06em;
+}
+
+.brand__sub {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.22em;
+  color: var(--on-dark-muted);
+  margin-top: 0.3rem;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.site-nav__list {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.7rem, 1.6vw, 1.4rem);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav__link {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  color: var(--on-dark-muted);
+  padding-block: 0.4rem;
+  border-bottom: 1px solid transparent;
+  transition:
+    color var(--transition),
+    border-color var(--transition);
+  white-space: nowrap;
+}
+
+.site-nav__link:hover,
+.site-nav__link:focus-visible {
+  color: var(--chalk);
+}
+
+/* Η τρέχουσα σελίδα υπογραμμίζεται με το χρώμα του προβολέα. */
+.site-nav__link[aria-current="page"] {
+  color: var(--chalk);
+  border-bottom-color: var(--amber);
+}
+
+.site-nav__cta {
+  padding: 0.6rem 1rem;
+}
+
+/* Το κουμπί «Μενού» υπάρχει μόνο σε μικρές οθόνες (βλ. media query). */
+.nav-toggle {
+  display: none;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.55rem 0.9rem;
+  background: none;
+  border: var(--line-dark);
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+.nav-toggle__label {
+  font-family: var(--font-mono);
+  font-size: var(--size-small);
+}
+
+/* Οι τρεις γραμμές του εικονιδίου: μία πραγματική και δύο ψευδοστοιχεία. */
+.nav-toggle__bars,
+.nav-toggle__bars::before,
+.nav-toggle__bars::after {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: currentColor;
+  transition: transform var(--transition), opacity var(--transition);
+}
+
+.nav-toggle__bars::before,
+.nav-toggle__bars::after {
+  content: "";
+  position: relative;
+}
+
+.nav-toggle__bars::before {
+  top: -6px;
+}
+
+.nav-toggle__bars::after {
+  top: 4px;
+}
+
+/* Ανοιχτό μενού: οι γραμμές γίνονται «Χ». */
+.nav-toggle[aria-expanded="true"] .nav-toggle__bars {
+  background: transparent;
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle__bars::before {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle__bars::after {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+@media (max-width: 62rem) {
+  .nav-toggle {
+    display: inline-flex;
+  }
+
+  .site-nav {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: var(--space-sm) var(--gutter) var(--space-md);
+    background: var(--ink);
+    border-bottom: var(--line-dark);
+  }
+
+  /* Η κλάση μπαίνει από το site.js όταν πατηθεί το κουμπί. */
+  .site-nav.is-open {
+    display: flex;
+  }
+
+  .site-nav__list {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .site-nav__link {
+    display: block;
+    padding: 0.85rem 0;
+    font-size: 1rem;
+    border-bottom: var(--line-dark);
+  }
+
+  .site-nav__cta {
+    margin-top: var(--space-sm);
+    justify-content: center;
+  }
+}
+
+/* =====================================================================
+   7. HERO ΚΑΙ Η ΛΩΡΙΔΑ ΤΩΝ ΟΚΤΩ ΜΕΤΡΗΜΑΤΩΝ
+   ---------------------------------------------------------------------
+   Το «5, 6, 7, 8» είναι το σήμα κατατεθέν της σελίδας: κάθε χορογραφία
+   ξεκινά με αυτό το μέτρημα, και από εκεί πήρε το όνομά της η σχολή.
+   ================================================================== */
+
+.hero {
+  background: var(--ink);
+  color: var(--on-dark);
+  overflow: hidden;
+}
+
+.hero__inner {
+  display: grid;
+  gap: var(--space-lg);
+  padding-block: clamp(3rem, 7vw, 5.5rem);
+  align-items: center;
+}
+
+@media (min-width: 60rem) {
+  .hero__inner {
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: var(--space-xl);
+  }
+}
+
+.hero__eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-family: var(--font-mono);
+  font-size: var(--size-label);
+  letter-spacing: 0.2em;
+  color: var(--amber);
+  margin-bottom: var(--space-md);
+}
+
+.hero__eyebrow::before {
+  content: "";
+  width: 2.5rem;
+  height: 1px;
+  background: currentColor;
+}
+
+.hero__title {
+  font-size: var(--size-hero);
+  margin-bottom: var(--space-md);
+}
+
+.hero__text {
+  color: var(--on-dark-muted);
+  font-size: var(--size-lead);
+  max-width: 46ch;
+}
+
+.hero__figure {
+  position: relative;
+}
+
+.hero__image {
+  width: 100%;
+  aspect-ratio: 7 / 5;
+  border: var(--line-dark);
+}
+
+@media (min-width: 60rem) {
+  .hero__image {
+    aspect-ratio: 7 / 8;
+  }
+}
+
+/* --- Η λωρίδα μετρήματος ------------------------------------------- */
+
+.count {
+  display: flex;
+  gap: clamp(0.4rem, 1.6vw, 1rem);
+  margin-bottom: var(--space-md);
+  font-family: var(--font-mono);
+  font-size: clamp(1rem, 2.2vw, 1.5rem);
+}
+
+.count__beat {
+  --dim: #5b4a66;
+  color: var(--dim);
+  /* Κάθε νούμερο ανάβει με τη σειρά του: 8 χτύποι σε 3,2 δευτερόλεπτα,
+     δηλαδή 150 bpm — ο ρυθμός ενός γρήγορου μαθήματος. */
+  animation: beat 3.2s linear infinite;
+  animation-delay: calc(var(--i) * 0.4s);
+}
+
+/* Τα τέσσερα τελευταία μετρήματα είναι αυτά που λέει δυνατά ο δάσκαλος. */
+.count__beat--loud {
+  --dim: #a8763c;
+}
+
+@keyframes beat {
+  0% {
+    color: var(--dim);
+    transform: translateY(0);
+  }
+  3% {
+    color: var(--chalk);
+    transform: translateY(-0.28em);
+  }
+  16% {
+    color: var(--dim);
+    transform: translateY(0);
+  }
+  100% {
+    color: var(--dim);
+    transform: translateY(0);
+  }
+}
+
+/* Η ίδια ιδέα ως διακοσμητική γραμμή: οκτώ χαραγές πριν το υποσέλιδο. */
+.count-rule {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  border-top: var(--line-dark);
+}
+
+.count-rule__tick {
+  padding: 0.45rem 0 0 0.45rem;
+  border-left: var(--line-dark);
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  color: var(--plum-line);
+}
+
+.count-rule__tick:first-child {
+  border-left: none;
+}
+
+/* =====================================================================
+   8. ΕΠΙΚΕΦΑΛΙΔΕΣ ΕΝΟΤΗΤΩΝ
+   ================================================================== */
+
+.section-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.section-head__text {
+  max-width: 60ch;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-family: var(--font-mono);
+  font-size: var(--size-label);
+  letter-spacing: 0.2em;
+  color: var(--amber-ink);
+  margin-bottom: var(--space-xs);
+}
+
+.eyebrow::before {
+  content: "";
+  width: 1.8rem;
+  height: 1px;
+  background: currentColor;
+}
+
+.section--dark .eyebrow {
+  color: var(--amber);
+}
+
+/* Επικεφαλίδα σελίδας (κάτω από την κεφαλίδα, πάνω από το περιεχόμενο). */
+.page-head {
+  background: var(--ink);
+  color: var(--on-dark);
+  padding-block: clamp(2.5rem, 5vw, 4rem);
+}
+
+.page-head__title {
+  font-size: var(--size-h1);
+  margin-bottom: var(--space-sm);
+}
+
+.page-head__lead {
+  color: var(--on-dark-muted);
+  font-size: var(--size-lead);
+  max-width: 62ch;
+  margin: 0;
+}
+
+/* Όταν η επικεφαλίδα έχει και εικόνα δίπλα, τα δύο μισά κεντράρονται μεταξύ
+   τους — αλλιώς το κείμενο κολλάει ψηλά και μένει μεγάλο κενό από κάτω. */
+.page-head .split {
+  align-items: center;
+}
+
+/* =====================================================================
+   9. ΚΑΡΤΕΣ
+   ================================================================== */
+
+/* --- Κάρτα μαθήματος ------------------------------------------------ */
+
+.class-card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+}
+
+.class-card__media {
+  position: relative;
+  overflow: hidden;
+  background: var(--ink);
+  border-radius: var(--radius);
+}
+
+.class-card__image {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  transition: transform 400ms ease;
+}
+
+.class-card:hover .class-card__image,
+.class-card:focus-visible .class-card__image {
+  transform: scale(1.04);
+}
+
+/* Το μετρικό (π.χ. 7/8) πάνω στην εικόνα: η πληροφορία που ξεχωρίζει
+   πραγματικά ένα είδος χορού από ένα άλλο. */
+.class-card__meter {
+  position: absolute;
+  left: 0.7rem;
+  bottom: 0.7rem;
+  padding: 0.25rem 0.55rem;
+  background: rgb(23 16 28 / 0.82);
+  border: 1px solid var(--plum-line);
+  border-radius: var(--radius);
+  font-family: var(--font-mono);
+  font-size: var(--size-label);
+  color: var(--amber);
+  letter-spacing: 0.06em;
+}
+
+.class-card__body {
+  padding-top: var(--space-sm);
+}
+
+.class-card__title {
+  font-size: var(--size-h3);
+  margin-bottom: 0.35rem;
+}
+
+.class-card:hover .class-card__title,
+.class-card:focus-visible .class-card__title {
+  text-decoration: underline;
+  text-decoration-color: var(--amber);
+  text-underline-offset: 5px;
+}
+
+.class-card__meta {
+  font-family: var(--font-mono);
+  font-size: var(--size-label);
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+.class-card__text {
+  margin: var(--space-2xs) 0 0;
+  font-size: var(--size-small);
+  color: var(--text-muted);
+}
+
+/* --- Κάρτα καθηγητή ------------------------------------------------- */
+
+.person-card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+}
+
+.person-card__image {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border-radius: var(--radius);
+  background: var(--ink);
+  filter: saturate(0.9);
+  transition: filter var(--transition);
+}
+
+.person-card:hover .person-card__image,
+.person-card:focus-visible .person-card__image {
+  filter: saturate(1.1);
+}
+
+.person-card__name {
+  font-size: var(--size-h3);
+  margin: var(--space-sm) 0 0.2rem;
+}
+
+.person-card__role {
+  font-family: var(--font-mono);
+  font-size: var(--size-label);
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+.section--dark .person-card__role {
+  color: var(--on-dark-muted);
+}
+
+/* --- Κάρτα νέου ----------------------------------------------------- */
+
+.post-card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  border-top: var(--line);
+  padding-top: var(--space-sm);
+}
+
+.post-card__image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius);
+  margin-bottom: var(--space-sm);
+}
+
+.post-card__date {
+  font-family: var(--font-mono);
+  font-size: var(--size-label);
+  letter-spacing: 0.1em;
+  color: var(--amber-ink);
+}
+
+.post-card__title {
+  font-size: var(--size-h3);
+  margin: var(--space-2xs) 0 0.4rem;
+}
+
+.post-card:hover .post-card__title,
+.post-card:focus-visible .post-card__title {
+  text-decoration: underline;
+  text-decoration-color: var(--amber);
+  text-underline-offset: 5px;
+}
+
+.post-card__excerpt {
+  font-size: var(--size-small);
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* =====================================================================
+   10. ΕΒΔΟΜΑΔΙΑΙΟ ΠΡΟΓΡΑΜΜΑ
+   ---------------------------------------------------------------------
+   Αντί για πίνακα με συγχωνευμένα κελιά (που σπάει σε κινητό), κάθε μέρα
+   είναι μια στήλη με τις ώρες της, ταξινομημένες. Ίδια δομή σε όλες τις
+   οθόνες — αλλάζει μόνο ο αριθμός των στηλών.
+   ================================================================== */
+
+.schedule {
+  display: grid;
+  gap: var(--space-sm);
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 48rem) {
+  .schedule {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 72rem) {
+  .schedule {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0;
+  }
+}
+
+.day {
+  border-top: 2px solid var(--text);
+  padding-top: var(--space-xs);
+}
+
+@media (min-width: 72rem) {
+  .day {
+    border-left: var(--line);
+    border-top: 2px solid var(--text);
+    padding: var(--space-xs) var(--space-xs) 0;
+  }
+
+  .day:first-child {
+    border-left: none;
+    padding-left: 0;
+  }
+}
+
+.day__name {
+  font-family: var(--font-mono);
+  font-size: var(--size-label);
+  letter-spacing: 0.16em;
+  margin-bottom: var(--space-sm);
+}
+
+.day__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.session {
+  display: block;
+  padding: 0.6rem 0.65rem;
+  background: var(--chalk-2);
+  border-left: 2px solid transparent;
+  border-radius: 2px;
+  text-decoration: none;
+  color: inherit;
+  transition:
+    background-color var(--transition),
+    border-color var(--transition);
+}
+
+.session:hover,
+.session:focus-visible {
+  background: var(--ink);
+  color: var(--on-dark);
+  border-left-color: var(--amber);
+}
+
+.session__time {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: var(--size-label);
+  letter-spacing: 0.03em;
+  color: var(--amber-ink);
+}
+
+.session:hover .session__time,
+.session:focus-visible .session__time {
+  color: var(--amber);
+}
+
+.session__title {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  line-height: 1.15;
+  margin: 0.15rem 0;
+}
+
+.session__meta {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+}
+
+.session:hover .session__meta,
+.session:focus-visible .session__meta {
+  color: var(--on-dark-muted);
+}
+
+/* Μήνυμα όταν το φιλτράρισμα δεν αφήνει καμία ώρα σε μια μέρα. */
+.day__empty {
+  font-family: var(--font-mono);
+  font-size: var(--size-label);
+  color: var(--text-muted);
+  padding: 0.6rem 0;
+}
+
+/* --- Φίλτρα προγράμματος -------------------------------------------- */
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-md);
+  border-bottom: var(--line);
+}
+
+.filters__group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.filters__legend {
+  font-family: var(--font-mono);
+  font-size: var(--size-label);
+  letter-spacing: 0.14em;
+  color: var(--text-muted);
+  margin-right: 0.4rem;
+  min-width: 6.5rem;
+}
+
+.chip {
+  padding: 0.4rem 0.75rem;
+  background: none;
+  border: var(--line);
+  border-radius: 999px;
+  font-family: var(--font-mono);
+  font-size: var(--size-label);
+  cursor: pointer;
+  transition:
+    background-color var(--transition),
+    color var(--transition),
+    border-color var(--transition);
+}
+
+.chip:hover {
+  border-color: var(--text);
+}
+
+.chip[aria-pressed="true"] {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--chalk);
+}
+
+/* --- Ώρες μέσα στη σελίδα ενός μαθήματος ---------------------------- */
+
+.times {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.times__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.3rem 1rem;
+  padding: 0.7rem 0;
+  border-top: var(--line);
+  font-family: var(--font-mono);
+  font-size: var(--size-small);
+}
+
+.times__day {
+  min-width: 6rem;
+  letter-spacing: 0.08em;
+}
+
+.times__hours {
+  min-width: 8.5rem;
+  color: var(--amber-ink);
+}
+
+.times__level {
+  color: var(--text-muted);
+}
+
+/* =====================================================================
+   11. ΣΥΝΔΡΟΜΕΣ
+   ================================================================== */
+
+.plan {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-md);
+  background: var(--chalk);
+  border: var(--line);
+  border-radius: var(--radius);
+}
+
+/* Το πακέτο που επιλέγουν οι περισσότεροι — ξεχωρίζει με σκούρο φόντο,
+   όχι με κραυγαλέο σήμα. */
+.plan--highlight {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--on-dark);
+}
+
+.plan__badge {
+  font-family: var(--font-mono);
+  font-size: var(--size-label);
+  letter-spacing: 0.12em;
+  color: var(--amber);
+  margin-bottom: var(--space-xs);
+}
+
+.plan__name {
+  font-size: var(--size-h3);
+  margin-bottom: 0.1rem;
+}
+
+.plan__per {
+  font-family: var(--font-mono);
+  font-size: var(--size-label);
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+}
+
+.plan--highlight .plan__per {
+  color: var(--on-dark-muted);
+}
+
+.plan__price {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 4vw, 3.2rem);
+  line-height: 1;
+  margin: var(--space-sm) 0 0;
+}
+
+.plan__unit {
+  font-family: var(--font-mono);
+  font-size: var(--size-small);
+  color: var(--text-muted);
+}
+
+.plan--highlight .plan__unit {
+  color: var(--on-dark-muted);
+}
+
+.plan__list {
+  list-style: none;
+  margin: var(--space-md) 0 var(--space-md);
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: var(--size-small);
+}
+
+.plan__list li {
+  padding-left: 1.3rem;
+  position: relative;
+}
+
+/* Το «σημαδάκι» της λίστας είναι μια νότα — διακριτικά θεματικό. */
+.plan__list li::before {
+  content: "♪";
+  position: absolute;
+  left: 0;
+  color: var(--amber-ink);
+}
+
+.plan--highlight .plan__list li::before {
+  color: var(--amber);
+}
+
+.plan__cta {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+/* --- Πίνακας πρόσθετων επιλογών ------------------------------------- */
+
+.rate-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--size-small);
+}
+
+.rate-table th,
+.rate-table td {
+  text-align: left;
+  padding: 0.85rem 0.5rem;
+  border-bottom: var(--line);
+  vertical-align: baseline;
+}
+
+.rate-table th {
+  font-family: var(--font-mono);
+  font-size: var(--size-label);
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+.rate-table__price {
+  font-family: var(--font-mono);
+  white-space: nowrap;
+  text-align: right;
+}
+
+.rate-table__note {
+  color: var(--text-muted);
+}
+
+/* =====================================================================
+   12. ΓΚΑΛΕΡΙ ΚΑΙ LIGHTBOX
+   ================================================================== */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-sm);
+}
+
+@media (min-width: 48rem) {
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.gallery__item {
+  margin: 0;
+  position: relative;
+}
+
+/* Οι οριζόντιες φωτογραφίες πιάνουν δύο στήλες — έτσι το πλέγμα αποκτά
+   ρυθμό αντί να είναι ένα ομοιόμορφο μωσαϊκό. */
+.gallery__item--landscape {
+  grid-column: span 2;
+}
+
+.gallery__button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  background: var(--ink);
+  border-radius: var(--radius);
+  overflow: hidden;
+  cursor: zoom-in;
+}
+
+.gallery__image {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  transition: transform 400ms ease, opacity var(--transition);
+}
+
+/* 4:3 και όχι 3:2, ώστε μια οριζόντια φωτογραφία που πιάνει δύο στήλες να
+   έχει σχεδόν το ίδιο ύψος με μια κάθετη — αλλιώς οι σειρές δεν ευθυγραμμίζονται. */
+.gallery__item--landscape .gallery__image {
+  aspect-ratio: 4 / 3;
+}
+
+.gallery__button:hover .gallery__image {
+  transform: scale(1.03);
+  opacity: 0.9;
+}
+
+.gallery__caption {
+  font-family: var(--font-mono);
+  font-size: var(--size-label);
+  color: var(--text-muted);
+  padding-top: 0.5rem;
+}
+
+/* Το lightbox είναι στοιχείο <dialog>: ο browser αναλαμβάνει το modal,
+   το Escape και την εστίαση. */
+.lightbox {
+  width: min(94vw, 1100px);
+  padding: 0;
+  border: none;
+  background: var(--ink);
+  color: var(--on-dark);
+  border-radius: var(--radius);
+}
+
+.lightbox::backdrop {
+  background: rgb(10 6 12 / 0.86);
+}
+
+.lightbox__image {
+  width: 100%;
+  max-height: 78vh;
+  object-fit: contain;
+  background: var(--ink);
+}
+
+.lightbox__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  padding: var(--space-sm);
+  border-top: var(--line-dark);
+}
+
+.lightbox__caption {
+  font-family: var(--font-mono);
+  font-size: var(--size-small);
+  margin: 0;
+  margin-right: auto;
+}
+
+/* Υπόδειξη πλήκτρων — κρύβεται σε στενές οθόνες, όπου δεν υπάρχει πληκτρολόγιο. */
+.lightbox__hint {
+  display: none;
+  font-family: var(--font-mono);
+  font-size: var(--size-label);
+  color: var(--on-dark-muted);
+  margin: 0;
+}
+
+@media (min-width: 40rem) {
+  .lightbox__hint {
+    display: block;
+  }
+}
+
+.lightbox__close {
+  padding: 0.45rem 0.9rem;
+  background: none;
+  border: var(--line-dark);
+  border-radius: var(--radius);
+  font-family: var(--font-mono);
+  font-size: var(--size-small);
+  cursor: pointer;
+}
+
+/* =====================================================================
+   13. ΦΟΡΜΑ, FAQ, ΣΤΟΙΧΕΙΑ ΕΠΙΚΟΙΝΩΝΙΑΣ
+   ================================================================== */
+
+.form {
+  display: grid;
+  gap: var(--space-sm);
+}
+
+.form__row {
+  display: grid;
+  gap: var(--space-sm);
+}
+
+@media (min-width: 40rem) {
+  .form__row--two {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.field__label {
+  font-family: var(--font-mono);
+  font-size: var(--size-label);
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+}
+
+.field__input,
+.field__select,
+.field__textarea {
+  padding: 0.75rem 0.85rem;
+  background: var(--chalk);
+  border: var(--line);
+  border-radius: var(--radius);
+  font: inherit;
+  font-size: var(--size-small);
+  color: var(--text);
+}
+
+.field__textarea {
+  min-height: 8rem;
+  resize: vertical;
+}
+
+.field__input:focus,
+.field__select:focus,
+.field__textarea:focus {
+  border-color: var(--text);
+}
+
+/* Διακριτική σημείωση ότι η φόρμα δεν στέλνει ακόμη πουθενά. */
+.notice {
+  padding: var(--space-sm);
+  background: var(--chalk-2);
+  border-left: 3px solid var(--amber);
+  border-radius: var(--radius);
+  font-size: var(--size-small);
+  color: var(--text-muted);
+}
+
+.notice strong {
+  color: var(--text);
+}
+
+/* --- Στοιχεία επικοινωνίας ------------------------------------------ */
+
+.info-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-list__item {
+  padding: var(--space-sm) 0;
+  border-top: var(--line);
+}
+
+.info-list__label {
+  font-family: var(--font-mono);
+  font-size: var(--size-label);
+  letter-spacing: 0.14em;
+  color: var(--text-muted);
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.info-list__value {
+  font-size: var(--size-lead);
+}
+
+.info-list__value a {
+  text-decoration-color: var(--amber);
+  text-underline-offset: 4px;
+}
+
+/* Θέση χάρτη: κρατά τον χώρο μέχρι να μπει πραγματικός χάρτης. */
+.map-placeholder {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* Γεμίζει το ύψος της στήλης δίπλα του· το aspect-ratio ισχύει μόνο όταν
+     δεν υπάρχει άλλο περιεχόμενο να το τεντώσει (π.χ. σε κινητό). */
+  height: 100%;
+  min-height: 16rem;
+  aspect-ratio: 16 / 10;
+  padding: var(--space-md);
+  background:
+    repeating-linear-gradient(
+      45deg,
+      transparent 0 14px,
+      rgb(70 48 79 / 0.25) 14px 15px
+    ),
+    var(--ink);
+  color: var(--on-dark);
+  border-radius: var(--radius);
+}
+
+.map-placeholder__label {
+  font-family: var(--font-mono);
+  font-size: var(--size-label);
+  letter-spacing: 0.14em;
+  color: var(--amber);
+  margin-bottom: var(--space-2xs);
+}
+
+/* --- Συχνές ερωτήσεις (χωρίς JavaScript) ---------------------------- */
+
+.faq {
+  border-top: var(--line);
+}
+
+.faq__item {
+  border-bottom: var(--line);
+}
+
+.faq__question {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  padding: var(--space-sm) 0;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  cursor: pointer;
+  list-style: none;
+}
+
+/* Κρύβει το προεπιλεγμένο τριγωνάκι του <details> στο WebKit. */
+.faq__question::-webkit-details-marker {
+  display: none;
+}
+
+.faq__question::after {
+  content: "+";
+  font-family: var(--font-mono);
+  color: var(--amber-ink);
+  flex: none;
+}
+
+.faq__item[open] .faq__question::after {
+  content: "–";
+}
+
+.faq__answer {
+  margin: 0 0 var(--space-sm);
+  padding-right: 2rem;
+  color: var(--text-muted);
+  font-size: var(--size-small);
+  max-width: 70ch;
+}
+
+/* =====================================================================
+   14. ΚΕΙΜΕΝΟ ΑΡΘΡΩΝ
+   ---------------------------------------------------------------------
+   Η κλάση .prose περιβάλλει ό,τι έρχεται από αρχεία Markdown, όπου δεν
+   μπορούμε να βάλουμε κλάσεις σε κάθε παράγραφο.
+   ================================================================== */
+
+.prose {
+  max-width: 68ch;
+}
+
+.prose > h2 {
+  margin-top: var(--space-lg);
+}
+
+.prose > h3 {
+  margin-top: var(--space-md);
+}
+
+.prose > p,
+.prose > ul,
+.prose > ol {
+  margin-bottom: var(--space-sm);
+}
+
+.prose ul,
+.prose ol {
+  padding-left: 1.3rem;
+}
+
+.prose li {
+  margin-bottom: 0.35rem;
+}
+
+.prose a {
+  text-decoration-color: var(--amber);
+  text-underline-offset: 4px;
+}
+
+.prose blockquote {
+  margin: var(--space-md) 0;
+  padding-left: var(--space-md);
+  border-left: 2px solid var(--amber);
+  font-family: var(--font-display);
+  font-size: var(--size-lead);
+  color: var(--text);
+}
+
+.prose strong {
+  font-weight: 600;
+}
+
+/* =====================================================================
+   15. ΥΠΟΣΕΛΙΔΟ
+   ================================================================== */
+
+.site-footer {
+  background: var(--ink);
+  color: var(--on-dark);
+  margin-top: var(--space-section);
+}
+
+.site-footer__grid {
+  display: grid;
+  gap: var(--space-lg);
+  padding-block: var(--space-lg);
+}
+
+@media (min-width: 46rem) {
+  .site-footer__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 68rem) {
+  .site-footer__grid {
+    grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  }
+}
+
+.site-footer__name {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  margin-bottom: 0.3rem;
+}
+
+.site-footer__tagline {
+  font-family: var(--font-mono);
+  color: var(--amber);
+  font-size: var(--size-small);
+  margin-bottom: var(--space-sm);
+}
+
+.site-footer__since,
+.site-footer__muted {
+  color: var(--on-dark-muted);
+  font-size: var(--size-small);
+}
+
+.site-footer__heading {
+  font-family: var(--font-mono);
+  font-size: var(--size-label);
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  color: var(--on-dark-muted);
+  margin-bottom: var(--space-sm);
+}
+
+.site-footer__address {
+  font-style: normal;
+  font-size: var(--size-small);
+  line-height: 1.8;
+}
+
+.site-footer__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  font-size: var(--size-small);
+}
+
+.site-footer__list a {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color var(--transition);
+}
+
+.site-footer__list a:hover,
+.site-footer__list a:focus-visible {
+  border-bottom-color: var(--amber);
+}
+
+.site-footer__list--social {
+  margin-top: var(--space-sm);
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  color: var(--on-dark-muted);
+}
+
+.site-footer__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--space-xs);
+  padding-block: var(--space-sm) var(--space-md);
+  border-top: var(--line-dark);
+  font-size: 0.78rem;
+  color: var(--on-dark-muted);
+}
+
+.site-footer__bottom p {
+  margin: 0;
+}
+
+.site-footer__demo {
+  color: var(--plum-line);
+}
+
+/* =====================================================================
+   16. ΕΠΙΜΕΡΟΥΣ ΣΤΟΙΧΕΙΑ ΣΕΛΙΔΩΝ
+   ================================================================== */
+
+/* --- Οι τίτλοι μέσα σε κάρτες είναι <span> (βρίσκονται μέσα σε <a>),
+       οπότε χρειάζονται ρητά τη γραμματοσειρά τίτλου. ----------------- */
+
+.class-card__title,
+.person-card__name,
+.post-card__title {
+  display: block;
+  font-family: var(--font-display);
+  line-height: 1.15;
+}
+
+.class-card__body,
+.class-card__meta,
+.person-card__role,
+.post-card__date,
+.post-card__excerpt {
+  display: block;
+}
+
+/* --- Μεγάλη εικόνα σε επικεφαλίδα σελίδας ------------------------- */
+
+.page-head__image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border: var(--line-dark);
+  border-radius: var(--radius);
+}
+
+@media (min-width: 56rem) {
+  .page-head__image {
+    aspect-ratio: 4 / 5;
+  }
+}
+
+.feature-image {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  border-radius: var(--radius);
+}
+
+.post__image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius);
+  margin-bottom: var(--space-lg);
+}
+
+.post__back {
+  margin-top: var(--space-lg);
+  padding-top: var(--space-md);
+  border-top: var(--line);
+}
+
+/* --- Σύντομα στοιχεία (μετρικό, διάρκεια, ηλικίες…) ---------------- */
+
+.facts {
+  list-style: none;
+  margin: var(--space-md) 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  gap: var(--space-sm);
+  border-top: var(--line-dark);
+  padding-top: var(--space-sm);
+}
+
+.facts__label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  color: var(--on-dark-muted);
+  margin-bottom: 0.15rem;
+}
+
+.facts__value {
+  display: block;
+  font-size: var(--size-small);
+  line-height: 1.35;
+}
+
+/* --- Πλαϊνή στήλη σελίδας ----------------------------------------- */
+
+.aside-block {
+  padding-top: var(--space-sm);
+}
+
+.meter-line {
+  font-family: var(--font-display);
+  font-size: 2.6rem;
+  line-height: 1;
+  margin: 0 0 var(--space-2xs);
+}
+
+.meter-note {
+  font-size: var(--size-small);
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* --- Μικρές καρτέλες καθηγητών μέσα σε πλαϊνή στήλη ---------------- */
+
+.mini-people {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.mini-person {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.mini-person__image {
+  width: 3.4rem;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background: var(--ink);
+  flex: none;
+}
+
+.mini-person__name {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+}
+
+.mini-person:hover .mini-person__name {
+  text-decoration: underline;
+  text-decoration-color: var(--amber);
+  text-underline-offset: 4px;
+}
+
+.mini-person__role {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+}
+
+/* --- Ταμπελάκια συνδέσμων (άλλα μαθήματα, τι διδάσκει…) ------------ */
+
+.pill-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  padding: 0.5rem 0.9rem;
+  border: var(--line-dark);
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: var(--size-small);
+  transition:
+    background-color var(--transition),
+    color var(--transition);
+}
+
+.pill:hover,
+.pill:focus-visible {
+  background: var(--chalk);
+  color: var(--ink);
+}
+
+.pill--light {
+  border: var(--line);
+}
+
+.pill--light:hover,
+.pill--light:focus-visible {
+  background: var(--ink);
+  color: var(--chalk);
+}
+
+.pill__meter {
+  font-family: var(--font-mono);
+  font-size: var(--size-label);
+  color: var(--amber);
+}
+
+.pill--light .pill__meter {
+  color: var(--amber-ink);
+}
+
+.pill:hover .pill__meter {
+  color: var(--amber-ink);
+}
+
+.pill--light:hover .pill__meter {
+  color: var(--amber);
+}
+
+/* --- «Τι γίνεται σήμερα»: καρτέλες ημερών --------------------------
+   Η εναλλαγή γίνεται με CSS. Αν ο browser δεν υποστηρίζει :has(),
+   εμφανίζονται απλώς και οι έξι μέρες η μία κάτω από την άλλη — καμία
+   πληροφορία δεν χάνεται. */
+
+.today__tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: var(--space-md);
+}
+
+.today__tab {
+  padding: 0.5rem 1rem;
+  border: var(--line-dark);
+  border-radius: 999px;
+  font-family: var(--font-mono);
+  font-size: var(--size-small);
+  cursor: pointer;
+}
+
+.today__tab:has(:checked) {
+  background: var(--chalk);
+  border-color: var(--chalk);
+  color: var(--ink);
+}
+
+.today__tab:has(:focus-visible) {
+  outline: 2px solid var(--amber);
+  outline-offset: 3px;
+}
+
+/* Κουκκίδα δίπλα στη σημερινή μέρα — την προσθέτει το site.js. */
+.today__tab[data-is-today="true"]::after {
+  content: " ●";
+  color: var(--amber);
+  font-size: 0.6em;
+  vertical-align: middle;
+}
+
+.today__day {
+  font-size: var(--size-h3);
+  margin-bottom: var(--space-xs);
+}
+
+@supports selector(:has(*)) {
+  .today__panel {
+    display: none;
+  }
+
+  .today:has([value="mon"]:checked) [data-panel="mon"],
+  .today:has([value="tue"]:checked) [data-panel="tue"],
+  .today:has([value="wed"]:checked) [data-panel="wed"],
+  .today:has([value="thu"]:checked) [data-panel="thu"],
+  .today:has([value="fri"]:checked) [data-panel="fri"],
+  .today:has([value="sat"]:checked) [data-panel="sat"] {
+    display: block;
+  }
+}
+
+/* --- Λωρίδα κλεισίματος (κάλεσμα για δοκιμαστικό) ------------------ */
+
+.cta-band {
+  display: grid;
+  gap: var(--space-md);
+  align-items: center;
+}
+
+@media (min-width: 56rem) {
+  .cta-band {
+    grid-template-columns: 1.4fr 1fr;
+  }
+
+  .cta-band .btn-row {
+    justify-content: flex-end;
+    margin-top: 0;
+  }
+}
+
+/* --- Διορθώσεις για ανοιχτά στοιχεία μέσα σε σκούρες ενότητες ------ */
+
+.section--dark .lead,
+.section--dark .times__level,
+.section--dark .mini-person__role {
+  color: var(--on-dark-muted);
+}
+
+.section--dark .times__row {
+  border-top-color: var(--plum-line);
+}
+
+.section--dark .times__hours {
+  color: var(--amber);
+}
+
+.section--dark .times__day a {
+  text-decoration-color: var(--amber);
+  text-underline-offset: 4px;
+}
+
+/* =====================================================================
+   17. ΒΟΗΘΗΤΙΚΑ
+   ================================================================== */
+
+/* Ορατό μόνο σε αναγνώστες οθόνης. */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.stack-sm > * + * {
+  margin-top: var(--space-sm);
+}
+
+.stack-md > * + * {
+  margin-top: var(--space-md);
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Δύο στήλες κειμένου/περιεχομένου σε μεγάλες οθόνες. */
+.split {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+@media (min-width: 56rem) {
+  .split {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
+  }
+
+  .split--wide-left {
+    grid-template-columns: 1.35fr 1fr;
+  }
+
+  .split--wide-right {
+    grid-template-columns: 1fr 1.35fr;
+  }
+}
+
+/* Σεβασμός στην προτίμηση του συστήματος για λιγότερη κίνηση:
+   σβήνουν όλες οι μεταβάσεις, αλλά τίποτα δεν χάνεται σε πληροφορία. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  /* Χωρίς την κίνηση, τα τέσσερα δυνατά μετρήματα μένουν απλώς φωτισμένα. */
+  .count__beat--loud {
+    color: var(--amber);
+  }
+}

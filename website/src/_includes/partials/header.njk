@@ -1,0 +1,58 @@
+{#
+  Κεφαλίδα με το κύριο μενού.
+
+  Το μενού παράγεται από το plugin eleventy-navigation: κάθε σελίδα που θέλει
+  να εμφανίζεται εδώ δηλώνει στο front matter της
+      eleventyNavigation:
+        key: Μαθήματα
+        order: 1
+  Έτσι η σειρά και τα ονόματα ζουν μαζί με τις σελίδες, όχι σε ξεχωριστή λίστα.
+
+  Σε μικρές οθόνες το μενού κρύβεται πίσω από το κουμπί «Μενού»· το άνοιγμα/
+  κλείσιμο το αναλαμβάνει το assets/js/site.js μέσω του aria-expanded.
+#}
+<header class="site-header">
+  <div class="site-header__inner wrap">
+    <a class="brand" href="/">
+      {# Το σήμα: δύο κύκλοι σε κλίση — ένα «8» και μια φιγούρα σε κίνηση. #}
+      <svg class="brand__mark" viewBox="0 0 48 48" width="34" height="34" aria-hidden="true">
+        <g transform="rotate(-14 24 24)" fill="none" stroke="currentColor" stroke-width="5">
+          <circle cx="24" cy="15" r="9.5" />
+          <circle cx="24" cy="33" r="11.5" />
+        </g>
+      </svg>
+      <span class="brand__text">
+        <span class="brand__name">{{ site.name }}</span>
+        <span class="brand__sub">σχολή χορού</span>
+      </span>
+    </a>
+
+    <button
+      class="nav-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="site-nav"
+    >
+      <span class="nav-toggle__bars" aria-hidden="true"></span>
+      <span class="nav-toggle__label">Μενού</span>
+    </button>
+
+    <nav class="site-nav" id="site-nav" aria-label="Κύριο μενού">
+      <ul class="site-nav__list">
+        {%- for entry in collections.all | eleventyNavigation -%}
+          <li>
+            <a
+              class="site-nav__link"
+              href="{{ entry.url }}"
+              {% if entry.url == page.url %}aria-current="page"{% endif %}
+            >{{ entry.title }}</a>
+          </li>
+        {%- endfor -%}
+      </ul>
+
+      <a class="btn btn--accent site-nav__cta" href="/epikoinonia/#dokimastiko">
+        {{ site.cta.short }}
+      </a>
+    </nav>
+  </div>
+</header>

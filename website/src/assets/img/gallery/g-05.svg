@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" width="800" height="1200" role="img">
+  <title>gallery-g-05.svg</title>
+  <defs>
+    <linearGradient id="bg-3005" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2E1D38"/>
+      <stop offset="70%" stop-color="#17101C"/>
+      <stop offset="100%" stop-color="#17101C"/>
+    </linearGradient>
+    <radialGradient id="spot-3005" cx="632" cy="648" r="744" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#D8607A" stop-opacity="0.42"/>
+      <stop offset="55%" stop-color="#D8607A" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#D8607A" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Ο κόκκος φτιάχνεται μία φορά σε μικρό πλακίδιο και επαναλαμβάνεται,
+         ώστε το φίλτρο να μην τρέχει σε ολόκληρη την εικόνα. -->
+    <filter id="noise-3005" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="3005"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+    <pattern id="grain-3005" width="140" height="140" patternUnits="userSpaceOnUse">
+      <rect width="140" height="140" filter="url(#noise-3005)" opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="1200" fill="url(#bg-3005)"/>
+  <rect width="800" height="1200" fill="url(#spot-3005)"/>
+  <g opacity="0.5">
+    <rect x="0" y="1008" width="800" height="1.5" fill="#D8607A" opacity="0.35"/>
+    <rect x="0" y="1009.5" width="800" height="60" fill="#17101C" opacity="0.35"/>
+  </g>
+  <ellipse cx="632.0" cy="1008.0" rx="132.0" ry="19.2" fill="#17101C" opacity="0.55"/>
+  <g transform="translate(128.0 769.5) scale(4.877)"><g opacity="0.100">
+      <line x1="0" y1="0" x2="0.0" y2="-40.0" stroke="#D8607A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <circle cx="0.0" cy="-52.0" r="7" fill="#D8607A"/>
+      <polyline points="0.0,-40.0 -2.4,-23.2 -4.1,-6.3" stroke="#D8607A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <polyline points="0.0,-40.0 2.4,-23.2 4.1,-6.3" stroke="#D8607A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <polyline points="0.0,0.0 -1.3,25.0 -2.2,50.0" stroke="#D8607A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <polyline points="0.0,0.0 1.3,25.0 2.2,50.0" stroke="#D8607A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    </g></g>
+    <g transform="translate(254.0 739.8) scale(5.081)"><g opacity="0.205">
+      <line x1="0" y1="0" x2="-0.2" y2="-40.0" stroke="#D8607A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <circle cx="-0.3" cy="-52.0" r="7" fill="#D8607A"/>
+      <polyline points="-0.2,-40.0 8.2,-25.2 17.9,-11.3" stroke="#D8607A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <polyline points="-0.2,-40.0 7.5,-24.9 14.0,-9.1" stroke="#D8607A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <polyline points="0.0,0.0 -3.7,24.7 -8.3,49.3" stroke="#D8607A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <polyline points="0.0,0.0 3.7,24.7 8.3,49.3" stroke="#D8607A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    </g></g>
+    <g transform="translate(380.0 727.5) scale(5.284)"><g opacity="0.310">
+      <line x1="0" y1="0" x2="-0.7" y2="-40.0" stroke="#D8607A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <circle cx="-0.9" cy="-52.0" r="7" fill="#D8607A"/>
+      <polyline points="-0.7,-40.0 15.0,-46.6 29.0,-56.1" stroke="#D8607A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <polyline points="-0.7,-40.0 15.2,-33.9 29.6,-24.9" stroke="#D8607A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <polyline points="0.0,0.0 -8.8,23.4 -21.3,45.1" stroke="#D8607A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <polyline points="0.0,0.0 8.8,23.4 21.3,45.1" stroke="#D8607A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    </g></g>
+    <g transform="translate(506.0 739.8) scale(5.487)"><g opacity="0.415">
+      <line x1="0" y1="0" x2="-1.2" y2="-40.0" stroke="#D8607A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <circle cx="-1.5" cy="-52.0" r="7" fill="#D8607A"/>
+      <polyline points="-1.2,-40.0 -5.9,-56.3 -15.3,-70.5" stroke="#D8607A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <polyline points="-1.2,-40.0 14.7,-46.1 31.7,-47.2" stroke="#D8607A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <polyline points="0.0,0.0 -13.4,21.1 -32.4,37.4" stroke="#D8607A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <polyline points="0.0,0.0 13.4,21.1 32.4,37.4" stroke="#D8607A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    </g></g>
+    <g transform="translate(632.0 769.5) scale(5.690)"><g opacity="0.960">
+      <line x1="0" y1="0" x2="-1.4" y2="-40.0" stroke="#F5F1EC" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <circle cx="-1.8" cy="-52.0" r="7" fill="#F5F1EC"/>
+      <polyline points="-1.4,-40.0 -15.1,-50.0 -31.5,-54.7" stroke="#F5F1EC" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <polyline points="-1.4,-40.0 11.6,-50.9 27.6,-56.7" stroke="#F5F1EC" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <polyline points="0.0,0.0 -15.4,19.7 -36.6,32.9" stroke="#F5F1EC" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <polyline points="0.0,0.0 15.4,19.7 36.6,32.9" stroke="#F5F1EC" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    </g></g>
+  <rect width="800" height="1200" fill="url(#grain-3005)" opacity="0.07" style="mix-blend-mode:overlay"/>
+</svg>

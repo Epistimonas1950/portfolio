@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img">
+  <title>gallery-g-10.svg</title>
+  <defs>
+    <linearGradient id="bg-1254" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2E1D38"/>
+      <stop offset="70%" stop-color="#17101C"/>
+      <stop offset="100%" stop-color="#17101C"/>
+    </linearGradient>
+    <radialGradient id="spot-1254" cx="816.0000000000001" cy="270" r="945" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#D8607A" stop-opacity="0.42"/>
+      <stop offset="55%" stop-color="#D8607A" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#D8607A" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Ο κόκκος φτιάχνεται μία φορά σε μικρό πλακίδιο και επαναλαμβάνεται,
+         ώστε το φίλτρο να μην τρέχει σε ολόκληρη την εικόνα. -->
+    <filter id="noise-1254" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="1254"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+    <pattern id="grain-1254" width="140" height="140" patternUnits="userSpaceOnUse">
+      <rect width="140" height="140" filter="url(#noise-1254)" opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg-1254)"/>
+  <rect width="1200" height="900" fill="url(#spot-1254)"/>
+  <defs>
+      <linearGradient id="mirror-1254" x1="0" y1="0" x2="0.35" y2="1">
+        <stop offset="0%" stop-color="#F5F1EC" stop-opacity="0.10"/>
+        <stop offset="45%" stop-color="#2E1D38" stop-opacity="0.55"/>
+        <stop offset="100%" stop-color="#17101C" stop-opacity="0.75"/>
+      </linearGradient>
+    </defs>
+  <rect x="84.00000000000001" y="126.00000000000001" width="1032" height="495" fill="url(#mirror-1254)"/>
+  <rect x="84.00000000000001" y="126.00000000000001" width="1032" height="495"
+           fill="none" stroke="#D8607A" stroke-width="1.5" opacity="0.4"/>
+  <g opacity="0.06" fill="#F5F1EC">
+      <path d="M 120 621 L 432 126.00000000000001 L 540 126.00000000000001 L 228 621 Z"/>
+      <path d="M 576 621 L 888 126.00000000000001 L 924 126.00000000000001 L 612 621 Z"/>
+    </g>
+  <g fill="#D8607A" opacity="0.55">
+      <rect x="168.00000000000003" y="54" width="192" height="5.4" rx="2"/>
+      <rect x="504" y="54" width="192" height="5.4" rx="2"/>
+      <rect x="840" y="54" width="192" height="5.4" rx="2"/>
+    </g>
+  <g>
+      <rect x="60" y="477" width="1080" height="8.1"
+            rx="4.05" fill="#D8607A" opacity="0.55"/>
+      <rect x="192" y="486" width="2" height="180" fill="#D8607A" opacity="0.2"/>
+      <rect x="983.9999999999999" y="486" width="2" height="180" fill="#D8607A" opacity="0.2"/>
+    </g>
+  <g transform="translate(864.0 525.5) scale(3.194)"><g opacity="0.500">
+      <line x1="0" y1="0" x2="-3.8" y2="-39.8" stroke="#F5F1EC" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <circle cx="-5.0" cy="-51.8" r="7" fill="#F5F1EC"/>
+      <polyline points="-3.8,-39.8 10.2,-30.3 24.1,-20.4" stroke="#F5F1EC" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <polyline points="-3.8,-39.8 -7.3,-23.2 -14.4,-7.7" stroke="#F5F1EC" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <polyline points="0.0,0.0 -3.9,24.7 -6.7,49.5" stroke="#F5F1EC" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <polyline points="0.0,0.0 3.9,24.7 5.8,49.6" stroke="#F5F1EC" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    </g></g>
+  <g opacity="0.5">
+    <rect x="0" y="666" width="1200" height="1.5" fill="#D8607A" opacity="0.35"/>
+    <rect x="0" y="667.5" width="1200" height="60" fill="#17101C" opacity="0.35"/>
+  </g>
+  <g opacity="0.14">
+      <rect x="60" y="715.5" width="1080" height="1.5" fill="#D8607A"/>
+      <ellipse cx="864" cy="693" rx="40.5" ry="10.8" fill="#F5F1EC"/>
+    </g>
+  <rect width="1200" height="900" fill="url(#grain-1254)" opacity="0.07" style="mix-blend-mode:overlay"/>
+</svg>

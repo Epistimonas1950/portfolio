@@ -1,0 +1,32 @@
+id,difficulty,parsed,exact,capacity_ok,stop_set_ok,demands_ok,windows_ok,service_ok,start_ok,self_flagged,warnings,labelled_modes,error,optimal_plan_cost
+p01,plain,1,1,1,1,1,1,1,1,0,,,,87
+p02,plain,1,1,1,1,1,1,1,1,0,,,,63
+p03,plain,1,1,1,1,1,1,1,1,0,,,,93
+p04,plain,1,1,1,1,1,1,1,1,0,,,,205
+p05,plain,1,1,1,1,1,1,1,1,0,,,,106
+p06,plain,1,1,1,1,1,1,1,1,0,,,,50
+p07,plain,1,1,1,1,1,1,1,1,0,,,,51
+p08,plain,1,1,1,1,1,1,1,1,0,,,,77
+p09,plain,1,1,1,1,1,1,1,1,0,,,,160
+p10,plain,1,1,1,1,1,1,1,1,0,,,,73
+p11,plain,1,1,1,1,1,1,1,1,0,,,,110
+p12,plain,1,1,1,1,1,1,1,1,0,,,,114
+p13,plain,1,1,1,1,1,1,1,1,0,,,,137
+p14,plain,1,1,1,1,1,1,1,1,0,,,,53
+p15,plain,1,1,1,1,1,1,1,1,0,,,,158
+p16,plain,1,1,1,1,1,1,1,1,0,,,,204
+p17,plain,1,1,1,1,1,1,1,1,0,,,,46
+p18,plain,1,1,1,1,1,1,1,1,0,,,,96
+p19,plain,1,1,1,1,1,1,1,1,0,,,,385
+p20,plain,1,1,1,1,1,1,1,1,0,,,,126
+h01,hard,0,0,0,0,0,0,0,0,1,relative_time|vague_quantity,unknown_location|relative_time|vague_quantity,no known stop names found -- every stop must be in the gazetteer,
+h02,hard,1,0,1,1,1,0,1,1,1,coreference,coreference,,87
+h03,hard,1,0,1,1,0,1,1,1,1,arithmetic,arithmetic,,infeasible
+h04,hard,1,0,1,1,1,0,1,1,1,exception_scope,exception_scope,,115
+h05,hard,1,1,1,1,1,1,1,1,1,unrepresentable_constraint,unrepresentable_constraint,,82
+h06,hard,1,1,1,1,1,1,1,1,1,conditional|negation,conditional,,77
+h07,hard,1,1,1,1,1,1,1,1,1,unit_mismatch,unit_mismatch,,71
+h08,hard,1,0,1,1,1,0,1,1,1,relative_time,relative_time,,94
+h09,hard,0,0,0,0,0,0,0,0,1,implicit_capacity,implicit_capacity,no vehicle capacity found -- expected something like 'the van holds four crates' or 'capacity 5',
+h10,hard,1,0,1,0,0,0,1,1,1,negation,negation,,130
+h11,hard,1,1,1,1,1,1,1,1,1,coreference|missing_context,missing_context,,44

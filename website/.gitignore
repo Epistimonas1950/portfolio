@@ -1,0 +1,9 @@
+# Εξαρτήσεις — εγκαθίστανται με `npm install`
+node_modules/
+
+# Το αποτέλεσμα του build — παράγεται με `npm run build`
+_site/
+
+# Τοπικά αρχεία συστήματος
+.DS_Store
+*.log

@@ -1,0 +1,87 @@
+prediction,config,value,units,note
+half_ulp,ang:Q.28,1.862645149e-09,value units,"2^-(n+1), the per-operation representation error"
+half_ulp,bias:Q.30,4.656612873e-10,value units,"2^-(n+1), the per-operation representation error"
+half_ulp,cov:Q.30,4.656612873e-10,value units,"2^-(n+1), the per-operation representation error"
+half_ulp,dt:Q.31,2.328306437e-10,value units,"2^-(n+1), the per-operation representation error"
+half_ulp,gain:Q.30,4.656612873e-10,value units,"2^-(n+1), the per-operation representation error"
+half_ulp,gain1:Q.26,7.450580597e-09,value units,"2^-(n+1), the per-operation representation error"
+half_ulp,rate:Q.27,3.725290298e-09,value units,"2^-(n+1), the per-operation representation error"
+angle_error_rms,nominal,6.792014015e-05,deg,"LOWER estimate: every rounding independent and uniform, variances added. Roundings in a deterministic recursion are not white, so this under-predicts"
+angle_error_bound,nominal,0.1245589994,deg,UPPER bound: l1 gain of the loop with every rounding at its full half-ulp and perfectly aligned in time
+angle_error_peak_rms,nominal,6.792014015e-05,deg,"the white-noise estimate at its largest, i.e. including the transient"
+cov_error_rms,nominal,2.260742805e-09,rad^2,RMS error in P00 from the vec(dP) = (A kron A) vec(dP) + eta recursion
+cov_error_bound,nominal,1.098155969e-07,rad^2,"same recursion, l1 gain, every covariance rounding at its half-ulp"
+angle_drift_60s,nominal,6.792014015e-05,deg,"the loop is a contraction, so |d(60s)| is the floor, not a growing walk"
+angle_drift_rate,nominal,0,deg/s,"predicted ZERO secular drift, conditional on the deadband margins below"
+bias_error_rms,nominal,0.0002451061859,deg/s,RMS of (fixed - float64) in the bias state
+gain_error_amplification,nominal,4236.906002,x,"RMS error in K1 caused by covariance rounding, in half-ulps of K1's own format: the covariance channel dominates the divide's own rounding by this factor"
+deadband_margin_bias,nominal,454046.7269,x half-ulp,"smallest |K1 y| over the run, in half-ulps of Q1.30; >1 means no freeze"
+deadband_margin_angle,nominal,137766.1436,x half-ulp,"smallest |K0 y| over the run, in half-ulps of Q3.28"
+angle_error_rms,global_Q4.27,0.0005433420623,deg,every quantity forced into the format the gyro range demands
+angle_error_ratio,global_over_nominal,7.999719392,x,cost of using one format for everything
+naive_pd_threshold,gain_bits,12.28786572,bits,naive P+00 goes negative for gain fractional bits below this; Joseph has no such threshold
+joseph_pd_threshold,gain_bits,-inf,bits,P+00 = a(a P00) + K0(K0 R) is a sum of non-negative products
+cov_bits_threshold,cov_bits,25.40549976,bits,soft: below this Qd is resolved by fewer than 2 ulps
+cov_bits_cliff,cov_bits,23.40549976,bits,"hard: below this Qd rounds to exactly zero, P collapses and the estimate freezes. Affects BOTH update forms -- Joseph does not fix this one"
+naive_max_sym_resid,gain_bits=30,3.676280872e-08,rad^2,"relaxation d_k = (1-K0)d_{k-1} + eta, run on the float64 P sequence"
+joseph_max_sym_resid,gain_bits=30,0,rad^2,"exactly zero: congruence, same expression with P01 and P10 exchanged"
+naive_max_sym_resid,gain_bits=28,3.676522008e-08,rad^2,"relaxation d_k = (1-K0)d_{k-1} + eta, run on the float64 P sequence"
+joseph_max_sym_resid,gain_bits=28,0,rad^2,"exactly zero: congruence, same expression with P01 and P10 exchanged"
+naive_max_sym_resid,gain_bits=26,1.201506757e-07,rad^2,"relaxation d_k = (1-K0)d_{k-1} + eta, run on the float64 P sequence"
+joseph_max_sym_resid,gain_bits=26,0,rad^2,"exactly zero: congruence, same expression with P01 and P10 exchanged"
+naive_max_sym_resid,gain_bits=24,4.778087352e-07,rad^2,"relaxation d_k = (1-K0)d_{k-1} + eta, run on the float64 P sequence"
+joseph_max_sym_resid,gain_bits=24,0,rad^2,"exactly zero: congruence, same expression with P01 and P10 exchanged"
+naive_max_sym_resid,gain_bits=22,1.908440973e-06,rad^2,"relaxation d_k = (1-K0)d_{k-1} + eta, run on the float64 P sequence"
+joseph_max_sym_resid,gain_bits=22,0,rad^2,"exactly zero: congruence, same expression with P01 and P10 exchanged"
+naive_max_sym_resid,gain_bits=20,7.630969925e-06,rad^2,"relaxation d_k = (1-K0)d_{k-1} + eta, run on the float64 P sequence"
+joseph_max_sym_resid,gain_bits=20,0,rad^2,"exactly zero: congruence, same expression with P01 and P10 exchanged"
+naive_max_sym_resid,gain_bits=18,3.052108573e-05,rad^2,"relaxation d_k = (1-K0)d_{k-1} + eta, run on the float64 P sequence"
+joseph_max_sym_resid,gain_bits=18,0,rad^2,"exactly zero: congruence, same expression with P01 and P10 exchanged"
+naive_max_sym_resid,gain_bits=16,0.000122081549,rad^2,"relaxation d_k = (1-K0)d_{k-1} + eta, run on the float64 P sequence"
+joseph_max_sym_resid,gain_bits=16,0,rad^2,"exactly zero: congruence, same expression with P01 and P10 exchanged"
+naive_max_sym_resid,gain_bits=15,0.0002441621666,rad^2,"relaxation d_k = (1-K0)d_{k-1} + eta, run on the float64 P sequence"
+joseph_max_sym_resid,gain_bits=15,0,rad^2,"exactly zero: congruence, same expression with P01 and P10 exchanged"
+naive_max_sym_resid,gain_bits=14,0.0004883234019,rad^2,"relaxation d_k = (1-K0)d_{k-1} + eta, run on the float64 P sequence"
+joseph_max_sym_resid,gain_bits=14,0,rad^2,"exactly zero: congruence, same expression with P01 and P10 exchanged"
+naive_max_sym_resid,gain_bits=13,0.0009766458724,rad^2,"relaxation d_k = (1-K0)d_{k-1} + eta, run on the float64 P sequence"
+joseph_max_sym_resid,gain_bits=13,0,rad^2,"exactly zero: congruence, same expression with P01 and P10 exchanged"
+naive_max_sym_resid,gain_bits=12,0.001953290814,rad^2,"relaxation d_k = (1-K0)d_{k-1} + eta, run on the float64 P sequence"
+joseph_max_sym_resid,gain_bits=12,0,rad^2,"exactly zero: congruence, same expression with P01 and P10 exchanged"
+naive_max_sym_resid,gain_bits=11,0.003906580696,rad^2,"relaxation d_k = (1-K0)d_{k-1} + eta, run on the float64 P sequence"
+joseph_max_sym_resid,gain_bits=11,0,rad^2,"exactly zero: congruence, same expression with P01 and P10 exchanged"
+naive_max_sym_resid,gain_bits=10,0.00781316046,rad^2,"relaxation d_k = (1-K0)d_{k-1} + eta, run on the float64 P sequence"
+joseph_max_sym_resid,gain_bits=10,0,rad^2,"exactly zero: congruence, same expression with P01 and P10 exchanged"
+rms_omega_dot,trace,6.805993621,rad/s^2,closed form from the four motion modes; sets the zero-order-hold error
+zoh_error_vs_dt,fs=25Hz,3.561516353,deg,"(dt^2/2)|omega_dot| per step, amplified by the loop DC gain 1/K0; an upper estimate because the term is oscillatory, not DC"
+rounding_error_vs_dt,fs=25Hz,2.454857703e-05,deg,RMS of (fixed - float64) from the variance propagation
+filter_sigma_vs_dt,fs=25Hz,0.1775246704,deg,sqrt(P00) at steady state: the estimation error the filter itself claims
+zoh_error_vs_dt,fs=50Hz,1.359050953,deg,"(dt^2/2)|omega_dot| per step, amplified by the loop DC gain 1/K0; an upper estimate because the term is oscillatory, not DC"
+rounding_error_vs_dt,fs=50Hz,3.44188883e-05,deg,RMS of (fixed - float64) from the variance propagation
+filter_sigma_vs_dt,fs=50Hz,0.141368793,deg,sqrt(P00) at steady state: the estimation error the filter itself claims
+zoh_error_vs_dt,fs=100Hz,0.5124985055,deg,"(dt^2/2)|omega_dot| per step, amplified by the loop DC gain 1/K0; an upper estimate because the term is oscillatory, not DC"
+rounding_error_vs_dt,fs=100Hz,4.807618056e-05,deg,RMS of (fixed - float64) from the variance propagation
+filter_sigma_vs_dt,fs=100Hz,0.1139413143,deg,sqrt(P00) at steady state: the estimation error the filter itself claims
+zoh_error_vs_dt,fs=200Hz,0.1924080517,deg,"(dt^2/2)|omega_dot| per step, amplified by the loop DC gain 1/K0; an upper estimate because the term is oscillatory, not DC"
+rounding_error_vs_dt,fs=200Hz,6.792014015e-05,deg,RMS of (fixed - float64) from the variance propagation
+filter_sigma_vs_dt,fs=200Hz,0.09236992626,deg,sqrt(P00) at steady state: the estimation error the filter itself claims
+zoh_error_vs_dt,fs=400Hz,0.07117169849,deg,"(dt^2/2)|omega_dot| per step, amplified by the loop DC gain 1/K0; an upper estimate because the term is oscillatory, not DC"
+rounding_error_vs_dt,fs=400Hz,9.575402342e-05,deg,RMS of (fixed - float64) from the variance propagation
+filter_sigma_vs_dt,fs=400Hz,0.0756187914,deg,sqrt(P00) at steady state: the estimation error the filter itself claims
+zoh_error_vs_dt,fs=800Hz,0.02606880195,deg,"(dt^2/2)|omega_dot| per step, amplified by the loop DC gain 1/K0; an upper estimate because the term is oscillatory, not DC"
+rounding_error_vs_dt,fs=800Hz,0.000135310176,deg,RMS of (fixed - float64) from the variance propagation
+filter_sigma_vs_dt,fs=800Hz,0.06229959996,deg,sqrt(P00) at steady state: the estimation error the filter itself claims
+zoh_error_vs_dt,fs=1600Hz,0.009468813061,deg,"(dt^2/2)|omega_dot| per step, amplified by the loop DC gain 1/K0; an upper estimate because the term is oscillatory, not DC"
+rounding_error_vs_dt,fs=1600Hz,0.00019145522,deg,RMS of (fixed - float64) from the variance propagation
+filter_sigma_vs_dt,fs=1600Hz,0.05158872589,deg,sqrt(P00) at steady state: the estimation error the filter itself claims
+zoh_error_vs_dt,fs=3200Hz,0.003416009542,deg,"(dt^2/2)|omega_dot| per step, amplified by the loop DC gain 1/K0; an upper estimate because the term is oscillatory, not DC"
+rounding_error_vs_dt,fs=3200Hz,0.0002710450468,deg,RMS of (fixed - float64) from the variance propagation
+filter_sigma_vs_dt,fs=3200Hz,0.04288967696,deg,sqrt(P00) at steady state: the estimation error the filter itself claims
+zoh_error_vs_dt,fs=6400Hz,0.001067454348,deg,"(dt^2/2)|omega_dot| per step, amplified by the loop DC gain 1/K0; an upper estimate because the term is oscillatory, not DC"
+rounding_error_vs_dt,fs=6400Hz,0.0003324958065,deg,RMS of (fixed - float64) from the variance propagation
+filter_sigma_vs_dt,fs=6400Hz,0.03833962533,deg,sqrt(P00) at steady state: the estimation error the filter itself claims
+zoh_error_vs_dt,fs=12800Hz,0.0003809347176,deg,"(dt^2/2)|omega_dot| per step, amplified by the loop DC gain 1/K0; an upper estimate because the term is oscillatory, not DC"
+rounding_error_vs_dt,fs=12800Hz,0.0004706904023,deg,RMS of (fixed - float64) from the variance propagation
+filter_sigma_vs_dt,fs=12800Hz,0.03206570532,deg,sqrt(P00) at steady state: the estimation error the filter itself claims
+max_sample_rate,nominal_Q1.30,19327.35283,Hz,"above this, Qd = sigma^2 dt rounds to zero and the covariance collapses"
+max_sample_rate,global_Q4.27,2415.919104,Hz,"above this, Qd = sigma^2 dt rounds to zero and the covariance collapses"
+max_sample_rate,coarse_Q1.24,301.989888,Hz,"above this, Qd = sigma^2 dt rounds to zero and the covariance collapses"

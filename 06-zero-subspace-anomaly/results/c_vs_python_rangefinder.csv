@@ -1,0 +1,7 @@
+stream,sketch_width,oversampling,power_iters,proj_error_c,proj_error_numpy,optimal_rank_ell,relative_difference
+normal.csv,14,6,1,2.6332494,2.5903965,2.386832,1.654e-02
+normal.csv,14,6,2,2.556372,2.4835145,2.386832,2.934e-02
+normal.csv,8,0,1,3.3663794,3.3260048,3.2350218,1.214e-02
+multimode.csv,14,6,1,2.5802062,2.6591936,2.4352893,2.970e-02
+multimode.csv,14,6,2,2.5227863,2.5457292,2.4352893,9.012e-03
+multimode.csv,8,0,1,3.3750721,3.3972147,3.3391574,6.518e-03

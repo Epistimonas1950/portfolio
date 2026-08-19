@@ -1,0 +1,19 @@
+# Every CSV in results/ is produced, and the whole test suite passes, with the Python
+# standard library plus numpy.  Nothing below is needed to reproduce a single number in
+# the README.
+#
+#   python3 -m venv .venv
+#   .venv/bin/pip install -r requirements.txt
+#
+# The system interpreter on this machine is PEP-668 externally managed; installing into
+# it will fail.  Use the venv.
+
+numpy>=1.26            # instance generation and the travel-matrix geometry
+
+# --- plotting: analysis/plot_results.py only ---
+matplotlib>=3.7
+
+# --- for the language-model path (see STATUS.md; not installed, not measured) ---
+# ollama>=0.3          # client for a local open-weight model, for translate.OllamaBackend
+# outlines>=0.1        # grammar-constrained decoding, so the model cannot emit invalid JSON
+# gradio>=4.0          # the interactive demo the brief asks for

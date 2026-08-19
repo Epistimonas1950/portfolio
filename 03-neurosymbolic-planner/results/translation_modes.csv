@@ -1,0 +1,13 @@
+failure_mode,wrong_parses,exact_but_information_lost
+arithmetic,1,0
+conditional,0,1
+coreference,1,0
+exception_scope,1,0
+implicit_capacity,1,0
+missing_context,0,1
+negation,1,0
+relative_time,2,0
+unit_mismatch,0,1
+unknown_location,1,0
+unrepresentable_constraint,0,1
+vague_quantity,1,0

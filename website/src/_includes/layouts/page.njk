@@ -1,0 +1,19 @@
+---
+# Το layout «κουμπώνει» πάνω στο base.njk (αλυσίδα layouts του Eleventy).
+layout: layouts/base.njk
+---
+{#
+  Layout για τις απλές σελίδες (Πρόγραμμα, Συνδρομές, Η σχολή, Επικοινωνία…).
+  Βάζει μια σκούρα επικεφαλίδα και από κάτω αφήνει ελεύθερο το περιεχόμενο.
+
+  Front matter: title (υποχρεωτικό), eyebrow και lead (προαιρετικά).
+#}
+<header class="page-head">
+  <div class="wrap">
+    {% if eyebrow %}<p class="eyebrow">{{ eyebrow }}</p>{% endif %}
+    <h1 class="page-head__title">{{ title }}</h1>
+    {% if lead %}<p class="page-head__lead">{{ lead }}</p>{% endif %}
+  </div>
+</header>
+
+{{ content | safe }}

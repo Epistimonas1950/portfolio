@@ -1,0 +1,78 @@
+# Offline voice assistant -- systemd unit for 64-bit Raspberry Pi OS Lite.
+#
+# Install:  sudo install -Dm644 setup/assistant.service /etc/systemd/system/
+#           sudo systemctl daemon-reload && sudo systemctl enable --now assistant
+# Logs:     journalctl -u assistant -f
+#
+# NOT DEPLOYED ANYWHERE YET -- there is no board. Every directive below is chosen for
+# a reason recorded inline; none of it has been exercised. See STATUS.md.
+
+[Unit]
+Description=Offline voice assistant (whisper.cpp + llama.cpp + Piper)
+Documentation=file:/home/assistant/assistant/README.md
+# network-online.target is deliberately NOT required. The whole point is that this
+# works with the Wi-Fi off; requiring the network would make a fully offline device
+# wait on a DHCP lease it does not need. After=network.target only orders it, and is
+# kept solely so the unit does not race sshd during a debugging session.
+After=network.target sound.target
+Wants=sound.target
+
+[Service]
+Type=simple
+User=assistant
+Group=assistant
+SupplementaryGroups=audio
+WorkingDirectory=/home/assistant/assistant
+Environment=PATH=/home/assistant/assistant/bin:/usr/local/bin:/usr/bin:/bin
+Environment=PYTHONUNBUFFERED=1
+# 4 cores, 4 threads. llama.cpp oversubscribed past the core count on a Pi 3 loses
+# throughput to context switching rather than gaining it, and leaves nothing for the
+# ALSA callback, which shows up as audible dropouts rather than as a slow number.
+Environment=OMP_NUM_THREADS=4
+Environment=GGML_NTHREADS=4
+ExecStart=/usr/bin/python3 -m src.orchestrate --real --turns 0
+
+# --- restart policy -------------------------------------------------------------
+Restart=on-failure
+RestartSec=5
+# Five failures in five minutes stops the retries. Without this a genuine fault --
+# a missing model file, a mic that got unplugged -- becomes an infinite crash loop
+# that writes to the SD card until it dies.
+StartLimitIntervalSec=300
+StartLimitBurst=5
+
+# --- resource limits ------------------------------------------------------------
+# 1 GB total, shared with the GPU. 700 MB is roughly what a sub-1B Q4 model plus
+# whisper tiny needs; the cap turns "the whole board froze and I power-cycled it"
+# into "the unit was OOM-killed at 21:04 and here is the journal entry".
+MemoryMax=700M
+MemoryHigh=650M
+# Below the default 100. Inference should yield to the audio thread, never the
+# reverse: a late token is invisible, a late audio buffer is a click.
+Nice=5
+CPUWeight=80
+TasksMax=64
+
+# --- hardening ------------------------------------------------------------------
+# It reads models, writes one temp WAV and talks to ALSA. Nothing else is needed, and
+# an always-on always-listening device is exactly the kind of thing to lock down.
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=/home/assistant/assistant/results
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectControlGroups=yes
+RestrictSUIDSGID=yes
+RestrictNamespaces=yes
+LockPersonality=yes
+# No network namespace at all: this is the strongest available statement that nothing
+# leaves the device. If a future version needs an update check, it gets its own unit.
+PrivateNetwork=yes
+DevicePolicy=closed
+DeviceAllow=char-alsa rw
+DeviceAllow=/dev/snd rw
+
+[Install]
+WantedBy=multi-user.target

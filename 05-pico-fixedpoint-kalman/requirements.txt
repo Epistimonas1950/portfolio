@@ -1,0 +1,26 @@
+# Everything in results/ is produced by `make host && make results` with gcc, python3
+# and numpy. The test suite passes with numpy alone. Nothing below is needed to
+# reproduce a single number in this repo.
+#
+#   python3 -m venv .venv
+#   .venv/bin/pip install -r requirements.txt
+#
+# The system interpreter here is PEP-668 externally managed and installing into it
+# fails by design. Use the venv.
+
+numpy>=1.26            # the only hard requirement
+matplotlib>=3.7        # analysis/plot_results.py only -- figures, not numbers
+
+# --- for the on-device half of BRIEF.md, none of which is built (see STATUS.md) ---
+#
+# These are not pip packages. They are recorded here because they are the real
+# dependency list for the part of the brief that needs hardware:
+#
+#   Raspberry Pi Pico SDK >= 1.5     I2C, hardware timer, USB CDC   (PICO_SDK_PATH)
+#   arm-none-eabi-gcc >= 10          Cortex-M0+ cross compiler
+#   CMSIS-DSP                        fixed-point primitives, if the filter grew
+#   TensorFlow Lite Micro            the gesture classifier in the brief
+#   openocd + a picoprobe            flashing and cycle counting via SWD
+#
+# None of the above is present on this machine and no result in this repo depends on
+# any of it.

@@ -1,0 +1,21 @@
+method,nominal_bits,effective_bits,output_error_mean,output_error_std,relative_error_mean,seconds_mean,n_seeds
+RTN per-tensor,8,8.125,2.181521,0.092955,0.009538,0.0003,5
+RTN per-channel,8,8.125,1.566062,0.03127,0.006847,0.0005,5
+"Sequential, natural order",8,8.125,0.777018,0.14982,0.003394,0.0839,5
+"Sequential, salience order",8,8.125,0.365249,0.010446,0.001597,0.078,5
+"Sequential, salience + fp16 outliers",8,8.25,0.266579,0.003442,0.001166,0.0801,5
+RTN per-tensor,4,4.125,40.445331,1.673639,0.176875,0.0003,5
+RTN per-channel,4,4.125,28.471662,0.654702,0.1245,0.0003,5
+"Sequential, natural order",4,4.125,14.319249,2.909507,0.06255,0.0809,5
+"Sequential, salience order",4,4.125,6.609664,0.157075,0.028906,0.0786,5
+"Sequential, salience + fp16 outliers",4,4.3125,4.835193,0.05846,0.02114,0.0766,5
+RTN per-tensor,3,3.125,93.529319,5.630239,0.408951,0.0003,5
+RTN per-channel,3,3.125,67.382576,1.565714,0.294564,0.0003,5
+"Sequential, natural order",3,3.125,33.983672,7.06582,0.1484,0.0811,5
+"Sequential, salience order",3,3.125,15.608404,0.435328,0.068244,0.0778,5
+"Sequential, salience + fp16 outliers",3,3.3281,11.313201,0.1058,0.049466,0.0771,5
+RTN per-tensor,2,2.125,214.533361,4.410532,0.937868,0.0003,5
+RTN per-channel,2,2.125,183.955248,3.805206,0.804112,0.0003,5
+"Sequential, natural order",2,2.125,100.389325,14.974625,0.438591,0.0799,5
+"Sequential, salience order",2,2.125,47.954747,1.51722,0.209673,0.0771,5
+"Sequential, salience + fp16 outliers",2,2.3438,33.725892,0.33325,0.147466,0.0768,5

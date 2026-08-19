@@ -1,0 +1,5 @@
+stream,updates,drift_c_late_median,drift_numpy_late_median,numpy_over_c
+normal.csv,22200,9.8770e-14,1.0853e-12,10.99
+anomalous.csv,21700,4.2328e-14,9.8195e-13,23.2
+rotating.csv,21700,1.1328e-13,9.7934e-13,8.65
+multimode.csv,21700,3.7231e-13,9.8917e-13,2.66

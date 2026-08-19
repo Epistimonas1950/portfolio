@@ -1,0 +1,105 @@
+---
+layout: layouts/page.njk
+title: Συνδρομές
+eyebrow: ΤΙΜΟΚΑΤΑΛΟΓΟΣ
+lead: >-
+  Μηνιαία συνδρομή, χωρίς συμβόλαιο και χωρίς δέσμευση χρονιάς. Αν σταματήσεις,
+  απλώς δεν πληρώνεις τον επόμενο μήνα.
+eleventyNavigation:
+  key: Συνδρομές
+  order: 4
+---
+
+{# Όλες οι τιμές έρχονται από το _data/pricing.js. #}
+<section class="section">
+  <div class="wrap">
+    <div class="grid grid--3">
+      {%- for plan in pricing.plans %}
+        <div class="plan{% if plan.highlight %} plan--highlight{% endif %}">
+          {% if plan.badge %}<p class="plan__badge">{{ plan.badge }}</p>{% endif %}
+          <h2 class="plan__name">{{ plan.name }}</h2>
+          <p class="plan__per">{{ plan.per }}</p>
+          <p class="plan__price">
+            {{ plan.price }}€ <span class="plan__unit">{{ plan.unit }}</span>
+          </p>
+          <ul class="plan__list">
+            {%- for line in plan.includes %}
+              <li>{{ line }}</li>
+            {%- endfor %}
+          </ul>
+          <a class="btn btn--ghost plan__cta" href="/epikoinonia/#dokimastiko">
+            <span>Ξεκίνα με δοκιμαστικό</span>
+          </a>
+        </div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight section--ruled">
+  <div class="wrap split split--wide-left">
+    <div>
+      <p class="eyebrow">ΕΚΤΟΣ ΣΥΝΔΡΟΜΗΣ</p>
+      <h2>Άλλες επιλογές</h2>
+
+      <table class="rate-table">
+        <caption class="visually-hidden">Τιμές εκτός μηνιαίας συνδρομής</caption>
+        <tbody>
+          {%- for extra in pricing.extras %}
+            <tr>
+              <td>
+                {{ extra.name }}<br />
+                <span class="rate-table__note">{{ extra.note }}</span>
+              </td>
+              <td class="rate-table__price">
+                {% if extra.price == 0 %}δωρεάν{% else %}{{ extra.price }}€{% endif %}
+              </td>
+            </tr>
+          {%- endfor %}
+        </tbody>
+      </table>
+    </div>
+
+    <div class="stack-md">
+      <section>
+        <p class="eyebrow">ΕΚΠΤΩΣΕΙΣ</p>
+        <table class="rate-table">
+          <caption class="visually-hidden">Εκπτώσεις</caption>
+          <tbody>
+            {%- for discount in pricing.discounts %}
+              <tr>
+                <td>{{ discount.label }}</td>
+                <td class="rate-table__price">−{{ discount.off }}%</td>
+              </tr>
+            {%- endfor %}
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <p class="eyebrow">ΨΙΛΑ ΓΡΑΜΜΑΤΑ</p>
+        <ul class="plan__list">
+          {%- for note in pricing.notes %}
+            <li>{{ note }}</li>
+          {%- endfor %}
+        </ul>
+      </section>
+    </div>
+  </div>
+</section>
+
+<section class="section section--dark section--tight">
+  <div class="wrap cta-band">
+    <div>
+      <p class="eyebrow">ΠΡΙΝ ΠΛΗΡΩΣΕΙΣ ΟΤΙΔΗΠΟΤΕ</p>
+      <h2>Το πρώτο μάθημα δεν κοστίζει</h2>
+      <p class="lead">{{ site.cta.note }}</p>
+    </div>
+    <div class="btn-row">
+      <a class="btn btn--accent" href="/epikoinonia/#dokimastiko">{{ site.cta.short }}</a>
+      <a class="btn btn--ghost" href="tel:{{ site.contact.phoneHref }}">
+        <span>{{ site.contact.phone }}</span>
+      </a>
+    </div>
+  </div>
+</section>

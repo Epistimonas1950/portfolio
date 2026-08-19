@@ -1,0 +1,16 @@
+{#
+  Κάρτα καθηγητή. Περιμένει τη μεταβλητή `person`
+  (ένα στοιχείο του collections.teachers).
+#}
+<a class="person-card" href="{{ person.url }}">
+  <img
+    class="person-card__image"
+    src="{{ person.data.image }}"
+    alt="{{ person.data.title }}"
+    width="800"
+    height="1000"
+    loading="lazy"
+  />
+  <span class="person-card__name">{{ person.data.title }}</span>
+  <span class="person-card__role">{{ person.data.role }}</span>
+</a>

@@ -1,0 +1,43 @@
+---
+layout: layouts/page.njk
+title: Καθηγητές
+eyebrow: ΟΙ ΑΝΘΡΩΠΟΙ
+lead: >-
+  Έξι δάσκαλοι, καθένας με τη δική του διαδρομή. Όλοι τους διδάσκουν στα ίδια
+  τμήματα κάθε χρόνο, ώστε να ξέρουν πού βρίσκεται ο καθένας σας.
+eleventyNavigation:
+  key: Καθηγητές
+  order: 3
+---
+
+<section class="section">
+  <div class="wrap">
+    <div class="grid grid--3">
+      {%- for person in collections.teachers %}
+        {% include "partials/teacher-card.njk" %}
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight section--ruled">
+  <div class="wrap split">
+    <div>
+      <p class="eyebrow">ΠΩΣ ΔΟΥΛΕΥΟΥΜΕ</p>
+      <h2>Ο ίδιος δάσκαλος όλη τη χρονιά</h2>
+    </div>
+    <div>
+      <p>
+        Δεν αλλάζουμε καθηγητές στη μέση της χρονιάς και δεν βάζουμε
+        αντικαταστάτες που δεν ξέρουν το τμήμα. Αν κάποιος λείψει, το μάθημα
+        αναπληρώνεται — δεν το κάνει κάποιος περαστικός.
+      </p>
+      <p>
+        Όλοι οι καθηγητές συναντιούνται μία φορά τον μήνα για να συζητήσουν τα
+        τμήματα: ποιος προχωράει, ποιος δυσκολεύεται, ποιος χάθηκε τις
+        τελευταίες εβδομάδες και αξίζει ένα τηλέφωνο.
+      </p>
+      <p><a class="arrow-link" href="/programma/">Δες ποιος διδάσκει πότε</a></p>
+    </div>
+  </div>
+</section>

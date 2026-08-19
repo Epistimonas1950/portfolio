@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" role="img">
+  <title>ΟΚΤΩ</title>
+  <rect width="48" height="48" rx="10" fill="#17101C"/>
+  <g transform="scale(0.82) translate(5.3 5.3)"><g transform="rotate(-14 24 24)" fill="none" stroke="#E9A13B" stroke-width="5.5">
+      <circle cx="24" cy="15" r="9.5"/>
+      <circle cx="24" cy="33" r="11.5"/>
+    </g></g>
+</svg>

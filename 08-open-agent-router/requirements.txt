@@ -1,0 +1,28 @@
+# Every CSV in results/ is produced, and the whole test suite passes, with numpy and
+# PyYAML alone. Everything below the first block is either for drawing the figures or
+# for the real-fleet path that this machine cannot run at all.
+#
+#   python3 -m venv .venv
+#   .venv/bin/pip install -r requirements.txt
+#
+# The system interpreter here is PEP-668 externally managed, so installing into it
+# fails. Use the venv.
+
+numpy>=1.26             # the only hard requirement for the mathematics
+PyYAML>=6.0             # reads serve/fleet.yaml
+
+matplotlib>=3.7         # analysis/plot_results.py only; nothing else imports it
+
+# --- the real-fleet path (see STATUS.md) -----------------------------------------
+# Not installed, not run, and no number in this repo comes from any of them.
+#
+# requests>=2.31        # src/fleet/client.py talks to an Ollama/vLLM HTTP endpoint
+# huggingface-hub>=0.23 # fetching the open-weight checkpoints named in serve/fleet.yaml
+#
+# Serving runtimes are not pip packages: llama.cpp is built from source, Ollama and
+# vLLM are installed separately. serve/fleet.yaml records the flags.
+#
+# An agent framework is deliberately NOT listed. BRIEF.md's own line is that the router
+# is the project and the framework is plumbing; src/agent/loop.py is ~150 lines of
+# stdlib and numpy, and adding smolagents or LangGraph would buy nothing measurable
+# here while making the repo un-runnable on this machine.

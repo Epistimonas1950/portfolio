@@ -1,0 +1,3233 @@
+scenario,anomaly_kind,method,fpr,tpr
+unimodal,spike,batch full SVD (warm-up),0.0,0.166667
+unimodal,spike,batch full SVD (warm-up),0.01,0.666667
+unimodal,spike,batch full SVD (warm-up),0.02,0.741667
+unimodal,spike,batch full SVD (warm-up),0.03,0.85
+unimodal,spike,batch full SVD (warm-up),0.04,0.9
+unimodal,spike,batch full SVD (warm-up),0.05,0.925
+unimodal,spike,batch full SVD (warm-up),0.06,0.941667
+unimodal,spike,batch full SVD (warm-up),0.07,0.966667
+unimodal,spike,batch full SVD (warm-up),0.08,0.966667
+unimodal,spike,batch full SVD (warm-up),0.09,0.966667
+unimodal,spike,batch full SVD (warm-up),0.1,0.975
+unimodal,spike,batch full SVD (warm-up),0.11,0.991667
+unimodal,spike,batch full SVD (warm-up),0.12,0.991667
+unimodal,spike,batch full SVD (warm-up),0.13,0.991667
+unimodal,spike,batch full SVD (warm-up),0.14,0.991667
+unimodal,spike,batch full SVD (warm-up),0.15,0.991667
+unimodal,spike,batch full SVD (warm-up),0.16,0.991667
+unimodal,spike,batch full SVD (warm-up),0.17,0.991667
+unimodal,spike,batch full SVD (warm-up),0.18,1.0
+unimodal,spike,batch full SVD (warm-up),0.19,1.0
+unimodal,spike,batch full SVD (warm-up),0.2,1.0
+unimodal,spike,batch full SVD (warm-up),0.21,1.0
+unimodal,spike,batch full SVD (warm-up),0.22,1.0
+unimodal,spike,batch full SVD (warm-up),0.23,1.0
+unimodal,spike,batch full SVD (warm-up),0.24,1.0
+unimodal,spike,batch full SVD (warm-up),0.25,1.0
+unimodal,spike,batch full SVD (warm-up),0.26,1.0
+unimodal,spike,batch full SVD (warm-up),0.27,1.0
+unimodal,spike,batch full SVD (warm-up),0.28,1.0
+unimodal,spike,batch full SVD (warm-up),0.29,1.0
+unimodal,spike,batch full SVD (warm-up),0.3,1.0
+unimodal,spike,batch full SVD (warm-up),0.31,1.0
+unimodal,spike,batch full SVD (warm-up),0.32,1.0
+unimodal,spike,batch full SVD (warm-up),0.33,1.0
+unimodal,spike,batch full SVD (warm-up),0.34,1.0
+unimodal,spike,batch full SVD (warm-up),0.35,1.0
+unimodal,spike,batch full SVD (warm-up),0.36,1.0
+unimodal,spike,batch full SVD (warm-up),0.37,1.0
+unimodal,spike,batch full SVD (warm-up),0.38,1.0
+unimodal,spike,batch full SVD (warm-up),0.39,1.0
+unimodal,spike,batch full SVD (warm-up),0.4,1.0
+unimodal,spike,batch full SVD (warm-up),0.41,1.0
+unimodal,spike,batch full SVD (warm-up),0.42,1.0
+unimodal,spike,batch full SVD (warm-up),0.43,1.0
+unimodal,spike,batch full SVD (warm-up),0.44,1.0
+unimodal,spike,batch full SVD (warm-up),0.45,1.0
+unimodal,spike,batch full SVD (warm-up),0.46,1.0
+unimodal,spike,batch full SVD (warm-up),0.47,1.0
+unimodal,spike,batch full SVD (warm-up),0.48,1.0
+unimodal,spike,batch full SVD (warm-up),0.49,1.0
+unimodal,spike,batch full SVD (warm-up),0.5,1.0
+unimodal,spike,batch full SVD (warm-up),0.51,1.0
+unimodal,spike,batch full SVD (warm-up),0.52,1.0
+unimodal,spike,batch full SVD (warm-up),0.53,1.0
+unimodal,spike,batch full SVD (warm-up),0.54,1.0
+unimodal,spike,batch full SVD (warm-up),0.55,1.0
+unimodal,spike,batch full SVD (warm-up),0.56,1.0
+unimodal,spike,batch full SVD (warm-up),0.57,1.0
+unimodal,spike,batch full SVD (warm-up),0.58,1.0
+unimodal,spike,batch full SVD (warm-up),0.59,1.0
+unimodal,spike,batch full SVD (warm-up),0.6,1.0
+unimodal,spike,batch full SVD (warm-up),0.61,1.0
+unimodal,spike,batch full SVD (warm-up),0.62,1.0
+unimodal,spike,batch full SVD (warm-up),0.63,1.0
+unimodal,spike,batch full SVD (warm-up),0.64,1.0
+unimodal,spike,batch full SVD (warm-up),0.65,1.0
+unimodal,spike,batch full SVD (warm-up),0.66,1.0
+unimodal,spike,batch full SVD (warm-up),0.67,1.0
+unimodal,spike,batch full SVD (warm-up),0.68,1.0
+unimodal,spike,batch full SVD (warm-up),0.69,1.0
+unimodal,spike,batch full SVD (warm-up),0.7,1.0
+unimodal,spike,batch full SVD (warm-up),0.71,1.0
+unimodal,spike,batch full SVD (warm-up),0.72,1.0
+unimodal,spike,batch full SVD (warm-up),0.73,1.0
+unimodal,spike,batch full SVD (warm-up),0.74,1.0
+unimodal,spike,batch full SVD (warm-up),0.75,1.0
+unimodal,spike,batch full SVD (warm-up),0.76,1.0
+unimodal,spike,batch full SVD (warm-up),0.77,1.0
+unimodal,spike,batch full SVD (warm-up),0.78,1.0
+unimodal,spike,batch full SVD (warm-up),0.79,1.0
+unimodal,spike,batch full SVD (warm-up),0.8,1.0
+unimodal,spike,batch full SVD (warm-up),0.81,1.0
+unimodal,spike,batch full SVD (warm-up),0.82,1.0
+unimodal,spike,batch full SVD (warm-up),0.83,1.0
+unimodal,spike,batch full SVD (warm-up),0.84,1.0
+unimodal,spike,batch full SVD (warm-up),0.85,1.0
+unimodal,spike,batch full SVD (warm-up),0.86,1.0
+unimodal,spike,batch full SVD (warm-up),0.87,1.0
+unimodal,spike,batch full SVD (warm-up),0.88,1.0
+unimodal,spike,batch full SVD (warm-up),0.89,1.0
+unimodal,spike,batch full SVD (warm-up),0.9,1.0
+unimodal,spike,batch full SVD (warm-up),0.91,1.0
+unimodal,spike,batch full SVD (warm-up),0.92,1.0
+unimodal,spike,batch full SVD (warm-up),0.93,1.0
+unimodal,spike,batch full SVD (warm-up),0.94,1.0
+unimodal,spike,batch full SVD (warm-up),0.95,1.0
+unimodal,spike,batch full SVD (warm-up),0.96,1.0
+unimodal,spike,batch full SVD (warm-up),0.97,1.0
+unimodal,spike,batch full SVD (warm-up),0.98,1.0
+unimodal,spike,batch full SVD (warm-up),0.99,1.0
+unimodal,spike,batch full SVD (warm-up),1.0,1.0
+unimodal,rotate,batch full SVD (warm-up),0.0,0.582
+unimodal,rotate,batch full SVD (warm-up),0.01,0.782
+unimodal,rotate,batch full SVD (warm-up),0.02,0.816
+unimodal,rotate,batch full SVD (warm-up),0.03,0.838
+unimodal,rotate,batch full SVD (warm-up),0.04,0.864
+unimodal,rotate,batch full SVD (warm-up),0.05,0.876
+unimodal,rotate,batch full SVD (warm-up),0.06,0.884
+unimodal,rotate,batch full SVD (warm-up),0.07,0.896
+unimodal,rotate,batch full SVD (warm-up),0.08,0.9
+unimodal,rotate,batch full SVD (warm-up),0.09,0.904
+unimodal,rotate,batch full SVD (warm-up),0.1,0.91
+unimodal,rotate,batch full SVD (warm-up),0.11,0.916
+unimodal,rotate,batch full SVD (warm-up),0.12,0.92
+unimodal,rotate,batch full SVD (warm-up),0.13,0.922
+unimodal,rotate,batch full SVD (warm-up),0.14,0.924
+unimodal,rotate,batch full SVD (warm-up),0.15,0.93
+unimodal,rotate,batch full SVD (warm-up),0.16,0.932
+unimodal,rotate,batch full SVD (warm-up),0.17,0.934
+unimodal,rotate,batch full SVD (warm-up),0.18,0.934
+unimodal,rotate,batch full SVD (warm-up),0.19,0.936
+unimodal,rotate,batch full SVD (warm-up),0.2,0.94
+unimodal,rotate,batch full SVD (warm-up),0.21,0.94
+unimodal,rotate,batch full SVD (warm-up),0.22,0.944
+unimodal,rotate,batch full SVD (warm-up),0.23,0.946
+unimodal,rotate,batch full SVD (warm-up),0.24,0.946
+unimodal,rotate,batch full SVD (warm-up),0.25,0.948
+unimodal,rotate,batch full SVD (warm-up),0.26,0.952
+unimodal,rotate,batch full SVD (warm-up),0.27,0.954
+unimodal,rotate,batch full SVD (warm-up),0.28,0.956
+unimodal,rotate,batch full SVD (warm-up),0.29,0.956
+unimodal,rotate,batch full SVD (warm-up),0.3,0.956
+unimodal,rotate,batch full SVD (warm-up),0.31,0.958
+unimodal,rotate,batch full SVD (warm-up),0.32,0.958
+unimodal,rotate,batch full SVD (warm-up),0.33,0.96
+unimodal,rotate,batch full SVD (warm-up),0.34,0.964
+unimodal,rotate,batch full SVD (warm-up),0.35,0.964
+unimodal,rotate,batch full SVD (warm-up),0.36,0.966
+unimodal,rotate,batch full SVD (warm-up),0.37,0.968
+unimodal,rotate,batch full SVD (warm-up),0.38,0.972
+unimodal,rotate,batch full SVD (warm-up),0.39,0.972
+unimodal,rotate,batch full SVD (warm-up),0.4,0.976
+unimodal,rotate,batch full SVD (warm-up),0.41,0.978
+unimodal,rotate,batch full SVD (warm-up),0.42,0.978
+unimodal,rotate,batch full SVD (warm-up),0.43,0.978
+unimodal,rotate,batch full SVD (warm-up),0.44,0.982
+unimodal,rotate,batch full SVD (warm-up),0.45,0.982
+unimodal,rotate,batch full SVD (warm-up),0.46,0.982
+unimodal,rotate,batch full SVD (warm-up),0.47,0.986
+unimodal,rotate,batch full SVD (warm-up),0.48,0.986
+unimodal,rotate,batch full SVD (warm-up),0.49,0.988
+unimodal,rotate,batch full SVD (warm-up),0.5,0.99
+unimodal,rotate,batch full SVD (warm-up),0.51,0.99
+unimodal,rotate,batch full SVD (warm-up),0.52,0.992
+unimodal,rotate,batch full SVD (warm-up),0.53,0.992
+unimodal,rotate,batch full SVD (warm-up),0.54,0.992
+unimodal,rotate,batch full SVD (warm-up),0.55,0.992
+unimodal,rotate,batch full SVD (warm-up),0.56,0.992
+unimodal,rotate,batch full SVD (warm-up),0.57,0.992
+unimodal,rotate,batch full SVD (warm-up),0.58,0.994
+unimodal,rotate,batch full SVD (warm-up),0.59,0.994
+unimodal,rotate,batch full SVD (warm-up),0.6,0.994
+unimodal,rotate,batch full SVD (warm-up),0.61,0.996
+unimodal,rotate,batch full SVD (warm-up),0.62,0.996
+unimodal,rotate,batch full SVD (warm-up),0.63,0.996
+unimodal,rotate,batch full SVD (warm-up),0.64,0.996
+unimodal,rotate,batch full SVD (warm-up),0.65,0.996
+unimodal,rotate,batch full SVD (warm-up),0.66,0.996
+unimodal,rotate,batch full SVD (warm-up),0.67,0.996
+unimodal,rotate,batch full SVD (warm-up),0.68,0.996
+unimodal,rotate,batch full SVD (warm-up),0.69,0.996
+unimodal,rotate,batch full SVD (warm-up),0.7,0.998
+unimodal,rotate,batch full SVD (warm-up),0.71,0.998
+unimodal,rotate,batch full SVD (warm-up),0.72,0.998
+unimodal,rotate,batch full SVD (warm-up),0.73,0.998
+unimodal,rotate,batch full SVD (warm-up),0.74,0.998
+unimodal,rotate,batch full SVD (warm-up),0.75,0.998
+unimodal,rotate,batch full SVD (warm-up),0.76,0.998
+unimodal,rotate,batch full SVD (warm-up),0.77,0.998
+unimodal,rotate,batch full SVD (warm-up),0.78,0.998
+unimodal,rotate,batch full SVD (warm-up),0.79,0.998
+unimodal,rotate,batch full SVD (warm-up),0.8,0.998
+unimodal,rotate,batch full SVD (warm-up),0.81,0.998
+unimodal,rotate,batch full SVD (warm-up),0.82,0.998
+unimodal,rotate,batch full SVD (warm-up),0.83,0.998
+unimodal,rotate,batch full SVD (warm-up),0.84,0.998
+unimodal,rotate,batch full SVD (warm-up),0.85,0.998
+unimodal,rotate,batch full SVD (warm-up),0.86,0.998
+unimodal,rotate,batch full SVD (warm-up),0.87,0.998
+unimodal,rotate,batch full SVD (warm-up),0.88,0.998
+unimodal,rotate,batch full SVD (warm-up),0.89,0.998
+unimodal,rotate,batch full SVD (warm-up),0.9,0.998
+unimodal,rotate,batch full SVD (warm-up),0.91,1.0
+unimodal,rotate,batch full SVD (warm-up),0.92,1.0
+unimodal,rotate,batch full SVD (warm-up),0.93,1.0
+unimodal,rotate,batch full SVD (warm-up),0.94,1.0
+unimodal,rotate,batch full SVD (warm-up),0.95,1.0
+unimodal,rotate,batch full SVD (warm-up),0.96,1.0
+unimodal,rotate,batch full SVD (warm-up),0.97,1.0
+unimodal,rotate,batch full SVD (warm-up),0.98,1.0
+unimodal,rotate,batch full SVD (warm-up),0.99,1.0
+unimodal,rotate,batch full SVD (warm-up),1.0,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.0,0.166667
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.01,0.658333
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.02,0.741667
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.03,0.85
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.04,0.9
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.05,0.925
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.06,0.941667
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.07,0.966667
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.08,0.966667
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.09,0.966667
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.1,0.983333
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.11,0.991667
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.12,0.991667
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.13,0.991667
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.14,0.991667
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.15,0.991667
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.16,0.991667
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.17,0.991667
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.18,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.19,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.2,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.21,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.22,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.23,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.24,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.25,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.26,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.27,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.28,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.29,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.3,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.31,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.32,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.33,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.34,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.35,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.36,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.37,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.38,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.39,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.4,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.41,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.42,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.43,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.44,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.45,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.46,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.47,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.48,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.49,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.5,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.51,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.52,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.53,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.54,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.55,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.56,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.57,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.58,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.59,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.6,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.61,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.62,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.63,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.64,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.65,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.66,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.67,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.68,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.69,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.7,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.71,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.72,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.73,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.74,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.75,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.76,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.77,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.78,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.79,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.8,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.81,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.82,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.83,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.84,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.85,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.86,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.87,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.88,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.89,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.9,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.91,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.92,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.93,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.94,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.95,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.96,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.97,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.98,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.99,1.0
+unimodal,spike,"batch full SVD (all-normal, uses labels)",1.0,1.0
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.0,0.582
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.01,0.782
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.02,0.816
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.03,0.838
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.04,0.864
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.05,0.876
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.06,0.888
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.07,0.896
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.08,0.9
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.09,0.904
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.1,0.91
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.11,0.918
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.12,0.92
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.13,0.922
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.14,0.922
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.15,0.93
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.16,0.932
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.17,0.934
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.18,0.934
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.19,0.934
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.2,0.94
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.21,0.94
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.22,0.94
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.23,0.946
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.24,0.948
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.25,0.95
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.26,0.954
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.27,0.956
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.28,0.956
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.29,0.956
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.3,0.956
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.31,0.958
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.32,0.958
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.33,0.96
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.34,0.96
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.35,0.964
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.36,0.966
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.37,0.968
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.38,0.97
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.39,0.972
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.4,0.976
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.41,0.976
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.42,0.978
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.43,0.98
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.44,0.98
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.45,0.982
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.46,0.986
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.47,0.986
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.48,0.986
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.49,0.986
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.5,0.988
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.51,0.99
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.52,0.99
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.53,0.992
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.54,0.992
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.55,0.992
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.56,0.992
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.57,0.992
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.58,0.992
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.59,0.992
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.6,0.992
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.61,0.994
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.62,0.994
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.63,0.994
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.64,0.996
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.65,0.996
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.66,0.996
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.67,0.996
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.68,0.996
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.69,0.998
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.7,0.998
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.71,0.998
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.72,0.998
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.73,0.998
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.74,0.998
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.75,0.998
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.76,0.998
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.77,0.998
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.78,0.998
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.79,0.998
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.8,0.998
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.81,0.998
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.82,0.998
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.83,0.998
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.84,0.998
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.85,0.998
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.86,0.998
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.87,0.998
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.88,0.998
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.89,0.998
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.9,1.0
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.91,1.0
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.92,1.0
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.93,1.0
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.94,1.0
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.95,1.0
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.96,1.0
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.97,1.0
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.98,1.0
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.99,1.0
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",1.0,1.0
+unimodal,spike,"incremental, reorth",0.0,0.166667
+unimodal,spike,"incremental, reorth",0.01,0.633333
+unimodal,spike,"incremental, reorth",0.02,0.741667
+unimodal,spike,"incremental, reorth",0.03,0.85
+unimodal,spike,"incremental, reorth",0.04,0.908333
+unimodal,spike,"incremental, reorth",0.05,0.925
+unimodal,spike,"incremental, reorth",0.06,0.941667
+unimodal,spike,"incremental, reorth",0.07,0.966667
+unimodal,spike,"incremental, reorth",0.08,0.966667
+unimodal,spike,"incremental, reorth",0.09,0.966667
+unimodal,spike,"incremental, reorth",0.1,0.975
+unimodal,spike,"incremental, reorth",0.11,0.983333
+unimodal,spike,"incremental, reorth",0.12,0.991667
+unimodal,spike,"incremental, reorth",0.13,0.991667
+unimodal,spike,"incremental, reorth",0.14,0.991667
+unimodal,spike,"incremental, reorth",0.15,0.991667
+unimodal,spike,"incremental, reorth",0.16,0.991667
+unimodal,spike,"incremental, reorth",0.17,0.991667
+unimodal,spike,"incremental, reorth",0.18,1.0
+unimodal,spike,"incremental, reorth",0.19,1.0
+unimodal,spike,"incremental, reorth",0.2,1.0
+unimodal,spike,"incremental, reorth",0.21,1.0
+unimodal,spike,"incremental, reorth",0.22,1.0
+unimodal,spike,"incremental, reorth",0.23,1.0
+unimodal,spike,"incremental, reorth",0.24,1.0
+unimodal,spike,"incremental, reorth",0.25,1.0
+unimodal,spike,"incremental, reorth",0.26,1.0
+unimodal,spike,"incremental, reorth",0.27,1.0
+unimodal,spike,"incremental, reorth",0.28,1.0
+unimodal,spike,"incremental, reorth",0.29,1.0
+unimodal,spike,"incremental, reorth",0.3,1.0
+unimodal,spike,"incremental, reorth",0.31,1.0
+unimodal,spike,"incremental, reorth",0.32,1.0
+unimodal,spike,"incremental, reorth",0.33,1.0
+unimodal,spike,"incremental, reorth",0.34,1.0
+unimodal,spike,"incremental, reorth",0.35,1.0
+unimodal,spike,"incremental, reorth",0.36,1.0
+unimodal,spike,"incremental, reorth",0.37,1.0
+unimodal,spike,"incremental, reorth",0.38,1.0
+unimodal,spike,"incremental, reorth",0.39,1.0
+unimodal,spike,"incremental, reorth",0.4,1.0
+unimodal,spike,"incremental, reorth",0.41,1.0
+unimodal,spike,"incremental, reorth",0.42,1.0
+unimodal,spike,"incremental, reorth",0.43,1.0
+unimodal,spike,"incremental, reorth",0.44,1.0
+unimodal,spike,"incremental, reorth",0.45,1.0
+unimodal,spike,"incremental, reorth",0.46,1.0
+unimodal,spike,"incremental, reorth",0.47,1.0
+unimodal,spike,"incremental, reorth",0.48,1.0
+unimodal,spike,"incremental, reorth",0.49,1.0
+unimodal,spike,"incremental, reorth",0.5,1.0
+unimodal,spike,"incremental, reorth",0.51,1.0
+unimodal,spike,"incremental, reorth",0.52,1.0
+unimodal,spike,"incremental, reorth",0.53,1.0
+unimodal,spike,"incremental, reorth",0.54,1.0
+unimodal,spike,"incremental, reorth",0.55,1.0
+unimodal,spike,"incremental, reorth",0.56,1.0
+unimodal,spike,"incremental, reorth",0.57,1.0
+unimodal,spike,"incremental, reorth",0.58,1.0
+unimodal,spike,"incremental, reorth",0.59,1.0
+unimodal,spike,"incremental, reorth",0.6,1.0
+unimodal,spike,"incremental, reorth",0.61,1.0
+unimodal,spike,"incremental, reorth",0.62,1.0
+unimodal,spike,"incremental, reorth",0.63,1.0
+unimodal,spike,"incremental, reorth",0.64,1.0
+unimodal,spike,"incremental, reorth",0.65,1.0
+unimodal,spike,"incremental, reorth",0.66,1.0
+unimodal,spike,"incremental, reorth",0.67,1.0
+unimodal,spike,"incremental, reorth",0.68,1.0
+unimodal,spike,"incremental, reorth",0.69,1.0
+unimodal,spike,"incremental, reorth",0.7,1.0
+unimodal,spike,"incremental, reorth",0.71,1.0
+unimodal,spike,"incremental, reorth",0.72,1.0
+unimodal,spike,"incremental, reorth",0.73,1.0
+unimodal,spike,"incremental, reorth",0.74,1.0
+unimodal,spike,"incremental, reorth",0.75,1.0
+unimodal,spike,"incremental, reorth",0.76,1.0
+unimodal,spike,"incremental, reorth",0.77,1.0
+unimodal,spike,"incremental, reorth",0.78,1.0
+unimodal,spike,"incremental, reorth",0.79,1.0
+unimodal,spike,"incremental, reorth",0.8,1.0
+unimodal,spike,"incremental, reorth",0.81,1.0
+unimodal,spike,"incremental, reorth",0.82,1.0
+unimodal,spike,"incremental, reorth",0.83,1.0
+unimodal,spike,"incremental, reorth",0.84,1.0
+unimodal,spike,"incremental, reorth",0.85,1.0
+unimodal,spike,"incremental, reorth",0.86,1.0
+unimodal,spike,"incremental, reorth",0.87,1.0
+unimodal,spike,"incremental, reorth",0.88,1.0
+unimodal,spike,"incremental, reorth",0.89,1.0
+unimodal,spike,"incremental, reorth",0.9,1.0
+unimodal,spike,"incremental, reorth",0.91,1.0
+unimodal,spike,"incremental, reorth",0.92,1.0
+unimodal,spike,"incremental, reorth",0.93,1.0
+unimodal,spike,"incremental, reorth",0.94,1.0
+unimodal,spike,"incremental, reorth",0.95,1.0
+unimodal,spike,"incremental, reorth",0.96,1.0
+unimodal,spike,"incremental, reorth",0.97,1.0
+unimodal,spike,"incremental, reorth",0.98,1.0
+unimodal,spike,"incremental, reorth",0.99,1.0
+unimodal,spike,"incremental, reorth",1.0,1.0
+unimodal,rotate,"incremental, reorth",0.0,0.41
+unimodal,rotate,"incremental, reorth",0.01,0.734
+unimodal,rotate,"incremental, reorth",0.02,0.8
+unimodal,rotate,"incremental, reorth",0.03,0.82
+unimodal,rotate,"incremental, reorth",0.04,0.844
+unimodal,rotate,"incremental, reorth",0.05,0.866
+unimodal,rotate,"incremental, reorth",0.06,0.878
+unimodal,rotate,"incremental, reorth",0.07,0.886
+unimodal,rotate,"incremental, reorth",0.08,0.894
+unimodal,rotate,"incremental, reorth",0.09,0.898
+unimodal,rotate,"incremental, reorth",0.1,0.902
+unimodal,rotate,"incremental, reorth",0.11,0.906
+unimodal,rotate,"incremental, reorth",0.12,0.918
+unimodal,rotate,"incremental, reorth",0.13,0.922
+unimodal,rotate,"incremental, reorth",0.14,0.924
+unimodal,rotate,"incremental, reorth",0.15,0.924
+unimodal,rotate,"incremental, reorth",0.16,0.928
+unimodal,rotate,"incremental, reorth",0.17,0.928
+unimodal,rotate,"incremental, reorth",0.18,0.934
+unimodal,rotate,"incremental, reorth",0.19,0.934
+unimodal,rotate,"incremental, reorth",0.2,0.934
+unimodal,rotate,"incremental, reorth",0.21,0.936
+unimodal,rotate,"incremental, reorth",0.22,0.938
+unimodal,rotate,"incremental, reorth",0.23,0.938
+unimodal,rotate,"incremental, reorth",0.24,0.94
+unimodal,rotate,"incremental, reorth",0.25,0.948
+unimodal,rotate,"incremental, reorth",0.26,0.952
+unimodal,rotate,"incremental, reorth",0.27,0.956
+unimodal,rotate,"incremental, reorth",0.28,0.956
+unimodal,rotate,"incremental, reorth",0.29,0.958
+unimodal,rotate,"incremental, reorth",0.3,0.958
+unimodal,rotate,"incremental, reorth",0.31,0.958
+unimodal,rotate,"incremental, reorth",0.32,0.958
+unimodal,rotate,"incremental, reorth",0.33,0.958
+unimodal,rotate,"incremental, reorth",0.34,0.962
+unimodal,rotate,"incremental, reorth",0.35,0.966
+unimodal,rotate,"incremental, reorth",0.36,0.966
+unimodal,rotate,"incremental, reorth",0.37,0.968
+unimodal,rotate,"incremental, reorth",0.38,0.97
+unimodal,rotate,"incremental, reorth",0.39,0.974
+unimodal,rotate,"incremental, reorth",0.4,0.974
+unimodal,rotate,"incremental, reorth",0.41,0.974
+unimodal,rotate,"incremental, reorth",0.42,0.976
+unimodal,rotate,"incremental, reorth",0.43,0.976
+unimodal,rotate,"incremental, reorth",0.44,0.978
+unimodal,rotate,"incremental, reorth",0.45,0.982
+unimodal,rotate,"incremental, reorth",0.46,0.982
+unimodal,rotate,"incremental, reorth",0.47,0.986
+unimodal,rotate,"incremental, reorth",0.48,0.986
+unimodal,rotate,"incremental, reorth",0.49,0.988
+unimodal,rotate,"incremental, reorth",0.5,0.99
+unimodal,rotate,"incremental, reorth",0.51,0.99
+unimodal,rotate,"incremental, reorth",0.52,0.99
+unimodal,rotate,"incremental, reorth",0.53,0.99
+unimodal,rotate,"incremental, reorth",0.54,0.99
+unimodal,rotate,"incremental, reorth",0.55,0.99
+unimodal,rotate,"incremental, reorth",0.56,0.99
+unimodal,rotate,"incremental, reorth",0.57,0.99
+unimodal,rotate,"incremental, reorth",0.58,0.994
+unimodal,rotate,"incremental, reorth",0.59,0.994
+unimodal,rotate,"incremental, reorth",0.6,0.994
+unimodal,rotate,"incremental, reorth",0.61,0.996
+unimodal,rotate,"incremental, reorth",0.62,0.996
+unimodal,rotate,"incremental, reorth",0.63,0.996
+unimodal,rotate,"incremental, reorth",0.64,0.998
+unimodal,rotate,"incremental, reorth",0.65,0.998
+unimodal,rotate,"incremental, reorth",0.66,0.998
+unimodal,rotate,"incremental, reorth",0.67,0.998
+unimodal,rotate,"incremental, reorth",0.68,0.998
+unimodal,rotate,"incremental, reorth",0.69,0.998
+unimodal,rotate,"incremental, reorth",0.7,0.998
+unimodal,rotate,"incremental, reorth",0.71,0.998
+unimodal,rotate,"incremental, reorth",0.72,0.998
+unimodal,rotate,"incremental, reorth",0.73,0.998
+unimodal,rotate,"incremental, reorth",0.74,0.998
+unimodal,rotate,"incremental, reorth",0.75,0.998
+unimodal,rotate,"incremental, reorth",0.76,0.998
+unimodal,rotate,"incremental, reorth",0.77,0.998
+unimodal,rotate,"incremental, reorth",0.78,0.998
+unimodal,rotate,"incremental, reorth",0.79,0.998
+unimodal,rotate,"incremental, reorth",0.8,0.998
+unimodal,rotate,"incremental, reorth",0.81,0.998
+unimodal,rotate,"incremental, reorth",0.82,0.998
+unimodal,rotate,"incremental, reorth",0.83,0.998
+unimodal,rotate,"incremental, reorth",0.84,0.998
+unimodal,rotate,"incremental, reorth",0.85,0.998
+unimodal,rotate,"incremental, reorth",0.86,0.998
+unimodal,rotate,"incremental, reorth",0.87,0.998
+unimodal,rotate,"incremental, reorth",0.88,0.998
+unimodal,rotate,"incremental, reorth",0.89,1.0
+unimodal,rotate,"incremental, reorth",0.9,1.0
+unimodal,rotate,"incremental, reorth",0.91,1.0
+unimodal,rotate,"incremental, reorth",0.92,1.0
+unimodal,rotate,"incremental, reorth",0.93,1.0
+unimodal,rotate,"incremental, reorth",0.94,1.0
+unimodal,rotate,"incremental, reorth",0.95,1.0
+unimodal,rotate,"incremental, reorth",0.96,1.0
+unimodal,rotate,"incremental, reorth",0.97,1.0
+unimodal,rotate,"incremental, reorth",0.98,1.0
+unimodal,rotate,"incremental, reorth",0.99,1.0
+unimodal,rotate,"incremental, reorth",1.0,1.0
+unimodal,spike,"incremental, no reorth",0.0,0.166667
+unimodal,spike,"incremental, no reorth",0.01,0.633333
+unimodal,spike,"incremental, no reorth",0.02,0.741667
+unimodal,spike,"incremental, no reorth",0.03,0.85
+unimodal,spike,"incremental, no reorth",0.04,0.908333
+unimodal,spike,"incremental, no reorth",0.05,0.925
+unimodal,spike,"incremental, no reorth",0.06,0.941667
+unimodal,spike,"incremental, no reorth",0.07,0.966667
+unimodal,spike,"incremental, no reorth",0.08,0.966667
+unimodal,spike,"incremental, no reorth",0.09,0.966667
+unimodal,spike,"incremental, no reorth",0.1,0.975
+unimodal,spike,"incremental, no reorth",0.11,0.983333
+unimodal,spike,"incremental, no reorth",0.12,0.991667
+unimodal,spike,"incremental, no reorth",0.13,0.991667
+unimodal,spike,"incremental, no reorth",0.14,0.991667
+unimodal,spike,"incremental, no reorth",0.15,0.991667
+unimodal,spike,"incremental, no reorth",0.16,0.991667
+unimodal,spike,"incremental, no reorth",0.17,0.991667
+unimodal,spike,"incremental, no reorth",0.18,1.0
+unimodal,spike,"incremental, no reorth",0.19,1.0
+unimodal,spike,"incremental, no reorth",0.2,1.0
+unimodal,spike,"incremental, no reorth",0.21,1.0
+unimodal,spike,"incremental, no reorth",0.22,1.0
+unimodal,spike,"incremental, no reorth",0.23,1.0
+unimodal,spike,"incremental, no reorth",0.24,1.0
+unimodal,spike,"incremental, no reorth",0.25,1.0
+unimodal,spike,"incremental, no reorth",0.26,1.0
+unimodal,spike,"incremental, no reorth",0.27,1.0
+unimodal,spike,"incremental, no reorth",0.28,1.0
+unimodal,spike,"incremental, no reorth",0.29,1.0
+unimodal,spike,"incremental, no reorth",0.3,1.0
+unimodal,spike,"incremental, no reorth",0.31,1.0
+unimodal,spike,"incremental, no reorth",0.32,1.0
+unimodal,spike,"incremental, no reorth",0.33,1.0
+unimodal,spike,"incremental, no reorth",0.34,1.0
+unimodal,spike,"incremental, no reorth",0.35,1.0
+unimodal,spike,"incremental, no reorth",0.36,1.0
+unimodal,spike,"incremental, no reorth",0.37,1.0
+unimodal,spike,"incremental, no reorth",0.38,1.0
+unimodal,spike,"incremental, no reorth",0.39,1.0
+unimodal,spike,"incremental, no reorth",0.4,1.0
+unimodal,spike,"incremental, no reorth",0.41,1.0
+unimodal,spike,"incremental, no reorth",0.42,1.0
+unimodal,spike,"incremental, no reorth",0.43,1.0
+unimodal,spike,"incremental, no reorth",0.44,1.0
+unimodal,spike,"incremental, no reorth",0.45,1.0
+unimodal,spike,"incremental, no reorth",0.46,1.0
+unimodal,spike,"incremental, no reorth",0.47,1.0
+unimodal,spike,"incremental, no reorth",0.48,1.0
+unimodal,spike,"incremental, no reorth",0.49,1.0
+unimodal,spike,"incremental, no reorth",0.5,1.0
+unimodal,spike,"incremental, no reorth",0.51,1.0
+unimodal,spike,"incremental, no reorth",0.52,1.0
+unimodal,spike,"incremental, no reorth",0.53,1.0
+unimodal,spike,"incremental, no reorth",0.54,1.0
+unimodal,spike,"incremental, no reorth",0.55,1.0
+unimodal,spike,"incremental, no reorth",0.56,1.0
+unimodal,spike,"incremental, no reorth",0.57,1.0
+unimodal,spike,"incremental, no reorth",0.58,1.0
+unimodal,spike,"incremental, no reorth",0.59,1.0
+unimodal,spike,"incremental, no reorth",0.6,1.0
+unimodal,spike,"incremental, no reorth",0.61,1.0
+unimodal,spike,"incremental, no reorth",0.62,1.0
+unimodal,spike,"incremental, no reorth",0.63,1.0
+unimodal,spike,"incremental, no reorth",0.64,1.0
+unimodal,spike,"incremental, no reorth",0.65,1.0
+unimodal,spike,"incremental, no reorth",0.66,1.0
+unimodal,spike,"incremental, no reorth",0.67,1.0
+unimodal,spike,"incremental, no reorth",0.68,1.0
+unimodal,spike,"incremental, no reorth",0.69,1.0
+unimodal,spike,"incremental, no reorth",0.7,1.0
+unimodal,spike,"incremental, no reorth",0.71,1.0
+unimodal,spike,"incremental, no reorth",0.72,1.0
+unimodal,spike,"incremental, no reorth",0.73,1.0
+unimodal,spike,"incremental, no reorth",0.74,1.0
+unimodal,spike,"incremental, no reorth",0.75,1.0
+unimodal,spike,"incremental, no reorth",0.76,1.0
+unimodal,spike,"incremental, no reorth",0.77,1.0
+unimodal,spike,"incremental, no reorth",0.78,1.0
+unimodal,spike,"incremental, no reorth",0.79,1.0
+unimodal,spike,"incremental, no reorth",0.8,1.0
+unimodal,spike,"incremental, no reorth",0.81,1.0
+unimodal,spike,"incremental, no reorth",0.82,1.0
+unimodal,spike,"incremental, no reorth",0.83,1.0
+unimodal,spike,"incremental, no reorth",0.84,1.0
+unimodal,spike,"incremental, no reorth",0.85,1.0
+unimodal,spike,"incremental, no reorth",0.86,1.0
+unimodal,spike,"incremental, no reorth",0.87,1.0
+unimodal,spike,"incremental, no reorth",0.88,1.0
+unimodal,spike,"incremental, no reorth",0.89,1.0
+unimodal,spike,"incremental, no reorth",0.9,1.0
+unimodal,spike,"incremental, no reorth",0.91,1.0
+unimodal,spike,"incremental, no reorth",0.92,1.0
+unimodal,spike,"incremental, no reorth",0.93,1.0
+unimodal,spike,"incremental, no reorth",0.94,1.0
+unimodal,spike,"incremental, no reorth",0.95,1.0
+unimodal,spike,"incremental, no reorth",0.96,1.0
+unimodal,spike,"incremental, no reorth",0.97,1.0
+unimodal,spike,"incremental, no reorth",0.98,1.0
+unimodal,spike,"incremental, no reorth",0.99,1.0
+unimodal,spike,"incremental, no reorth",1.0,1.0
+unimodal,rotate,"incremental, no reorth",0.0,0.41
+unimodal,rotate,"incremental, no reorth",0.01,0.734
+unimodal,rotate,"incremental, no reorth",0.02,0.8
+unimodal,rotate,"incremental, no reorth",0.03,0.82
+unimodal,rotate,"incremental, no reorth",0.04,0.844
+unimodal,rotate,"incremental, no reorth",0.05,0.866
+unimodal,rotate,"incremental, no reorth",0.06,0.878
+unimodal,rotate,"incremental, no reorth",0.07,0.886
+unimodal,rotate,"incremental, no reorth",0.08,0.894
+unimodal,rotate,"incremental, no reorth",0.09,0.898
+unimodal,rotate,"incremental, no reorth",0.1,0.902
+unimodal,rotate,"incremental, no reorth",0.11,0.906
+unimodal,rotate,"incremental, no reorth",0.12,0.918
+unimodal,rotate,"incremental, no reorth",0.13,0.922
+unimodal,rotate,"incremental, no reorth",0.14,0.924
+unimodal,rotate,"incremental, no reorth",0.15,0.924
+unimodal,rotate,"incremental, no reorth",0.16,0.928
+unimodal,rotate,"incremental, no reorth",0.17,0.928
+unimodal,rotate,"incremental, no reorth",0.18,0.934
+unimodal,rotate,"incremental, no reorth",0.19,0.934
+unimodal,rotate,"incremental, no reorth",0.2,0.934
+unimodal,rotate,"incremental, no reorth",0.21,0.936
+unimodal,rotate,"incremental, no reorth",0.22,0.938
+unimodal,rotate,"incremental, no reorth",0.23,0.938
+unimodal,rotate,"incremental, no reorth",0.24,0.94
+unimodal,rotate,"incremental, no reorth",0.25,0.948
+unimodal,rotate,"incremental, no reorth",0.26,0.952
+unimodal,rotate,"incremental, no reorth",0.27,0.956
+unimodal,rotate,"incremental, no reorth",0.28,0.956
+unimodal,rotate,"incremental, no reorth",0.29,0.958
+unimodal,rotate,"incremental, no reorth",0.3,0.958
+unimodal,rotate,"incremental, no reorth",0.31,0.958
+unimodal,rotate,"incremental, no reorth",0.32,0.958
+unimodal,rotate,"incremental, no reorth",0.33,0.958
+unimodal,rotate,"incremental, no reorth",0.34,0.962
+unimodal,rotate,"incremental, no reorth",0.35,0.966
+unimodal,rotate,"incremental, no reorth",0.36,0.966
+unimodal,rotate,"incremental, no reorth",0.37,0.968
+unimodal,rotate,"incremental, no reorth",0.38,0.97
+unimodal,rotate,"incremental, no reorth",0.39,0.974
+unimodal,rotate,"incremental, no reorth",0.4,0.974
+unimodal,rotate,"incremental, no reorth",0.41,0.974
+unimodal,rotate,"incremental, no reorth",0.42,0.976
+unimodal,rotate,"incremental, no reorth",0.43,0.976
+unimodal,rotate,"incremental, no reorth",0.44,0.978
+unimodal,rotate,"incremental, no reorth",0.45,0.982
+unimodal,rotate,"incremental, no reorth",0.46,0.982
+unimodal,rotate,"incremental, no reorth",0.47,0.986
+unimodal,rotate,"incremental, no reorth",0.48,0.986
+unimodal,rotate,"incremental, no reorth",0.49,0.988
+unimodal,rotate,"incremental, no reorth",0.5,0.99
+unimodal,rotate,"incremental, no reorth",0.51,0.99
+unimodal,rotate,"incremental, no reorth",0.52,0.99
+unimodal,rotate,"incremental, no reorth",0.53,0.99
+unimodal,rotate,"incremental, no reorth",0.54,0.99
+unimodal,rotate,"incremental, no reorth",0.55,0.99
+unimodal,rotate,"incremental, no reorth",0.56,0.99
+unimodal,rotate,"incremental, no reorth",0.57,0.99
+unimodal,rotate,"incremental, no reorth",0.58,0.994
+unimodal,rotate,"incremental, no reorth",0.59,0.994
+unimodal,rotate,"incremental, no reorth",0.6,0.994
+unimodal,rotate,"incremental, no reorth",0.61,0.996
+unimodal,rotate,"incremental, no reorth",0.62,0.996
+unimodal,rotate,"incremental, no reorth",0.63,0.996
+unimodal,rotate,"incremental, no reorth",0.64,0.998
+unimodal,rotate,"incremental, no reorth",0.65,0.998
+unimodal,rotate,"incremental, no reorth",0.66,0.998
+unimodal,rotate,"incremental, no reorth",0.67,0.998
+unimodal,rotate,"incremental, no reorth",0.68,0.998
+unimodal,rotate,"incremental, no reorth",0.69,0.998
+unimodal,rotate,"incremental, no reorth",0.7,0.998
+unimodal,rotate,"incremental, no reorth",0.71,0.998
+unimodal,rotate,"incremental, no reorth",0.72,0.998
+unimodal,rotate,"incremental, no reorth",0.73,0.998
+unimodal,rotate,"incremental, no reorth",0.74,0.998
+unimodal,rotate,"incremental, no reorth",0.75,0.998
+unimodal,rotate,"incremental, no reorth",0.76,0.998
+unimodal,rotate,"incremental, no reorth",0.77,0.998
+unimodal,rotate,"incremental, no reorth",0.78,0.998
+unimodal,rotate,"incremental, no reorth",0.79,0.998
+unimodal,rotate,"incremental, no reorth",0.8,0.998
+unimodal,rotate,"incremental, no reorth",0.81,0.998
+unimodal,rotate,"incremental, no reorth",0.82,0.998
+unimodal,rotate,"incremental, no reorth",0.83,0.998
+unimodal,rotate,"incremental, no reorth",0.84,0.998
+unimodal,rotate,"incremental, no reorth",0.85,0.998
+unimodal,rotate,"incremental, no reorth",0.86,0.998
+unimodal,rotate,"incremental, no reorth",0.87,0.998
+unimodal,rotate,"incremental, no reorth",0.88,0.998
+unimodal,rotate,"incremental, no reorth",0.89,1.0
+unimodal,rotate,"incremental, no reorth",0.9,1.0
+unimodal,rotate,"incremental, no reorth",0.91,1.0
+unimodal,rotate,"incremental, no reorth",0.92,1.0
+unimodal,rotate,"incremental, no reorth",0.93,1.0
+unimodal,rotate,"incremental, no reorth",0.94,1.0
+unimodal,rotate,"incremental, no reorth",0.95,1.0
+unimodal,rotate,"incremental, no reorth",0.96,1.0
+unimodal,rotate,"incremental, no reorth",0.97,1.0
+unimodal,rotate,"incremental, no reorth",0.98,1.0
+unimodal,rotate,"incremental, no reorth",0.99,1.0
+unimodal,rotate,"incremental, no reorth",1.0,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.0,0.166667
+unimodal,spike,"incremental, rank from gap criterion",0.01,0.633333
+unimodal,spike,"incremental, rank from gap criterion",0.02,0.741667
+unimodal,spike,"incremental, rank from gap criterion",0.03,0.85
+unimodal,spike,"incremental, rank from gap criterion",0.04,0.908333
+unimodal,spike,"incremental, rank from gap criterion",0.05,0.925
+unimodal,spike,"incremental, rank from gap criterion",0.06,0.941667
+unimodal,spike,"incremental, rank from gap criterion",0.07,0.966667
+unimodal,spike,"incremental, rank from gap criterion",0.08,0.966667
+unimodal,spike,"incremental, rank from gap criterion",0.09,0.966667
+unimodal,spike,"incremental, rank from gap criterion",0.1,0.975
+unimodal,spike,"incremental, rank from gap criterion",0.11,0.983333
+unimodal,spike,"incremental, rank from gap criterion",0.12,0.991667
+unimodal,spike,"incremental, rank from gap criterion",0.13,0.991667
+unimodal,spike,"incremental, rank from gap criterion",0.14,0.991667
+unimodal,spike,"incremental, rank from gap criterion",0.15,0.991667
+unimodal,spike,"incremental, rank from gap criterion",0.16,0.991667
+unimodal,spike,"incremental, rank from gap criterion",0.17,0.991667
+unimodal,spike,"incremental, rank from gap criterion",0.18,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.19,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.2,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.21,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.22,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.23,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.24,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.25,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.26,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.27,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.28,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.29,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.3,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.31,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.32,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.33,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.34,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.35,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.36,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.37,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.38,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.39,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.4,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.41,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.42,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.43,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.44,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.45,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.46,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.47,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.48,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.49,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.5,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.51,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.52,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.53,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.54,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.55,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.56,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.57,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.58,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.59,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.6,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.61,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.62,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.63,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.64,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.65,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.66,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.67,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.68,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.69,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.7,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.71,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.72,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.73,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.74,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.75,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.76,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.77,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.78,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.79,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.8,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.81,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.82,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.83,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.84,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.85,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.86,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.87,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.88,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.89,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.9,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.91,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.92,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.93,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.94,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.95,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.96,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.97,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.98,1.0
+unimodal,spike,"incremental, rank from gap criterion",0.99,1.0
+unimodal,spike,"incremental, rank from gap criterion",1.0,1.0
+unimodal,rotate,"incremental, rank from gap criterion",0.0,0.41
+unimodal,rotate,"incremental, rank from gap criterion",0.01,0.734
+unimodal,rotate,"incremental, rank from gap criterion",0.02,0.8
+unimodal,rotate,"incremental, rank from gap criterion",0.03,0.82
+unimodal,rotate,"incremental, rank from gap criterion",0.04,0.844
+unimodal,rotate,"incremental, rank from gap criterion",0.05,0.866
+unimodal,rotate,"incremental, rank from gap criterion",0.06,0.878
+unimodal,rotate,"incremental, rank from gap criterion",0.07,0.886
+unimodal,rotate,"incremental, rank from gap criterion",0.08,0.894
+unimodal,rotate,"incremental, rank from gap criterion",0.09,0.898
+unimodal,rotate,"incremental, rank from gap criterion",0.1,0.902
+unimodal,rotate,"incremental, rank from gap criterion",0.11,0.906
+unimodal,rotate,"incremental, rank from gap criterion",0.12,0.918
+unimodal,rotate,"incremental, rank from gap criterion",0.13,0.922
+unimodal,rotate,"incremental, rank from gap criterion",0.14,0.924
+unimodal,rotate,"incremental, rank from gap criterion",0.15,0.924
+unimodal,rotate,"incremental, rank from gap criterion",0.16,0.928
+unimodal,rotate,"incremental, rank from gap criterion",0.17,0.928
+unimodal,rotate,"incremental, rank from gap criterion",0.18,0.934
+unimodal,rotate,"incremental, rank from gap criterion",0.19,0.934
+unimodal,rotate,"incremental, rank from gap criterion",0.2,0.934
+unimodal,rotate,"incremental, rank from gap criterion",0.21,0.936
+unimodal,rotate,"incremental, rank from gap criterion",0.22,0.938
+unimodal,rotate,"incremental, rank from gap criterion",0.23,0.938
+unimodal,rotate,"incremental, rank from gap criterion",0.24,0.94
+unimodal,rotate,"incremental, rank from gap criterion",0.25,0.948
+unimodal,rotate,"incremental, rank from gap criterion",0.26,0.952
+unimodal,rotate,"incremental, rank from gap criterion",0.27,0.956
+unimodal,rotate,"incremental, rank from gap criterion",0.28,0.956
+unimodal,rotate,"incremental, rank from gap criterion",0.29,0.958
+unimodal,rotate,"incremental, rank from gap criterion",0.3,0.958
+unimodal,rotate,"incremental, rank from gap criterion",0.31,0.958
+unimodal,rotate,"incremental, rank from gap criterion",0.32,0.958
+unimodal,rotate,"incremental, rank from gap criterion",0.33,0.958
+unimodal,rotate,"incremental, rank from gap criterion",0.34,0.962
+unimodal,rotate,"incremental, rank from gap criterion",0.35,0.966
+unimodal,rotate,"incremental, rank from gap criterion",0.36,0.966
+unimodal,rotate,"incremental, rank from gap criterion",0.37,0.968
+unimodal,rotate,"incremental, rank from gap criterion",0.38,0.97
+unimodal,rotate,"incremental, rank from gap criterion",0.39,0.974
+unimodal,rotate,"incremental, rank from gap criterion",0.4,0.974
+unimodal,rotate,"incremental, rank from gap criterion",0.41,0.974
+unimodal,rotate,"incremental, rank from gap criterion",0.42,0.976
+unimodal,rotate,"incremental, rank from gap criterion",0.43,0.976
+unimodal,rotate,"incremental, rank from gap criterion",0.44,0.978
+unimodal,rotate,"incremental, rank from gap criterion",0.45,0.982
+unimodal,rotate,"incremental, rank from gap criterion",0.46,0.982
+unimodal,rotate,"incremental, rank from gap criterion",0.47,0.986
+unimodal,rotate,"incremental, rank from gap criterion",0.48,0.986
+unimodal,rotate,"incremental, rank from gap criterion",0.49,0.988
+unimodal,rotate,"incremental, rank from gap criterion",0.5,0.99
+unimodal,rotate,"incremental, rank from gap criterion",0.51,0.99
+unimodal,rotate,"incremental, rank from gap criterion",0.52,0.99
+unimodal,rotate,"incremental, rank from gap criterion",0.53,0.99
+unimodal,rotate,"incremental, rank from gap criterion",0.54,0.99
+unimodal,rotate,"incremental, rank from gap criterion",0.55,0.99
+unimodal,rotate,"incremental, rank from gap criterion",0.56,0.99
+unimodal,rotate,"incremental, rank from gap criterion",0.57,0.99
+unimodal,rotate,"incremental, rank from gap criterion",0.58,0.994
+unimodal,rotate,"incremental, rank from gap criterion",0.59,0.994
+unimodal,rotate,"incremental, rank from gap criterion",0.6,0.994
+unimodal,rotate,"incremental, rank from gap criterion",0.61,0.996
+unimodal,rotate,"incremental, rank from gap criterion",0.62,0.996
+unimodal,rotate,"incremental, rank from gap criterion",0.63,0.996
+unimodal,rotate,"incremental, rank from gap criterion",0.64,0.998
+unimodal,rotate,"incremental, rank from gap criterion",0.65,0.998
+unimodal,rotate,"incremental, rank from gap criterion",0.66,0.998
+unimodal,rotate,"incremental, rank from gap criterion",0.67,0.998
+unimodal,rotate,"incremental, rank from gap criterion",0.68,0.998
+unimodal,rotate,"incremental, rank from gap criterion",0.69,0.998
+unimodal,rotate,"incremental, rank from gap criterion",0.7,0.998
+unimodal,rotate,"incremental, rank from gap criterion",0.71,0.998
+unimodal,rotate,"incremental, rank from gap criterion",0.72,0.998
+unimodal,rotate,"incremental, rank from gap criterion",0.73,0.998
+unimodal,rotate,"incremental, rank from gap criterion",0.74,0.998
+unimodal,rotate,"incremental, rank from gap criterion",0.75,0.998
+unimodal,rotate,"incremental, rank from gap criterion",0.76,0.998
+unimodal,rotate,"incremental, rank from gap criterion",0.77,0.998
+unimodal,rotate,"incremental, rank from gap criterion",0.78,0.998
+unimodal,rotate,"incremental, rank from gap criterion",0.79,0.998
+unimodal,rotate,"incremental, rank from gap criterion",0.8,0.998
+unimodal,rotate,"incremental, rank from gap criterion",0.81,0.998
+unimodal,rotate,"incremental, rank from gap criterion",0.82,0.998
+unimodal,rotate,"incremental, rank from gap criterion",0.83,0.998
+unimodal,rotate,"incremental, rank from gap criterion",0.84,0.998
+unimodal,rotate,"incremental, rank from gap criterion",0.85,0.998
+unimodal,rotate,"incremental, rank from gap criterion",0.86,0.998
+unimodal,rotate,"incremental, rank from gap criterion",0.87,0.998
+unimodal,rotate,"incremental, rank from gap criterion",0.88,0.998
+unimodal,rotate,"incremental, rank from gap criterion",0.89,1.0
+unimodal,rotate,"incremental, rank from gap criterion",0.9,1.0
+unimodal,rotate,"incremental, rank from gap criterion",0.91,1.0
+unimodal,rotate,"incremental, rank from gap criterion",0.92,1.0
+unimodal,rotate,"incremental, rank from gap criterion",0.93,1.0
+unimodal,rotate,"incremental, rank from gap criterion",0.94,1.0
+unimodal,rotate,"incremental, rank from gap criterion",0.95,1.0
+unimodal,rotate,"incremental, rank from gap criterion",0.96,1.0
+unimodal,rotate,"incremental, rank from gap criterion",0.97,1.0
+unimodal,rotate,"incremental, rank from gap criterion",0.98,1.0
+unimodal,rotate,"incremental, rank from gap criterion",0.99,1.0
+unimodal,rotate,"incremental, rank from gap criterion",1.0,1.0
+unimodal,spike,"C host binary, reorth",0.0,0.166667
+unimodal,spike,"C host binary, reorth",0.01,0.633333
+unimodal,spike,"C host binary, reorth",0.02,0.741667
+unimodal,spike,"C host binary, reorth",0.03,0.85
+unimodal,spike,"C host binary, reorth",0.04,0.908333
+unimodal,spike,"C host binary, reorth",0.05,0.925
+unimodal,spike,"C host binary, reorth",0.06,0.941667
+unimodal,spike,"C host binary, reorth",0.07,0.966667
+unimodal,spike,"C host binary, reorth",0.08,0.966667
+unimodal,spike,"C host binary, reorth",0.09,0.966667
+unimodal,spike,"C host binary, reorth",0.1,0.975
+unimodal,spike,"C host binary, reorth",0.11,0.983333
+unimodal,spike,"C host binary, reorth",0.12,0.991667
+unimodal,spike,"C host binary, reorth",0.13,0.991667
+unimodal,spike,"C host binary, reorth",0.14,0.991667
+unimodal,spike,"C host binary, reorth",0.15,0.991667
+unimodal,spike,"C host binary, reorth",0.16,0.991667
+unimodal,spike,"C host binary, reorth",0.17,0.991667
+unimodal,spike,"C host binary, reorth",0.18,1.0
+unimodal,spike,"C host binary, reorth",0.19,1.0
+unimodal,spike,"C host binary, reorth",0.2,1.0
+unimodal,spike,"C host binary, reorth",0.21,1.0
+unimodal,spike,"C host binary, reorth",0.22,1.0
+unimodal,spike,"C host binary, reorth",0.23,1.0
+unimodal,spike,"C host binary, reorth",0.24,1.0
+unimodal,spike,"C host binary, reorth",0.25,1.0
+unimodal,spike,"C host binary, reorth",0.26,1.0
+unimodal,spike,"C host binary, reorth",0.27,1.0
+unimodal,spike,"C host binary, reorth",0.28,1.0
+unimodal,spike,"C host binary, reorth",0.29,1.0
+unimodal,spike,"C host binary, reorth",0.3,1.0
+unimodal,spike,"C host binary, reorth",0.31,1.0
+unimodal,spike,"C host binary, reorth",0.32,1.0
+unimodal,spike,"C host binary, reorth",0.33,1.0
+unimodal,spike,"C host binary, reorth",0.34,1.0
+unimodal,spike,"C host binary, reorth",0.35,1.0
+unimodal,spike,"C host binary, reorth",0.36,1.0
+unimodal,spike,"C host binary, reorth",0.37,1.0
+unimodal,spike,"C host binary, reorth",0.38,1.0
+unimodal,spike,"C host binary, reorth",0.39,1.0
+unimodal,spike,"C host binary, reorth",0.4,1.0
+unimodal,spike,"C host binary, reorth",0.41,1.0
+unimodal,spike,"C host binary, reorth",0.42,1.0
+unimodal,spike,"C host binary, reorth",0.43,1.0
+unimodal,spike,"C host binary, reorth",0.44,1.0
+unimodal,spike,"C host binary, reorth",0.45,1.0
+unimodal,spike,"C host binary, reorth",0.46,1.0
+unimodal,spike,"C host binary, reorth",0.47,1.0
+unimodal,spike,"C host binary, reorth",0.48,1.0
+unimodal,spike,"C host binary, reorth",0.49,1.0
+unimodal,spike,"C host binary, reorth",0.5,1.0
+unimodal,spike,"C host binary, reorth",0.51,1.0
+unimodal,spike,"C host binary, reorth",0.52,1.0
+unimodal,spike,"C host binary, reorth",0.53,1.0
+unimodal,spike,"C host binary, reorth",0.54,1.0
+unimodal,spike,"C host binary, reorth",0.55,1.0
+unimodal,spike,"C host binary, reorth",0.56,1.0
+unimodal,spike,"C host binary, reorth",0.57,1.0
+unimodal,spike,"C host binary, reorth",0.58,1.0
+unimodal,spike,"C host binary, reorth",0.59,1.0
+unimodal,spike,"C host binary, reorth",0.6,1.0
+unimodal,spike,"C host binary, reorth",0.61,1.0
+unimodal,spike,"C host binary, reorth",0.62,1.0
+unimodal,spike,"C host binary, reorth",0.63,1.0
+unimodal,spike,"C host binary, reorth",0.64,1.0
+unimodal,spike,"C host binary, reorth",0.65,1.0
+unimodal,spike,"C host binary, reorth",0.66,1.0
+unimodal,spike,"C host binary, reorth",0.67,1.0
+unimodal,spike,"C host binary, reorth",0.68,1.0
+unimodal,spike,"C host binary, reorth",0.69,1.0
+unimodal,spike,"C host binary, reorth",0.7,1.0
+unimodal,spike,"C host binary, reorth",0.71,1.0
+unimodal,spike,"C host binary, reorth",0.72,1.0
+unimodal,spike,"C host binary, reorth",0.73,1.0
+unimodal,spike,"C host binary, reorth",0.74,1.0
+unimodal,spike,"C host binary, reorth",0.75,1.0
+unimodal,spike,"C host binary, reorth",0.76,1.0
+unimodal,spike,"C host binary, reorth",0.77,1.0
+unimodal,spike,"C host binary, reorth",0.78,1.0
+unimodal,spike,"C host binary, reorth",0.79,1.0
+unimodal,spike,"C host binary, reorth",0.8,1.0
+unimodal,spike,"C host binary, reorth",0.81,1.0
+unimodal,spike,"C host binary, reorth",0.82,1.0
+unimodal,spike,"C host binary, reorth",0.83,1.0
+unimodal,spike,"C host binary, reorth",0.84,1.0
+unimodal,spike,"C host binary, reorth",0.85,1.0
+unimodal,spike,"C host binary, reorth",0.86,1.0
+unimodal,spike,"C host binary, reorth",0.87,1.0
+unimodal,spike,"C host binary, reorth",0.88,1.0
+unimodal,spike,"C host binary, reorth",0.89,1.0
+unimodal,spike,"C host binary, reorth",0.9,1.0
+unimodal,spike,"C host binary, reorth",0.91,1.0
+unimodal,spike,"C host binary, reorth",0.92,1.0
+unimodal,spike,"C host binary, reorth",0.93,1.0
+unimodal,spike,"C host binary, reorth",0.94,1.0
+unimodal,spike,"C host binary, reorth",0.95,1.0
+unimodal,spike,"C host binary, reorth",0.96,1.0
+unimodal,spike,"C host binary, reorth",0.97,1.0
+unimodal,spike,"C host binary, reorth",0.98,1.0
+unimodal,spike,"C host binary, reorth",0.99,1.0
+unimodal,spike,"C host binary, reorth",1.0,1.0
+unimodal,rotate,"C host binary, reorth",0.0,0.41
+unimodal,rotate,"C host binary, reorth",0.01,0.734
+unimodal,rotate,"C host binary, reorth",0.02,0.8
+unimodal,rotate,"C host binary, reorth",0.03,0.82
+unimodal,rotate,"C host binary, reorth",0.04,0.844
+unimodal,rotate,"C host binary, reorth",0.05,0.866
+unimodal,rotate,"C host binary, reorth",0.06,0.878
+unimodal,rotate,"C host binary, reorth",0.07,0.886
+unimodal,rotate,"C host binary, reorth",0.08,0.894
+unimodal,rotate,"C host binary, reorth",0.09,0.898
+unimodal,rotate,"C host binary, reorth",0.1,0.902
+unimodal,rotate,"C host binary, reorth",0.11,0.906
+unimodal,rotate,"C host binary, reorth",0.12,0.918
+unimodal,rotate,"C host binary, reorth",0.13,0.922
+unimodal,rotate,"C host binary, reorth",0.14,0.924
+unimodal,rotate,"C host binary, reorth",0.15,0.924
+unimodal,rotate,"C host binary, reorth",0.16,0.928
+unimodal,rotate,"C host binary, reorth",0.17,0.928
+unimodal,rotate,"C host binary, reorth",0.18,0.934
+unimodal,rotate,"C host binary, reorth",0.19,0.934
+unimodal,rotate,"C host binary, reorth",0.2,0.934
+unimodal,rotate,"C host binary, reorth",0.21,0.936
+unimodal,rotate,"C host binary, reorth",0.22,0.938
+unimodal,rotate,"C host binary, reorth",0.23,0.938
+unimodal,rotate,"C host binary, reorth",0.24,0.94
+unimodal,rotate,"C host binary, reorth",0.25,0.948
+unimodal,rotate,"C host binary, reorth",0.26,0.952
+unimodal,rotate,"C host binary, reorth",0.27,0.956
+unimodal,rotate,"C host binary, reorth",0.28,0.956
+unimodal,rotate,"C host binary, reorth",0.29,0.958
+unimodal,rotate,"C host binary, reorth",0.3,0.958
+unimodal,rotate,"C host binary, reorth",0.31,0.958
+unimodal,rotate,"C host binary, reorth",0.32,0.958
+unimodal,rotate,"C host binary, reorth",0.33,0.958
+unimodal,rotate,"C host binary, reorth",0.34,0.962
+unimodal,rotate,"C host binary, reorth",0.35,0.966
+unimodal,rotate,"C host binary, reorth",0.36,0.966
+unimodal,rotate,"C host binary, reorth",0.37,0.968
+unimodal,rotate,"C host binary, reorth",0.38,0.97
+unimodal,rotate,"C host binary, reorth",0.39,0.974
+unimodal,rotate,"C host binary, reorth",0.4,0.974
+unimodal,rotate,"C host binary, reorth",0.41,0.974
+unimodal,rotate,"C host binary, reorth",0.42,0.976
+unimodal,rotate,"C host binary, reorth",0.43,0.976
+unimodal,rotate,"C host binary, reorth",0.44,0.978
+unimodal,rotate,"C host binary, reorth",0.45,0.982
+unimodal,rotate,"C host binary, reorth",0.46,0.982
+unimodal,rotate,"C host binary, reorth",0.47,0.986
+unimodal,rotate,"C host binary, reorth",0.48,0.986
+unimodal,rotate,"C host binary, reorth",0.49,0.988
+unimodal,rotate,"C host binary, reorth",0.5,0.99
+unimodal,rotate,"C host binary, reorth",0.51,0.99
+unimodal,rotate,"C host binary, reorth",0.52,0.99
+unimodal,rotate,"C host binary, reorth",0.53,0.99
+unimodal,rotate,"C host binary, reorth",0.54,0.99
+unimodal,rotate,"C host binary, reorth",0.55,0.99
+unimodal,rotate,"C host binary, reorth",0.56,0.99
+unimodal,rotate,"C host binary, reorth",0.57,0.99
+unimodal,rotate,"C host binary, reorth",0.58,0.994
+unimodal,rotate,"C host binary, reorth",0.59,0.994
+unimodal,rotate,"C host binary, reorth",0.6,0.994
+unimodal,rotate,"C host binary, reorth",0.61,0.996
+unimodal,rotate,"C host binary, reorth",0.62,0.996
+unimodal,rotate,"C host binary, reorth",0.63,0.996
+unimodal,rotate,"C host binary, reorth",0.64,0.998
+unimodal,rotate,"C host binary, reorth",0.65,0.998
+unimodal,rotate,"C host binary, reorth",0.66,0.998
+unimodal,rotate,"C host binary, reorth",0.67,0.998
+unimodal,rotate,"C host binary, reorth",0.68,0.998
+unimodal,rotate,"C host binary, reorth",0.69,0.998
+unimodal,rotate,"C host binary, reorth",0.7,0.998
+unimodal,rotate,"C host binary, reorth",0.71,0.998
+unimodal,rotate,"C host binary, reorth",0.72,0.998
+unimodal,rotate,"C host binary, reorth",0.73,0.998
+unimodal,rotate,"C host binary, reorth",0.74,0.998
+unimodal,rotate,"C host binary, reorth",0.75,0.998
+unimodal,rotate,"C host binary, reorth",0.76,0.998
+unimodal,rotate,"C host binary, reorth",0.77,0.998
+unimodal,rotate,"C host binary, reorth",0.78,0.998
+unimodal,rotate,"C host binary, reorth",0.79,0.998
+unimodal,rotate,"C host binary, reorth",0.8,0.998
+unimodal,rotate,"C host binary, reorth",0.81,0.998
+unimodal,rotate,"C host binary, reorth",0.82,0.998
+unimodal,rotate,"C host binary, reorth",0.83,0.998
+unimodal,rotate,"C host binary, reorth",0.84,0.998
+unimodal,rotate,"C host binary, reorth",0.85,0.998
+unimodal,rotate,"C host binary, reorth",0.86,0.998
+unimodal,rotate,"C host binary, reorth",0.87,0.998
+unimodal,rotate,"C host binary, reorth",0.88,0.998
+unimodal,rotate,"C host binary, reorth",0.89,1.0
+unimodal,rotate,"C host binary, reorth",0.9,1.0
+unimodal,rotate,"C host binary, reorth",0.91,1.0
+unimodal,rotate,"C host binary, reorth",0.92,1.0
+unimodal,rotate,"C host binary, reorth",0.93,1.0
+unimodal,rotate,"C host binary, reorth",0.94,1.0
+unimodal,rotate,"C host binary, reorth",0.95,1.0
+unimodal,rotate,"C host binary, reorth",0.96,1.0
+unimodal,rotate,"C host binary, reorth",0.97,1.0
+unimodal,rotate,"C host binary, reorth",0.98,1.0
+unimodal,rotate,"C host binary, reorth",0.99,1.0
+unimodal,rotate,"C host binary, reorth",1.0,1.0
+unimodal,spike,"C host binary, no reorth",0.0,0.166667
+unimodal,spike,"C host binary, no reorth",0.01,0.633333
+unimodal,spike,"C host binary, no reorth",0.02,0.741667
+unimodal,spike,"C host binary, no reorth",0.03,0.85
+unimodal,spike,"C host binary, no reorth",0.04,0.908333
+unimodal,spike,"C host binary, no reorth",0.05,0.925
+unimodal,spike,"C host binary, no reorth",0.06,0.941667
+unimodal,spike,"C host binary, no reorth",0.07,0.966667
+unimodal,spike,"C host binary, no reorth",0.08,0.966667
+unimodal,spike,"C host binary, no reorth",0.09,0.966667
+unimodal,spike,"C host binary, no reorth",0.1,0.975
+unimodal,spike,"C host binary, no reorth",0.11,0.983333
+unimodal,spike,"C host binary, no reorth",0.12,0.991667
+unimodal,spike,"C host binary, no reorth",0.13,0.991667
+unimodal,spike,"C host binary, no reorth",0.14,0.991667
+unimodal,spike,"C host binary, no reorth",0.15,0.991667
+unimodal,spike,"C host binary, no reorth",0.16,0.991667
+unimodal,spike,"C host binary, no reorth",0.17,0.991667
+unimodal,spike,"C host binary, no reorth",0.18,1.0
+unimodal,spike,"C host binary, no reorth",0.19,1.0
+unimodal,spike,"C host binary, no reorth",0.2,1.0
+unimodal,spike,"C host binary, no reorth",0.21,1.0
+unimodal,spike,"C host binary, no reorth",0.22,1.0
+unimodal,spike,"C host binary, no reorth",0.23,1.0
+unimodal,spike,"C host binary, no reorth",0.24,1.0
+unimodal,spike,"C host binary, no reorth",0.25,1.0
+unimodal,spike,"C host binary, no reorth",0.26,1.0
+unimodal,spike,"C host binary, no reorth",0.27,1.0
+unimodal,spike,"C host binary, no reorth",0.28,1.0
+unimodal,spike,"C host binary, no reorth",0.29,1.0
+unimodal,spike,"C host binary, no reorth",0.3,1.0
+unimodal,spike,"C host binary, no reorth",0.31,1.0
+unimodal,spike,"C host binary, no reorth",0.32,1.0
+unimodal,spike,"C host binary, no reorth",0.33,1.0
+unimodal,spike,"C host binary, no reorth",0.34,1.0
+unimodal,spike,"C host binary, no reorth",0.35,1.0
+unimodal,spike,"C host binary, no reorth",0.36,1.0
+unimodal,spike,"C host binary, no reorth",0.37,1.0
+unimodal,spike,"C host binary, no reorth",0.38,1.0
+unimodal,spike,"C host binary, no reorth",0.39,1.0
+unimodal,spike,"C host binary, no reorth",0.4,1.0
+unimodal,spike,"C host binary, no reorth",0.41,1.0
+unimodal,spike,"C host binary, no reorth",0.42,1.0
+unimodal,spike,"C host binary, no reorth",0.43,1.0
+unimodal,spike,"C host binary, no reorth",0.44,1.0
+unimodal,spike,"C host binary, no reorth",0.45,1.0
+unimodal,spike,"C host binary, no reorth",0.46,1.0
+unimodal,spike,"C host binary, no reorth",0.47,1.0
+unimodal,spike,"C host binary, no reorth",0.48,1.0
+unimodal,spike,"C host binary, no reorth",0.49,1.0
+unimodal,spike,"C host binary, no reorth",0.5,1.0
+unimodal,spike,"C host binary, no reorth",0.51,1.0
+unimodal,spike,"C host binary, no reorth",0.52,1.0
+unimodal,spike,"C host binary, no reorth",0.53,1.0
+unimodal,spike,"C host binary, no reorth",0.54,1.0
+unimodal,spike,"C host binary, no reorth",0.55,1.0
+unimodal,spike,"C host binary, no reorth",0.56,1.0
+unimodal,spike,"C host binary, no reorth",0.57,1.0
+unimodal,spike,"C host binary, no reorth",0.58,1.0
+unimodal,spike,"C host binary, no reorth",0.59,1.0
+unimodal,spike,"C host binary, no reorth",0.6,1.0
+unimodal,spike,"C host binary, no reorth",0.61,1.0
+unimodal,spike,"C host binary, no reorth",0.62,1.0
+unimodal,spike,"C host binary, no reorth",0.63,1.0
+unimodal,spike,"C host binary, no reorth",0.64,1.0
+unimodal,spike,"C host binary, no reorth",0.65,1.0
+unimodal,spike,"C host binary, no reorth",0.66,1.0
+unimodal,spike,"C host binary, no reorth",0.67,1.0
+unimodal,spike,"C host binary, no reorth",0.68,1.0
+unimodal,spike,"C host binary, no reorth",0.69,1.0
+unimodal,spike,"C host binary, no reorth",0.7,1.0
+unimodal,spike,"C host binary, no reorth",0.71,1.0
+unimodal,spike,"C host binary, no reorth",0.72,1.0
+unimodal,spike,"C host binary, no reorth",0.73,1.0
+unimodal,spike,"C host binary, no reorth",0.74,1.0
+unimodal,spike,"C host binary, no reorth",0.75,1.0
+unimodal,spike,"C host binary, no reorth",0.76,1.0
+unimodal,spike,"C host binary, no reorth",0.77,1.0
+unimodal,spike,"C host binary, no reorth",0.78,1.0
+unimodal,spike,"C host binary, no reorth",0.79,1.0
+unimodal,spike,"C host binary, no reorth",0.8,1.0
+unimodal,spike,"C host binary, no reorth",0.81,1.0
+unimodal,spike,"C host binary, no reorth",0.82,1.0
+unimodal,spike,"C host binary, no reorth",0.83,1.0
+unimodal,spike,"C host binary, no reorth",0.84,1.0
+unimodal,spike,"C host binary, no reorth",0.85,1.0
+unimodal,spike,"C host binary, no reorth",0.86,1.0
+unimodal,spike,"C host binary, no reorth",0.87,1.0
+unimodal,spike,"C host binary, no reorth",0.88,1.0
+unimodal,spike,"C host binary, no reorth",0.89,1.0
+unimodal,spike,"C host binary, no reorth",0.9,1.0
+unimodal,spike,"C host binary, no reorth",0.91,1.0
+unimodal,spike,"C host binary, no reorth",0.92,1.0
+unimodal,spike,"C host binary, no reorth",0.93,1.0
+unimodal,spike,"C host binary, no reorth",0.94,1.0
+unimodal,spike,"C host binary, no reorth",0.95,1.0
+unimodal,spike,"C host binary, no reorth",0.96,1.0
+unimodal,spike,"C host binary, no reorth",0.97,1.0
+unimodal,spike,"C host binary, no reorth",0.98,1.0
+unimodal,spike,"C host binary, no reorth",0.99,1.0
+unimodal,spike,"C host binary, no reorth",1.0,1.0
+unimodal,rotate,"C host binary, no reorth",0.0,0.41
+unimodal,rotate,"C host binary, no reorth",0.01,0.734
+unimodal,rotate,"C host binary, no reorth",0.02,0.8
+unimodal,rotate,"C host binary, no reorth",0.03,0.82
+unimodal,rotate,"C host binary, no reorth",0.04,0.844
+unimodal,rotate,"C host binary, no reorth",0.05,0.866
+unimodal,rotate,"C host binary, no reorth",0.06,0.878
+unimodal,rotate,"C host binary, no reorth",0.07,0.886
+unimodal,rotate,"C host binary, no reorth",0.08,0.894
+unimodal,rotate,"C host binary, no reorth",0.09,0.898
+unimodal,rotate,"C host binary, no reorth",0.1,0.902
+unimodal,rotate,"C host binary, no reorth",0.11,0.906
+unimodal,rotate,"C host binary, no reorth",0.12,0.918
+unimodal,rotate,"C host binary, no reorth",0.13,0.922
+unimodal,rotate,"C host binary, no reorth",0.14,0.924
+unimodal,rotate,"C host binary, no reorth",0.15,0.924
+unimodal,rotate,"C host binary, no reorth",0.16,0.928
+unimodal,rotate,"C host binary, no reorth",0.17,0.928
+unimodal,rotate,"C host binary, no reorth",0.18,0.934
+unimodal,rotate,"C host binary, no reorth",0.19,0.934
+unimodal,rotate,"C host binary, no reorth",0.2,0.934
+unimodal,rotate,"C host binary, no reorth",0.21,0.936
+unimodal,rotate,"C host binary, no reorth",0.22,0.938
+unimodal,rotate,"C host binary, no reorth",0.23,0.938
+unimodal,rotate,"C host binary, no reorth",0.24,0.94
+unimodal,rotate,"C host binary, no reorth",0.25,0.948
+unimodal,rotate,"C host binary, no reorth",0.26,0.952
+unimodal,rotate,"C host binary, no reorth",0.27,0.956
+unimodal,rotate,"C host binary, no reorth",0.28,0.956
+unimodal,rotate,"C host binary, no reorth",0.29,0.958
+unimodal,rotate,"C host binary, no reorth",0.3,0.958
+unimodal,rotate,"C host binary, no reorth",0.31,0.958
+unimodal,rotate,"C host binary, no reorth",0.32,0.958
+unimodal,rotate,"C host binary, no reorth",0.33,0.958
+unimodal,rotate,"C host binary, no reorth",0.34,0.962
+unimodal,rotate,"C host binary, no reorth",0.35,0.966
+unimodal,rotate,"C host binary, no reorth",0.36,0.966
+unimodal,rotate,"C host binary, no reorth",0.37,0.968
+unimodal,rotate,"C host binary, no reorth",0.38,0.97
+unimodal,rotate,"C host binary, no reorth",0.39,0.974
+unimodal,rotate,"C host binary, no reorth",0.4,0.974
+unimodal,rotate,"C host binary, no reorth",0.41,0.974
+unimodal,rotate,"C host binary, no reorth",0.42,0.976
+unimodal,rotate,"C host binary, no reorth",0.43,0.976
+unimodal,rotate,"C host binary, no reorth",0.44,0.978
+unimodal,rotate,"C host binary, no reorth",0.45,0.982
+unimodal,rotate,"C host binary, no reorth",0.46,0.982
+unimodal,rotate,"C host binary, no reorth",0.47,0.986
+unimodal,rotate,"C host binary, no reorth",0.48,0.986
+unimodal,rotate,"C host binary, no reorth",0.49,0.988
+unimodal,rotate,"C host binary, no reorth",0.5,0.99
+unimodal,rotate,"C host binary, no reorth",0.51,0.99
+unimodal,rotate,"C host binary, no reorth",0.52,0.99
+unimodal,rotate,"C host binary, no reorth",0.53,0.99
+unimodal,rotate,"C host binary, no reorth",0.54,0.99
+unimodal,rotate,"C host binary, no reorth",0.55,0.99
+unimodal,rotate,"C host binary, no reorth",0.56,0.99
+unimodal,rotate,"C host binary, no reorth",0.57,0.99
+unimodal,rotate,"C host binary, no reorth",0.58,0.994
+unimodal,rotate,"C host binary, no reorth",0.59,0.994
+unimodal,rotate,"C host binary, no reorth",0.6,0.994
+unimodal,rotate,"C host binary, no reorth",0.61,0.996
+unimodal,rotate,"C host binary, no reorth",0.62,0.996
+unimodal,rotate,"C host binary, no reorth",0.63,0.996
+unimodal,rotate,"C host binary, no reorth",0.64,0.998
+unimodal,rotate,"C host binary, no reorth",0.65,0.998
+unimodal,rotate,"C host binary, no reorth",0.66,0.998
+unimodal,rotate,"C host binary, no reorth",0.67,0.998
+unimodal,rotate,"C host binary, no reorth",0.68,0.998
+unimodal,rotate,"C host binary, no reorth",0.69,0.998
+unimodal,rotate,"C host binary, no reorth",0.7,0.998
+unimodal,rotate,"C host binary, no reorth",0.71,0.998
+unimodal,rotate,"C host binary, no reorth",0.72,0.998
+unimodal,rotate,"C host binary, no reorth",0.73,0.998
+unimodal,rotate,"C host binary, no reorth",0.74,0.998
+unimodal,rotate,"C host binary, no reorth",0.75,0.998
+unimodal,rotate,"C host binary, no reorth",0.76,0.998
+unimodal,rotate,"C host binary, no reorth",0.77,0.998
+unimodal,rotate,"C host binary, no reorth",0.78,0.998
+unimodal,rotate,"C host binary, no reorth",0.79,0.998
+unimodal,rotate,"C host binary, no reorth",0.8,0.998
+unimodal,rotate,"C host binary, no reorth",0.81,0.998
+unimodal,rotate,"C host binary, no reorth",0.82,0.998
+unimodal,rotate,"C host binary, no reorth",0.83,0.998
+unimodal,rotate,"C host binary, no reorth",0.84,0.998
+unimodal,rotate,"C host binary, no reorth",0.85,0.998
+unimodal,rotate,"C host binary, no reorth",0.86,0.998
+unimodal,rotate,"C host binary, no reorth",0.87,0.998
+unimodal,rotate,"C host binary, no reorth",0.88,0.998
+unimodal,rotate,"C host binary, no reorth",0.89,1.0
+unimodal,rotate,"C host binary, no reorth",0.9,1.0
+unimodal,rotate,"C host binary, no reorth",0.91,1.0
+unimodal,rotate,"C host binary, no reorth",0.92,1.0
+unimodal,rotate,"C host binary, no reorth",0.93,1.0
+unimodal,rotate,"C host binary, no reorth",0.94,1.0
+unimodal,rotate,"C host binary, no reorth",0.95,1.0
+unimodal,rotate,"C host binary, no reorth",0.96,1.0
+unimodal,rotate,"C host binary, no reorth",0.97,1.0
+unimodal,rotate,"C host binary, no reorth",0.98,1.0
+unimodal,rotate,"C host binary, no reorth",0.99,1.0
+unimodal,rotate,"C host binary, no reorth",1.0,1.0
+unimodal,spike,"C host binary, float32, reorth",0.0,0.166667
+unimodal,spike,"C host binary, float32, reorth",0.01,0.633333
+unimodal,spike,"C host binary, float32, reorth",0.02,0.741667
+unimodal,spike,"C host binary, float32, reorth",0.03,0.85
+unimodal,spike,"C host binary, float32, reorth",0.04,0.908333
+unimodal,spike,"C host binary, float32, reorth",0.05,0.925
+unimodal,spike,"C host binary, float32, reorth",0.06,0.941667
+unimodal,spike,"C host binary, float32, reorth",0.07,0.966667
+unimodal,spike,"C host binary, float32, reorth",0.08,0.966667
+unimodal,spike,"C host binary, float32, reorth",0.09,0.966667
+unimodal,spike,"C host binary, float32, reorth",0.1,0.975
+unimodal,spike,"C host binary, float32, reorth",0.11,0.983333
+unimodal,spike,"C host binary, float32, reorth",0.12,0.991667
+unimodal,spike,"C host binary, float32, reorth",0.13,0.991667
+unimodal,spike,"C host binary, float32, reorth",0.14,0.991667
+unimodal,spike,"C host binary, float32, reorth",0.15,0.991667
+unimodal,spike,"C host binary, float32, reorth",0.16,0.991667
+unimodal,spike,"C host binary, float32, reorth",0.17,0.991667
+unimodal,spike,"C host binary, float32, reorth",0.18,1.0
+unimodal,spike,"C host binary, float32, reorth",0.19,1.0
+unimodal,spike,"C host binary, float32, reorth",0.2,1.0
+unimodal,spike,"C host binary, float32, reorth",0.21,1.0
+unimodal,spike,"C host binary, float32, reorth",0.22,1.0
+unimodal,spike,"C host binary, float32, reorth",0.23,1.0
+unimodal,spike,"C host binary, float32, reorth",0.24,1.0
+unimodal,spike,"C host binary, float32, reorth",0.25,1.0
+unimodal,spike,"C host binary, float32, reorth",0.26,1.0
+unimodal,spike,"C host binary, float32, reorth",0.27,1.0
+unimodal,spike,"C host binary, float32, reorth",0.28,1.0
+unimodal,spike,"C host binary, float32, reorth",0.29,1.0
+unimodal,spike,"C host binary, float32, reorth",0.3,1.0
+unimodal,spike,"C host binary, float32, reorth",0.31,1.0
+unimodal,spike,"C host binary, float32, reorth",0.32,1.0
+unimodal,spike,"C host binary, float32, reorth",0.33,1.0
+unimodal,spike,"C host binary, float32, reorth",0.34,1.0
+unimodal,spike,"C host binary, float32, reorth",0.35,1.0
+unimodal,spike,"C host binary, float32, reorth",0.36,1.0
+unimodal,spike,"C host binary, float32, reorth",0.37,1.0
+unimodal,spike,"C host binary, float32, reorth",0.38,1.0
+unimodal,spike,"C host binary, float32, reorth",0.39,1.0
+unimodal,spike,"C host binary, float32, reorth",0.4,1.0
+unimodal,spike,"C host binary, float32, reorth",0.41,1.0
+unimodal,spike,"C host binary, float32, reorth",0.42,1.0
+unimodal,spike,"C host binary, float32, reorth",0.43,1.0
+unimodal,spike,"C host binary, float32, reorth",0.44,1.0
+unimodal,spike,"C host binary, float32, reorth",0.45,1.0
+unimodal,spike,"C host binary, float32, reorth",0.46,1.0
+unimodal,spike,"C host binary, float32, reorth",0.47,1.0
+unimodal,spike,"C host binary, float32, reorth",0.48,1.0
+unimodal,spike,"C host binary, float32, reorth",0.49,1.0
+unimodal,spike,"C host binary, float32, reorth",0.5,1.0
+unimodal,spike,"C host binary, float32, reorth",0.51,1.0
+unimodal,spike,"C host binary, float32, reorth",0.52,1.0
+unimodal,spike,"C host binary, float32, reorth",0.53,1.0
+unimodal,spike,"C host binary, float32, reorth",0.54,1.0
+unimodal,spike,"C host binary, float32, reorth",0.55,1.0
+unimodal,spike,"C host binary, float32, reorth",0.56,1.0
+unimodal,spike,"C host binary, float32, reorth",0.57,1.0
+unimodal,spike,"C host binary, float32, reorth",0.58,1.0
+unimodal,spike,"C host binary, float32, reorth",0.59,1.0
+unimodal,spike,"C host binary, float32, reorth",0.6,1.0
+unimodal,spike,"C host binary, float32, reorth",0.61,1.0
+unimodal,spike,"C host binary, float32, reorth",0.62,1.0
+unimodal,spike,"C host binary, float32, reorth",0.63,1.0
+unimodal,spike,"C host binary, float32, reorth",0.64,1.0
+unimodal,spike,"C host binary, float32, reorth",0.65,1.0
+unimodal,spike,"C host binary, float32, reorth",0.66,1.0
+unimodal,spike,"C host binary, float32, reorth",0.67,1.0
+unimodal,spike,"C host binary, float32, reorth",0.68,1.0
+unimodal,spike,"C host binary, float32, reorth",0.69,1.0
+unimodal,spike,"C host binary, float32, reorth",0.7,1.0
+unimodal,spike,"C host binary, float32, reorth",0.71,1.0
+unimodal,spike,"C host binary, float32, reorth",0.72,1.0
+unimodal,spike,"C host binary, float32, reorth",0.73,1.0
+unimodal,spike,"C host binary, float32, reorth",0.74,1.0
+unimodal,spike,"C host binary, float32, reorth",0.75,1.0
+unimodal,spike,"C host binary, float32, reorth",0.76,1.0
+unimodal,spike,"C host binary, float32, reorth",0.77,1.0
+unimodal,spike,"C host binary, float32, reorth",0.78,1.0
+unimodal,spike,"C host binary, float32, reorth",0.79,1.0
+unimodal,spike,"C host binary, float32, reorth",0.8,1.0
+unimodal,spike,"C host binary, float32, reorth",0.81,1.0
+unimodal,spike,"C host binary, float32, reorth",0.82,1.0
+unimodal,spike,"C host binary, float32, reorth",0.83,1.0
+unimodal,spike,"C host binary, float32, reorth",0.84,1.0
+unimodal,spike,"C host binary, float32, reorth",0.85,1.0
+unimodal,spike,"C host binary, float32, reorth",0.86,1.0
+unimodal,spike,"C host binary, float32, reorth",0.87,1.0
+unimodal,spike,"C host binary, float32, reorth",0.88,1.0
+unimodal,spike,"C host binary, float32, reorth",0.89,1.0
+unimodal,spike,"C host binary, float32, reorth",0.9,1.0
+unimodal,spike,"C host binary, float32, reorth",0.91,1.0
+unimodal,spike,"C host binary, float32, reorth",0.92,1.0
+unimodal,spike,"C host binary, float32, reorth",0.93,1.0
+unimodal,spike,"C host binary, float32, reorth",0.94,1.0
+unimodal,spike,"C host binary, float32, reorth",0.95,1.0
+unimodal,spike,"C host binary, float32, reorth",0.96,1.0
+unimodal,spike,"C host binary, float32, reorth",0.97,1.0
+unimodal,spike,"C host binary, float32, reorth",0.98,1.0
+unimodal,spike,"C host binary, float32, reorth",0.99,1.0
+unimodal,spike,"C host binary, float32, reorth",1.0,1.0
+unimodal,rotate,"C host binary, float32, reorth",0.0,0.41
+unimodal,rotate,"C host binary, float32, reorth",0.01,0.734
+unimodal,rotate,"C host binary, float32, reorth",0.02,0.8
+unimodal,rotate,"C host binary, float32, reorth",0.03,0.82
+unimodal,rotate,"C host binary, float32, reorth",0.04,0.844
+unimodal,rotate,"C host binary, float32, reorth",0.05,0.866
+unimodal,rotate,"C host binary, float32, reorth",0.06,0.878
+unimodal,rotate,"C host binary, float32, reorth",0.07,0.886
+unimodal,rotate,"C host binary, float32, reorth",0.08,0.894
+unimodal,rotate,"C host binary, float32, reorth",0.09,0.898
+unimodal,rotate,"C host binary, float32, reorth",0.1,0.902
+unimodal,rotate,"C host binary, float32, reorth",0.11,0.906
+unimodal,rotate,"C host binary, float32, reorth",0.12,0.918
+unimodal,rotate,"C host binary, float32, reorth",0.13,0.922
+unimodal,rotate,"C host binary, float32, reorth",0.14,0.924
+unimodal,rotate,"C host binary, float32, reorth",0.15,0.924
+unimodal,rotate,"C host binary, float32, reorth",0.16,0.928
+unimodal,rotate,"C host binary, float32, reorth",0.17,0.928
+unimodal,rotate,"C host binary, float32, reorth",0.18,0.934
+unimodal,rotate,"C host binary, float32, reorth",0.19,0.934
+unimodal,rotate,"C host binary, float32, reorth",0.2,0.934
+unimodal,rotate,"C host binary, float32, reorth",0.21,0.936
+unimodal,rotate,"C host binary, float32, reorth",0.22,0.938
+unimodal,rotate,"C host binary, float32, reorth",0.23,0.938
+unimodal,rotate,"C host binary, float32, reorth",0.24,0.94
+unimodal,rotate,"C host binary, float32, reorth",0.25,0.948
+unimodal,rotate,"C host binary, float32, reorth",0.26,0.952
+unimodal,rotate,"C host binary, float32, reorth",0.27,0.956
+unimodal,rotate,"C host binary, float32, reorth",0.28,0.956
+unimodal,rotate,"C host binary, float32, reorth",0.29,0.958
+unimodal,rotate,"C host binary, float32, reorth",0.3,0.958
+unimodal,rotate,"C host binary, float32, reorth",0.31,0.958
+unimodal,rotate,"C host binary, float32, reorth",0.32,0.958
+unimodal,rotate,"C host binary, float32, reorth",0.33,0.958
+unimodal,rotate,"C host binary, float32, reorth",0.34,0.962
+unimodal,rotate,"C host binary, float32, reorth",0.35,0.966
+unimodal,rotate,"C host binary, float32, reorth",0.36,0.966
+unimodal,rotate,"C host binary, float32, reorth",0.37,0.968
+unimodal,rotate,"C host binary, float32, reorth",0.38,0.97
+unimodal,rotate,"C host binary, float32, reorth",0.39,0.974
+unimodal,rotate,"C host binary, float32, reorth",0.4,0.974
+unimodal,rotate,"C host binary, float32, reorth",0.41,0.974
+unimodal,rotate,"C host binary, float32, reorth",0.42,0.976
+unimodal,rotate,"C host binary, float32, reorth",0.43,0.976
+unimodal,rotate,"C host binary, float32, reorth",0.44,0.978
+unimodal,rotate,"C host binary, float32, reorth",0.45,0.982
+unimodal,rotate,"C host binary, float32, reorth",0.46,0.982
+unimodal,rotate,"C host binary, float32, reorth",0.47,0.986
+unimodal,rotate,"C host binary, float32, reorth",0.48,0.986
+unimodal,rotate,"C host binary, float32, reorth",0.49,0.988
+unimodal,rotate,"C host binary, float32, reorth",0.5,0.99
+unimodal,rotate,"C host binary, float32, reorth",0.51,0.99
+unimodal,rotate,"C host binary, float32, reorth",0.52,0.99
+unimodal,rotate,"C host binary, float32, reorth",0.53,0.99
+unimodal,rotate,"C host binary, float32, reorth",0.54,0.99
+unimodal,rotate,"C host binary, float32, reorth",0.55,0.99
+unimodal,rotate,"C host binary, float32, reorth",0.56,0.99
+unimodal,rotate,"C host binary, float32, reorth",0.57,0.99
+unimodal,rotate,"C host binary, float32, reorth",0.58,0.994
+unimodal,rotate,"C host binary, float32, reorth",0.59,0.994
+unimodal,rotate,"C host binary, float32, reorth",0.6,0.994
+unimodal,rotate,"C host binary, float32, reorth",0.61,0.996
+unimodal,rotate,"C host binary, float32, reorth",0.62,0.996
+unimodal,rotate,"C host binary, float32, reorth",0.63,0.996
+unimodal,rotate,"C host binary, float32, reorth",0.64,0.998
+unimodal,rotate,"C host binary, float32, reorth",0.65,0.998
+unimodal,rotate,"C host binary, float32, reorth",0.66,0.998
+unimodal,rotate,"C host binary, float32, reorth",0.67,0.998
+unimodal,rotate,"C host binary, float32, reorth",0.68,0.998
+unimodal,rotate,"C host binary, float32, reorth",0.69,0.998
+unimodal,rotate,"C host binary, float32, reorth",0.7,0.998
+unimodal,rotate,"C host binary, float32, reorth",0.71,0.998
+unimodal,rotate,"C host binary, float32, reorth",0.72,0.998
+unimodal,rotate,"C host binary, float32, reorth",0.73,0.998
+unimodal,rotate,"C host binary, float32, reorth",0.74,0.998
+unimodal,rotate,"C host binary, float32, reorth",0.75,0.998
+unimodal,rotate,"C host binary, float32, reorth",0.76,0.998
+unimodal,rotate,"C host binary, float32, reorth",0.77,0.998
+unimodal,rotate,"C host binary, float32, reorth",0.78,0.998
+unimodal,rotate,"C host binary, float32, reorth",0.79,0.998
+unimodal,rotate,"C host binary, float32, reorth",0.8,0.998
+unimodal,rotate,"C host binary, float32, reorth",0.81,0.998
+unimodal,rotate,"C host binary, float32, reorth",0.82,0.998
+unimodal,rotate,"C host binary, float32, reorth",0.83,0.998
+unimodal,rotate,"C host binary, float32, reorth",0.84,0.998
+unimodal,rotate,"C host binary, float32, reorth",0.85,0.998
+unimodal,rotate,"C host binary, float32, reorth",0.86,0.998
+unimodal,rotate,"C host binary, float32, reorth",0.87,0.998
+unimodal,rotate,"C host binary, float32, reorth",0.88,0.998
+unimodal,rotate,"C host binary, float32, reorth",0.89,1.0
+unimodal,rotate,"C host binary, float32, reorth",0.9,1.0
+unimodal,rotate,"C host binary, float32, reorth",0.91,1.0
+unimodal,rotate,"C host binary, float32, reorth",0.92,1.0
+unimodal,rotate,"C host binary, float32, reorth",0.93,1.0
+unimodal,rotate,"C host binary, float32, reorth",0.94,1.0
+unimodal,rotate,"C host binary, float32, reorth",0.95,1.0
+unimodal,rotate,"C host binary, float32, reorth",0.96,1.0
+unimodal,rotate,"C host binary, float32, reorth",0.97,1.0
+unimodal,rotate,"C host binary, float32, reorth",0.98,1.0
+unimodal,rotate,"C host binary, float32, reorth",0.99,1.0
+unimodal,rotate,"C host binary, float32, reorth",1.0,1.0
+multimode,spike,batch full SVD (warm-up),0.0,0.016667
+multimode,spike,batch full SVD (warm-up),0.01,0.033333
+multimode,spike,batch full SVD (warm-up),0.02,0.05
+multimode,spike,batch full SVD (warm-up),0.03,0.066667
+multimode,spike,batch full SVD (warm-up),0.04,0.091667
+multimode,spike,batch full SVD (warm-up),0.05,0.116667
+multimode,spike,batch full SVD (warm-up),0.06,0.125
+multimode,spike,batch full SVD (warm-up),0.07,0.133333
+multimode,spike,batch full SVD (warm-up),0.08,0.141667
+multimode,spike,batch full SVD (warm-up),0.09,0.141667
+multimode,spike,batch full SVD (warm-up),0.1,0.15
+multimode,spike,batch full SVD (warm-up),0.11,0.175
+multimode,spike,batch full SVD (warm-up),0.12,0.183333
+multimode,spike,batch full SVD (warm-up),0.13,0.208333
+multimode,spike,batch full SVD (warm-up),0.14,0.233333
+multimode,spike,batch full SVD (warm-up),0.15,0.233333
+multimode,spike,batch full SVD (warm-up),0.16,0.233333
+multimode,spike,batch full SVD (warm-up),0.17,0.258333
+multimode,spike,batch full SVD (warm-up),0.18,0.275
+multimode,spike,batch full SVD (warm-up),0.19,0.3
+multimode,spike,batch full SVD (warm-up),0.2,0.308333
+multimode,spike,batch full SVD (warm-up),0.21,0.325
+multimode,spike,batch full SVD (warm-up),0.22,0.341667
+multimode,spike,batch full SVD (warm-up),0.23,0.358333
+multimode,spike,batch full SVD (warm-up),0.24,0.375
+multimode,spike,batch full SVD (warm-up),0.25,0.391667
+multimode,spike,batch full SVD (warm-up),0.26,0.416667
+multimode,spike,batch full SVD (warm-up),0.27,0.416667
+multimode,spike,batch full SVD (warm-up),0.28,0.433333
+multimode,spike,batch full SVD (warm-up),0.29,0.433333
+multimode,spike,batch full SVD (warm-up),0.3,0.45
+multimode,spike,batch full SVD (warm-up),0.31,0.475
+multimode,spike,batch full SVD (warm-up),0.32,0.483333
+multimode,spike,batch full SVD (warm-up),0.33,0.5
+multimode,spike,batch full SVD (warm-up),0.34,0.508333
+multimode,spike,batch full SVD (warm-up),0.35,0.533333
+multimode,spike,batch full SVD (warm-up),0.36,0.533333
+multimode,spike,batch full SVD (warm-up),0.37,0.541667
+multimode,spike,batch full SVD (warm-up),0.38,0.541667
+multimode,spike,batch full SVD (warm-up),0.39,0.55
+multimode,spike,batch full SVD (warm-up),0.4,0.566667
+multimode,spike,batch full SVD (warm-up),0.41,0.591667
+multimode,spike,batch full SVD (warm-up),0.42,0.608333
+multimode,spike,batch full SVD (warm-up),0.43,0.616667
+multimode,spike,batch full SVD (warm-up),0.44,0.641667
+multimode,spike,batch full SVD (warm-up),0.45,0.658333
+multimode,spike,batch full SVD (warm-up),0.46,0.658333
+multimode,spike,batch full SVD (warm-up),0.47,0.666667
+multimode,spike,batch full SVD (warm-up),0.48,0.666667
+multimode,spike,batch full SVD (warm-up),0.49,0.675
+multimode,spike,batch full SVD (warm-up),0.5,0.683333
+multimode,spike,batch full SVD (warm-up),0.51,0.7
+multimode,spike,batch full SVD (warm-up),0.52,0.708333
+multimode,spike,batch full SVD (warm-up),0.53,0.708333
+multimode,spike,batch full SVD (warm-up),0.54,0.716667
+multimode,spike,batch full SVD (warm-up),0.55,0.733333
+multimode,spike,batch full SVD (warm-up),0.56,0.75
+multimode,spike,batch full SVD (warm-up),0.57,0.766667
+multimode,spike,batch full SVD (warm-up),0.58,0.791667
+multimode,spike,batch full SVD (warm-up),0.59,0.8
+multimode,spike,batch full SVD (warm-up),0.6,0.8
+multimode,spike,batch full SVD (warm-up),0.61,0.8
+multimode,spike,batch full SVD (warm-up),0.62,0.808333
+multimode,spike,batch full SVD (warm-up),0.63,0.816667
+multimode,spike,batch full SVD (warm-up),0.64,0.833333
+multimode,spike,batch full SVD (warm-up),0.65,0.85
+multimode,spike,batch full SVD (warm-up),0.66,0.858333
+multimode,spike,batch full SVD (warm-up),0.67,0.875
+multimode,spike,batch full SVD (warm-up),0.68,0.916667
+multimode,spike,batch full SVD (warm-up),0.69,0.916667
+multimode,spike,batch full SVD (warm-up),0.7,0.933333
+multimode,spike,batch full SVD (warm-up),0.71,0.958333
+multimode,spike,batch full SVD (warm-up),0.72,0.958333
+multimode,spike,batch full SVD (warm-up),0.73,0.958333
+multimode,spike,batch full SVD (warm-up),0.74,0.966667
+multimode,spike,batch full SVD (warm-up),0.75,0.966667
+multimode,spike,batch full SVD (warm-up),0.76,0.966667
+multimode,spike,batch full SVD (warm-up),0.77,0.966667
+multimode,spike,batch full SVD (warm-up),0.78,0.966667
+multimode,spike,batch full SVD (warm-up),0.79,0.966667
+multimode,spike,batch full SVD (warm-up),0.8,0.966667
+multimode,spike,batch full SVD (warm-up),0.81,0.983333
+multimode,spike,batch full SVD (warm-up),0.82,0.991667
+multimode,spike,batch full SVD (warm-up),0.83,0.991667
+multimode,spike,batch full SVD (warm-up),0.84,1.0
+multimode,spike,batch full SVD (warm-up),0.85,1.0
+multimode,spike,batch full SVD (warm-up),0.86,1.0
+multimode,spike,batch full SVD (warm-up),0.87,1.0
+multimode,spike,batch full SVD (warm-up),0.88,1.0
+multimode,spike,batch full SVD (warm-up),0.89,1.0
+multimode,spike,batch full SVD (warm-up),0.9,1.0
+multimode,spike,batch full SVD (warm-up),0.91,1.0
+multimode,spike,batch full SVD (warm-up),0.92,1.0
+multimode,spike,batch full SVD (warm-up),0.93,1.0
+multimode,spike,batch full SVD (warm-up),0.94,1.0
+multimode,spike,batch full SVD (warm-up),0.95,1.0
+multimode,spike,batch full SVD (warm-up),0.96,1.0
+multimode,spike,batch full SVD (warm-up),0.97,1.0
+multimode,spike,batch full SVD (warm-up),0.98,1.0
+multimode,spike,batch full SVD (warm-up),0.99,1.0
+multimode,spike,batch full SVD (warm-up),1.0,1.0
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.0,0.0
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.01,0.016667
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.02,0.058333
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.03,0.083333
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.04,0.091667
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.05,0.1
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.06,0.108333
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.07,0.116667
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.08,0.125
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.09,0.141667
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.1,0.15
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.11,0.191667
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.12,0.216667
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.13,0.241667
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.14,0.241667
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.15,0.241667
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.16,0.258333
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.17,0.266667
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.18,0.275
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.19,0.291667
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.2,0.325
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.21,0.341667
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.22,0.35
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.23,0.358333
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.24,0.358333
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.25,0.375
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.26,0.391667
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.27,0.416667
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.28,0.433333
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.29,0.441667
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.3,0.45
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.31,0.458333
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.32,0.475
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.33,0.5
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.34,0.508333
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.35,0.516667
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.36,0.516667
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.37,0.533333
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.38,0.55
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.39,0.583333
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.4,0.583333
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.41,0.591667
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.42,0.608333
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.43,0.616667
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.44,0.633333
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.45,0.633333
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.46,0.658333
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.47,0.666667
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.48,0.691667
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.49,0.691667
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.5,0.7
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.51,0.7
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.52,0.708333
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.53,0.716667
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.54,0.75
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.55,0.758333
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.56,0.775
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.57,0.791667
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.58,0.8
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.59,0.816667
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.6,0.825
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.61,0.85
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.62,0.858333
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.63,0.866667
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.64,0.866667
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.65,0.875
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.66,0.883333
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.67,0.891667
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.68,0.9
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.69,0.908333
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.7,0.925
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.71,0.941667
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.72,0.958333
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.73,0.966667
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.74,0.966667
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.75,0.966667
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.76,0.966667
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.77,0.966667
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.78,0.966667
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.79,0.966667
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.8,0.983333
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.81,0.983333
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.82,0.991667
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.83,0.991667
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.84,1.0
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.85,1.0
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.86,1.0
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.87,1.0
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.88,1.0
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.89,1.0
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.9,1.0
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.91,1.0
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.92,1.0
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.93,1.0
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.94,1.0
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.95,1.0
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.96,1.0
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.97,1.0
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.98,1.0
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.99,1.0
+multimode,spike,"batch full SVD (all-normal, uses labels)",1.0,1.0
+multimode,spike,"incremental, reorth",0.0,0.0
+multimode,spike,"incremental, reorth",0.01,0.025
+multimode,spike,"incremental, reorth",0.02,0.033333
+multimode,spike,"incremental, reorth",0.03,0.058333
+multimode,spike,"incremental, reorth",0.04,0.075
+multimode,spike,"incremental, reorth",0.05,0.091667
+multimode,spike,"incremental, reorth",0.06,0.1
+multimode,spike,"incremental, reorth",0.07,0.108333
+multimode,spike,"incremental, reorth",0.08,0.133333
+multimode,spike,"incremental, reorth",0.09,0.15
+multimode,spike,"incremental, reorth",0.1,0.166667
+multimode,spike,"incremental, reorth",0.11,0.183333
+multimode,spike,"incremental, reorth",0.12,0.191667
+multimode,spike,"incremental, reorth",0.13,0.225
+multimode,spike,"incremental, reorth",0.14,0.25
+multimode,spike,"incremental, reorth",0.15,0.258333
+multimode,spike,"incremental, reorth",0.16,0.266667
+multimode,spike,"incremental, reorth",0.17,0.275
+multimode,spike,"incremental, reorth",0.18,0.283333
+multimode,spike,"incremental, reorth",0.19,0.283333
+multimode,spike,"incremental, reorth",0.2,0.308333
+multimode,spike,"incremental, reorth",0.21,0.316667
+multimode,spike,"incremental, reorth",0.22,0.316667
+multimode,spike,"incremental, reorth",0.23,0.341667
+multimode,spike,"incremental, reorth",0.24,0.358333
+multimode,spike,"incremental, reorth",0.25,0.366667
+multimode,spike,"incremental, reorth",0.26,0.375
+multimode,spike,"incremental, reorth",0.27,0.383333
+multimode,spike,"incremental, reorth",0.28,0.4
+multimode,spike,"incremental, reorth",0.29,0.425
+multimode,spike,"incremental, reorth",0.3,0.45
+multimode,spike,"incremental, reorth",0.31,0.458333
+multimode,spike,"incremental, reorth",0.32,0.466667
+multimode,spike,"incremental, reorth",0.33,0.466667
+multimode,spike,"incremental, reorth",0.34,0.466667
+multimode,spike,"incremental, reorth",0.35,0.491667
+multimode,spike,"incremental, reorth",0.36,0.516667
+multimode,spike,"incremental, reorth",0.37,0.55
+multimode,spike,"incremental, reorth",0.38,0.566667
+multimode,spike,"incremental, reorth",0.39,0.575
+multimode,spike,"incremental, reorth",0.4,0.591667
+multimode,spike,"incremental, reorth",0.41,0.641667
+multimode,spike,"incremental, reorth",0.42,0.65
+multimode,spike,"incremental, reorth",0.43,0.658333
+multimode,spike,"incremental, reorth",0.44,0.658333
+multimode,spike,"incremental, reorth",0.45,0.658333
+multimode,spike,"incremental, reorth",0.46,0.658333
+multimode,spike,"incremental, reorth",0.47,0.658333
+multimode,spike,"incremental, reorth",0.48,0.666667
+multimode,spike,"incremental, reorth",0.49,0.691667
+multimode,spike,"incremental, reorth",0.5,0.708333
+multimode,spike,"incremental, reorth",0.51,0.716667
+multimode,spike,"incremental, reorth",0.52,0.75
+multimode,spike,"incremental, reorth",0.53,0.766667
+multimode,spike,"incremental, reorth",0.54,0.783333
+multimode,spike,"incremental, reorth",0.55,0.783333
+multimode,spike,"incremental, reorth",0.56,0.8
+multimode,spike,"incremental, reorth",0.57,0.808333
+multimode,spike,"incremental, reorth",0.58,0.808333
+multimode,spike,"incremental, reorth",0.59,0.808333
+multimode,spike,"incremental, reorth",0.6,0.833333
+multimode,spike,"incremental, reorth",0.61,0.833333
+multimode,spike,"incremental, reorth",0.62,0.85
+multimode,spike,"incremental, reorth",0.63,0.858333
+multimode,spike,"incremental, reorth",0.64,0.858333
+multimode,spike,"incremental, reorth",0.65,0.875
+multimode,spike,"incremental, reorth",0.66,0.883333
+multimode,spike,"incremental, reorth",0.67,0.9
+multimode,spike,"incremental, reorth",0.68,0.908333
+multimode,spike,"incremental, reorth",0.69,0.925
+multimode,spike,"incremental, reorth",0.7,0.95
+multimode,spike,"incremental, reorth",0.71,0.95
+multimode,spike,"incremental, reorth",0.72,0.958333
+multimode,spike,"incremental, reorth",0.73,0.966667
+multimode,spike,"incremental, reorth",0.74,0.966667
+multimode,spike,"incremental, reorth",0.75,0.966667
+multimode,spike,"incremental, reorth",0.76,0.966667
+multimode,spike,"incremental, reorth",0.77,0.966667
+multimode,spike,"incremental, reorth",0.78,0.966667
+multimode,spike,"incremental, reorth",0.79,0.975
+multimode,spike,"incremental, reorth",0.8,0.983333
+multimode,spike,"incremental, reorth",0.81,0.983333
+multimode,spike,"incremental, reorth",0.82,0.991667
+multimode,spike,"incremental, reorth",0.83,0.991667
+multimode,spike,"incremental, reorth",0.84,0.991667
+multimode,spike,"incremental, reorth",0.85,1.0
+multimode,spike,"incremental, reorth",0.86,1.0
+multimode,spike,"incremental, reorth",0.87,1.0
+multimode,spike,"incremental, reorth",0.88,1.0
+multimode,spike,"incremental, reorth",0.89,1.0
+multimode,spike,"incremental, reorth",0.9,1.0
+multimode,spike,"incremental, reorth",0.91,1.0
+multimode,spike,"incremental, reorth",0.92,1.0
+multimode,spike,"incremental, reorth",0.93,1.0
+multimode,spike,"incremental, reorth",0.94,1.0
+multimode,spike,"incremental, reorth",0.95,1.0
+multimode,spike,"incremental, reorth",0.96,1.0
+multimode,spike,"incremental, reorth",0.97,1.0
+multimode,spike,"incremental, reorth",0.98,1.0
+multimode,spike,"incremental, reorth",0.99,1.0
+multimode,spike,"incremental, reorth",1.0,1.0
+multimode,spike,"incremental, no reorth",0.0,0.0
+multimode,spike,"incremental, no reorth",0.01,0.025
+multimode,spike,"incremental, no reorth",0.02,0.033333
+multimode,spike,"incremental, no reorth",0.03,0.058333
+multimode,spike,"incremental, no reorth",0.04,0.075
+multimode,spike,"incremental, no reorth",0.05,0.091667
+multimode,spike,"incremental, no reorth",0.06,0.1
+multimode,spike,"incremental, no reorth",0.07,0.108333
+multimode,spike,"incremental, no reorth",0.08,0.133333
+multimode,spike,"incremental, no reorth",0.09,0.15
+multimode,spike,"incremental, no reorth",0.1,0.166667
+multimode,spike,"incremental, no reorth",0.11,0.183333
+multimode,spike,"incremental, no reorth",0.12,0.191667
+multimode,spike,"incremental, no reorth",0.13,0.225
+multimode,spike,"incremental, no reorth",0.14,0.25
+multimode,spike,"incremental, no reorth",0.15,0.258333
+multimode,spike,"incremental, no reorth",0.16,0.266667
+multimode,spike,"incremental, no reorth",0.17,0.275
+multimode,spike,"incremental, no reorth",0.18,0.283333
+multimode,spike,"incremental, no reorth",0.19,0.283333
+multimode,spike,"incremental, no reorth",0.2,0.308333
+multimode,spike,"incremental, no reorth",0.21,0.316667
+multimode,spike,"incremental, no reorth",0.22,0.316667
+multimode,spike,"incremental, no reorth",0.23,0.341667
+multimode,spike,"incremental, no reorth",0.24,0.358333
+multimode,spike,"incremental, no reorth",0.25,0.366667
+multimode,spike,"incremental, no reorth",0.26,0.375
+multimode,spike,"incremental, no reorth",0.27,0.383333
+multimode,spike,"incremental, no reorth",0.28,0.4
+multimode,spike,"incremental, no reorth",0.29,0.425
+multimode,spike,"incremental, no reorth",0.3,0.45
+multimode,spike,"incremental, no reorth",0.31,0.458333
+multimode,spike,"incremental, no reorth",0.32,0.466667
+multimode,spike,"incremental, no reorth",0.33,0.466667
+multimode,spike,"incremental, no reorth",0.34,0.466667
+multimode,spike,"incremental, no reorth",0.35,0.491667
+multimode,spike,"incremental, no reorth",0.36,0.516667
+multimode,spike,"incremental, no reorth",0.37,0.55
+multimode,spike,"incremental, no reorth",0.38,0.566667
+multimode,spike,"incremental, no reorth",0.39,0.575
+multimode,spike,"incremental, no reorth",0.4,0.591667
+multimode,spike,"incremental, no reorth",0.41,0.641667
+multimode,spike,"incremental, no reorth",0.42,0.65
+multimode,spike,"incremental, no reorth",0.43,0.658333
+multimode,spike,"incremental, no reorth",0.44,0.658333
+multimode,spike,"incremental, no reorth",0.45,0.658333
+multimode,spike,"incremental, no reorth",0.46,0.658333
+multimode,spike,"incremental, no reorth",0.47,0.658333
+multimode,spike,"incremental, no reorth",0.48,0.666667
+multimode,spike,"incremental, no reorth",0.49,0.691667
+multimode,spike,"incremental, no reorth",0.5,0.708333
+multimode,spike,"incremental, no reorth",0.51,0.716667
+multimode,spike,"incremental, no reorth",0.52,0.75
+multimode,spike,"incremental, no reorth",0.53,0.766667
+multimode,spike,"incremental, no reorth",0.54,0.783333
+multimode,spike,"incremental, no reorth",0.55,0.783333
+multimode,spike,"incremental, no reorth",0.56,0.8
+multimode,spike,"incremental, no reorth",0.57,0.808333
+multimode,spike,"incremental, no reorth",0.58,0.808333
+multimode,spike,"incremental, no reorth",0.59,0.808333
+multimode,spike,"incremental, no reorth",0.6,0.833333
+multimode,spike,"incremental, no reorth",0.61,0.833333
+multimode,spike,"incremental, no reorth",0.62,0.85
+multimode,spike,"incremental, no reorth",0.63,0.858333
+multimode,spike,"incremental, no reorth",0.64,0.858333
+multimode,spike,"incremental, no reorth",0.65,0.875
+multimode,spike,"incremental, no reorth",0.66,0.883333
+multimode,spike,"incremental, no reorth",0.67,0.9
+multimode,spike,"incremental, no reorth",0.68,0.908333
+multimode,spike,"incremental, no reorth",0.69,0.925
+multimode,spike,"incremental, no reorth",0.7,0.95
+multimode,spike,"incremental, no reorth",0.71,0.95
+multimode,spike,"incremental, no reorth",0.72,0.958333
+multimode,spike,"incremental, no reorth",0.73,0.966667
+multimode,spike,"incremental, no reorth",0.74,0.966667
+multimode,spike,"incremental, no reorth",0.75,0.966667
+multimode,spike,"incremental, no reorth",0.76,0.966667
+multimode,spike,"incremental, no reorth",0.77,0.966667
+multimode,spike,"incremental, no reorth",0.78,0.966667
+multimode,spike,"incremental, no reorth",0.79,0.975
+multimode,spike,"incremental, no reorth",0.8,0.983333
+multimode,spike,"incremental, no reorth",0.81,0.983333
+multimode,spike,"incremental, no reorth",0.82,0.991667
+multimode,spike,"incremental, no reorth",0.83,0.991667
+multimode,spike,"incremental, no reorth",0.84,0.991667
+multimode,spike,"incremental, no reorth",0.85,1.0
+multimode,spike,"incremental, no reorth",0.86,1.0
+multimode,spike,"incremental, no reorth",0.87,1.0
+multimode,spike,"incremental, no reorth",0.88,1.0
+multimode,spike,"incremental, no reorth",0.89,1.0
+multimode,spike,"incremental, no reorth",0.9,1.0
+multimode,spike,"incremental, no reorth",0.91,1.0
+multimode,spike,"incremental, no reorth",0.92,1.0
+multimode,spike,"incremental, no reorth",0.93,1.0
+multimode,spike,"incremental, no reorth",0.94,1.0
+multimode,spike,"incremental, no reorth",0.95,1.0
+multimode,spike,"incremental, no reorth",0.96,1.0
+multimode,spike,"incremental, no reorth",0.97,1.0
+multimode,spike,"incremental, no reorth",0.98,1.0
+multimode,spike,"incremental, no reorth",0.99,1.0
+multimode,spike,"incremental, no reorth",1.0,1.0
+multimode,spike,"incremental, rank from gap criterion",0.0,0.216667
+multimode,spike,"incremental, rank from gap criterion",0.01,0.658333
+multimode,spike,"incremental, rank from gap criterion",0.02,0.8
+multimode,spike,"incremental, rank from gap criterion",0.03,0.883333
+multimode,spike,"incremental, rank from gap criterion",0.04,0.916667
+multimode,spike,"incremental, rank from gap criterion",0.05,0.916667
+multimode,spike,"incremental, rank from gap criterion",0.06,0.941667
+multimode,spike,"incremental, rank from gap criterion",0.07,0.95
+multimode,spike,"incremental, rank from gap criterion",0.08,0.958333
+multimode,spike,"incremental, rank from gap criterion",0.09,0.966667
+multimode,spike,"incremental, rank from gap criterion",0.1,0.983333
+multimode,spike,"incremental, rank from gap criterion",0.11,0.983333
+multimode,spike,"incremental, rank from gap criterion",0.12,0.991667
+multimode,spike,"incremental, rank from gap criterion",0.13,0.991667
+multimode,spike,"incremental, rank from gap criterion",0.14,0.991667
+multimode,spike,"incremental, rank from gap criterion",0.15,0.991667
+multimode,spike,"incremental, rank from gap criterion",0.16,1.0
+multimode,spike,"incremental, rank from gap criterion",0.17,1.0
+multimode,spike,"incremental, rank from gap criterion",0.18,1.0
+multimode,spike,"incremental, rank from gap criterion",0.19,1.0
+multimode,spike,"incremental, rank from gap criterion",0.2,1.0
+multimode,spike,"incremental, rank from gap criterion",0.21,1.0
+multimode,spike,"incremental, rank from gap criterion",0.22,1.0
+multimode,spike,"incremental, rank from gap criterion",0.23,1.0
+multimode,spike,"incremental, rank from gap criterion",0.24,1.0
+multimode,spike,"incremental, rank from gap criterion",0.25,1.0
+multimode,spike,"incremental, rank from gap criterion",0.26,1.0
+multimode,spike,"incremental, rank from gap criterion",0.27,1.0
+multimode,spike,"incremental, rank from gap criterion",0.28,1.0
+multimode,spike,"incremental, rank from gap criterion",0.29,1.0
+multimode,spike,"incremental, rank from gap criterion",0.3,1.0
+multimode,spike,"incremental, rank from gap criterion",0.31,1.0
+multimode,spike,"incremental, rank from gap criterion",0.32,1.0
+multimode,spike,"incremental, rank from gap criterion",0.33,1.0
+multimode,spike,"incremental, rank from gap criterion",0.34,1.0
+multimode,spike,"incremental, rank from gap criterion",0.35,1.0
+multimode,spike,"incremental, rank from gap criterion",0.36,1.0
+multimode,spike,"incremental, rank from gap criterion",0.37,1.0
+multimode,spike,"incremental, rank from gap criterion",0.38,1.0
+multimode,spike,"incremental, rank from gap criterion",0.39,1.0
+multimode,spike,"incremental, rank from gap criterion",0.4,1.0
+multimode,spike,"incremental, rank from gap criterion",0.41,1.0
+multimode,spike,"incremental, rank from gap criterion",0.42,1.0
+multimode,spike,"incremental, rank from gap criterion",0.43,1.0
+multimode,spike,"incremental, rank from gap criterion",0.44,1.0
+multimode,spike,"incremental, rank from gap criterion",0.45,1.0
+multimode,spike,"incremental, rank from gap criterion",0.46,1.0
+multimode,spike,"incremental, rank from gap criterion",0.47,1.0
+multimode,spike,"incremental, rank from gap criterion",0.48,1.0
+multimode,spike,"incremental, rank from gap criterion",0.49,1.0
+multimode,spike,"incremental, rank from gap criterion",0.5,1.0
+multimode,spike,"incremental, rank from gap criterion",0.51,1.0
+multimode,spike,"incremental, rank from gap criterion",0.52,1.0
+multimode,spike,"incremental, rank from gap criterion",0.53,1.0
+multimode,spike,"incremental, rank from gap criterion",0.54,1.0
+multimode,spike,"incremental, rank from gap criterion",0.55,1.0
+multimode,spike,"incremental, rank from gap criterion",0.56,1.0
+multimode,spike,"incremental, rank from gap criterion",0.57,1.0
+multimode,spike,"incremental, rank from gap criterion",0.58,1.0
+multimode,spike,"incremental, rank from gap criterion",0.59,1.0
+multimode,spike,"incremental, rank from gap criterion",0.6,1.0
+multimode,spike,"incremental, rank from gap criterion",0.61,1.0
+multimode,spike,"incremental, rank from gap criterion",0.62,1.0
+multimode,spike,"incremental, rank from gap criterion",0.63,1.0
+multimode,spike,"incremental, rank from gap criterion",0.64,1.0
+multimode,spike,"incremental, rank from gap criterion",0.65,1.0
+multimode,spike,"incremental, rank from gap criterion",0.66,1.0
+multimode,spike,"incremental, rank from gap criterion",0.67,1.0
+multimode,spike,"incremental, rank from gap criterion",0.68,1.0
+multimode,spike,"incremental, rank from gap criterion",0.69,1.0
+multimode,spike,"incremental, rank from gap criterion",0.7,1.0
+multimode,spike,"incremental, rank from gap criterion",0.71,1.0
+multimode,spike,"incremental, rank from gap criterion",0.72,1.0
+multimode,spike,"incremental, rank from gap criterion",0.73,1.0
+multimode,spike,"incremental, rank from gap criterion",0.74,1.0
+multimode,spike,"incremental, rank from gap criterion",0.75,1.0
+multimode,spike,"incremental, rank from gap criterion",0.76,1.0
+multimode,spike,"incremental, rank from gap criterion",0.77,1.0
+multimode,spike,"incremental, rank from gap criterion",0.78,1.0
+multimode,spike,"incremental, rank from gap criterion",0.79,1.0
+multimode,spike,"incremental, rank from gap criterion",0.8,1.0
+multimode,spike,"incremental, rank from gap criterion",0.81,1.0
+multimode,spike,"incremental, rank from gap criterion",0.82,1.0
+multimode,spike,"incremental, rank from gap criterion",0.83,1.0
+multimode,spike,"incremental, rank from gap criterion",0.84,1.0
+multimode,spike,"incremental, rank from gap criterion",0.85,1.0
+multimode,spike,"incremental, rank from gap criterion",0.86,1.0
+multimode,spike,"incremental, rank from gap criterion",0.87,1.0
+multimode,spike,"incremental, rank from gap criterion",0.88,1.0
+multimode,spike,"incremental, rank from gap criterion",0.89,1.0
+multimode,spike,"incremental, rank from gap criterion",0.9,1.0
+multimode,spike,"incremental, rank from gap criterion",0.91,1.0
+multimode,spike,"incremental, rank from gap criterion",0.92,1.0
+multimode,spike,"incremental, rank from gap criterion",0.93,1.0
+multimode,spike,"incremental, rank from gap criterion",0.94,1.0
+multimode,spike,"incremental, rank from gap criterion",0.95,1.0
+multimode,spike,"incremental, rank from gap criterion",0.96,1.0
+multimode,spike,"incremental, rank from gap criterion",0.97,1.0
+multimode,spike,"incremental, rank from gap criterion",0.98,1.0
+multimode,spike,"incremental, rank from gap criterion",0.99,1.0
+multimode,spike,"incremental, rank from gap criterion",1.0,1.0
+multimode,spike,"C host binary, reorth",0.0,0.0
+multimode,spike,"C host binary, reorth",0.01,0.025
+multimode,spike,"C host binary, reorth",0.02,0.033333
+multimode,spike,"C host binary, reorth",0.03,0.058333
+multimode,spike,"C host binary, reorth",0.04,0.075
+multimode,spike,"C host binary, reorth",0.05,0.091667
+multimode,spike,"C host binary, reorth",0.06,0.1
+multimode,spike,"C host binary, reorth",0.07,0.108333
+multimode,spike,"C host binary, reorth",0.08,0.133333
+multimode,spike,"C host binary, reorth",0.09,0.15
+multimode,spike,"C host binary, reorth",0.1,0.166667
+multimode,spike,"C host binary, reorth",0.11,0.183333
+multimode,spike,"C host binary, reorth",0.12,0.191667
+multimode,spike,"C host binary, reorth",0.13,0.225
+multimode,spike,"C host binary, reorth",0.14,0.25
+multimode,spike,"C host binary, reorth",0.15,0.258333
+multimode,spike,"C host binary, reorth",0.16,0.266667
+multimode,spike,"C host binary, reorth",0.17,0.275
+multimode,spike,"C host binary, reorth",0.18,0.283333
+multimode,spike,"C host binary, reorth",0.19,0.283333
+multimode,spike,"C host binary, reorth",0.2,0.308333
+multimode,spike,"C host binary, reorth",0.21,0.316667
+multimode,spike,"C host binary, reorth",0.22,0.316667
+multimode,spike,"C host binary, reorth",0.23,0.341667
+multimode,spike,"C host binary, reorth",0.24,0.358333
+multimode,spike,"C host binary, reorth",0.25,0.366667
+multimode,spike,"C host binary, reorth",0.26,0.375
+multimode,spike,"C host binary, reorth",0.27,0.383333
+multimode,spike,"C host binary, reorth",0.28,0.4
+multimode,spike,"C host binary, reorth",0.29,0.425
+multimode,spike,"C host binary, reorth",0.3,0.45
+multimode,spike,"C host binary, reorth",0.31,0.458333
+multimode,spike,"C host binary, reorth",0.32,0.466667
+multimode,spike,"C host binary, reorth",0.33,0.466667
+multimode,spike,"C host binary, reorth",0.34,0.466667
+multimode,spike,"C host binary, reorth",0.35,0.491667
+multimode,spike,"C host binary, reorth",0.36,0.516667
+multimode,spike,"C host binary, reorth",0.37,0.55
+multimode,spike,"C host binary, reorth",0.38,0.566667
+multimode,spike,"C host binary, reorth",0.39,0.575
+multimode,spike,"C host binary, reorth",0.4,0.591667
+multimode,spike,"C host binary, reorth",0.41,0.641667
+multimode,spike,"C host binary, reorth",0.42,0.65
+multimode,spike,"C host binary, reorth",0.43,0.658333
+multimode,spike,"C host binary, reorth",0.44,0.658333
+multimode,spike,"C host binary, reorth",0.45,0.658333
+multimode,spike,"C host binary, reorth",0.46,0.658333
+multimode,spike,"C host binary, reorth",0.47,0.658333
+multimode,spike,"C host binary, reorth",0.48,0.666667
+multimode,spike,"C host binary, reorth",0.49,0.691667
+multimode,spike,"C host binary, reorth",0.5,0.708333
+multimode,spike,"C host binary, reorth",0.51,0.716667
+multimode,spike,"C host binary, reorth",0.52,0.75
+multimode,spike,"C host binary, reorth",0.53,0.766667
+multimode,spike,"C host binary, reorth",0.54,0.783333
+multimode,spike,"C host binary, reorth",0.55,0.783333
+multimode,spike,"C host binary, reorth",0.56,0.8
+multimode,spike,"C host binary, reorth",0.57,0.808333
+multimode,spike,"C host binary, reorth",0.58,0.808333
+multimode,spike,"C host binary, reorth",0.59,0.808333
+multimode,spike,"C host binary, reorth",0.6,0.833333
+multimode,spike,"C host binary, reorth",0.61,0.833333
+multimode,spike,"C host binary, reorth",0.62,0.85
+multimode,spike,"C host binary, reorth",0.63,0.858333
+multimode,spike,"C host binary, reorth",0.64,0.858333
+multimode,spike,"C host binary, reorth",0.65,0.875
+multimode,spike,"C host binary, reorth",0.66,0.883333
+multimode,spike,"C host binary, reorth",0.67,0.9
+multimode,spike,"C host binary, reorth",0.68,0.908333
+multimode,spike,"C host binary, reorth",0.69,0.925
+multimode,spike,"C host binary, reorth",0.7,0.95
+multimode,spike,"C host binary, reorth",0.71,0.95
+multimode,spike,"C host binary, reorth",0.72,0.958333
+multimode,spike,"C host binary, reorth",0.73,0.966667
+multimode,spike,"C host binary, reorth",0.74,0.966667
+multimode,spike,"C host binary, reorth",0.75,0.966667
+multimode,spike,"C host binary, reorth",0.76,0.966667
+multimode,spike,"C host binary, reorth",0.77,0.966667
+multimode,spike,"C host binary, reorth",0.78,0.966667
+multimode,spike,"C host binary, reorth",0.79,0.975
+multimode,spike,"C host binary, reorth",0.8,0.983333
+multimode,spike,"C host binary, reorth",0.81,0.983333
+multimode,spike,"C host binary, reorth",0.82,0.991667
+multimode,spike,"C host binary, reorth",0.83,0.991667
+multimode,spike,"C host binary, reorth",0.84,0.991667
+multimode,spike,"C host binary, reorth",0.85,1.0
+multimode,spike,"C host binary, reorth",0.86,1.0
+multimode,spike,"C host binary, reorth",0.87,1.0
+multimode,spike,"C host binary, reorth",0.88,1.0
+multimode,spike,"C host binary, reorth",0.89,1.0
+multimode,spike,"C host binary, reorth",0.9,1.0
+multimode,spike,"C host binary, reorth",0.91,1.0
+multimode,spike,"C host binary, reorth",0.92,1.0
+multimode,spike,"C host binary, reorth",0.93,1.0
+multimode,spike,"C host binary, reorth",0.94,1.0
+multimode,spike,"C host binary, reorth",0.95,1.0
+multimode,spike,"C host binary, reorth",0.96,1.0
+multimode,spike,"C host binary, reorth",0.97,1.0
+multimode,spike,"C host binary, reorth",0.98,1.0
+multimode,spike,"C host binary, reorth",0.99,1.0
+multimode,spike,"C host binary, reorth",1.0,1.0
+multimode,spike,"C host binary, no reorth",0.0,0.0
+multimode,spike,"C host binary, no reorth",0.01,0.025
+multimode,spike,"C host binary, no reorth",0.02,0.033333
+multimode,spike,"C host binary, no reorth",0.03,0.058333
+multimode,spike,"C host binary, no reorth",0.04,0.075
+multimode,spike,"C host binary, no reorth",0.05,0.091667
+multimode,spike,"C host binary, no reorth",0.06,0.1
+multimode,spike,"C host binary, no reorth",0.07,0.108333
+multimode,spike,"C host binary, no reorth",0.08,0.133333
+multimode,spike,"C host binary, no reorth",0.09,0.15
+multimode,spike,"C host binary, no reorth",0.1,0.166667
+multimode,spike,"C host binary, no reorth",0.11,0.183333
+multimode,spike,"C host binary, no reorth",0.12,0.191667
+multimode,spike,"C host binary, no reorth",0.13,0.225
+multimode,spike,"C host binary, no reorth",0.14,0.25
+multimode,spike,"C host binary, no reorth",0.15,0.258333
+multimode,spike,"C host binary, no reorth",0.16,0.266667
+multimode,spike,"C host binary, no reorth",0.17,0.275
+multimode,spike,"C host binary, no reorth",0.18,0.283333
+multimode,spike,"C host binary, no reorth",0.19,0.283333
+multimode,spike,"C host binary, no reorth",0.2,0.308333
+multimode,spike,"C host binary, no reorth",0.21,0.316667
+multimode,spike,"C host binary, no reorth",0.22,0.316667
+multimode,spike,"C host binary, no reorth",0.23,0.341667
+multimode,spike,"C host binary, no reorth",0.24,0.358333
+multimode,spike,"C host binary, no reorth",0.25,0.366667
+multimode,spike,"C host binary, no reorth",0.26,0.375
+multimode,spike,"C host binary, no reorth",0.27,0.383333
+multimode,spike,"C host binary, no reorth",0.28,0.4
+multimode,spike,"C host binary, no reorth",0.29,0.425
+multimode,spike,"C host binary, no reorth",0.3,0.45
+multimode,spike,"C host binary, no reorth",0.31,0.458333
+multimode,spike,"C host binary, no reorth",0.32,0.466667
+multimode,spike,"C host binary, no reorth",0.33,0.466667
+multimode,spike,"C host binary, no reorth",0.34,0.466667
+multimode,spike,"C host binary, no reorth",0.35,0.491667
+multimode,spike,"C host binary, no reorth",0.36,0.516667
+multimode,spike,"C host binary, no reorth",0.37,0.55
+multimode,spike,"C host binary, no reorth",0.38,0.566667
+multimode,spike,"C host binary, no reorth",0.39,0.575
+multimode,spike,"C host binary, no reorth",0.4,0.591667
+multimode,spike,"C host binary, no reorth",0.41,0.641667
+multimode,spike,"C host binary, no reorth",0.42,0.65
+multimode,spike,"C host binary, no reorth",0.43,0.658333
+multimode,spike,"C host binary, no reorth",0.44,0.658333
+multimode,spike,"C host binary, no reorth",0.45,0.658333
+multimode,spike,"C host binary, no reorth",0.46,0.658333
+multimode,spike,"C host binary, no reorth",0.47,0.658333
+multimode,spike,"C host binary, no reorth",0.48,0.666667
+multimode,spike,"C host binary, no reorth",0.49,0.691667
+multimode,spike,"C host binary, no reorth",0.5,0.708333
+multimode,spike,"C host binary, no reorth",0.51,0.716667
+multimode,spike,"C host binary, no reorth",0.52,0.75
+multimode,spike,"C host binary, no reorth",0.53,0.766667
+multimode,spike,"C host binary, no reorth",0.54,0.783333
+multimode,spike,"C host binary, no reorth",0.55,0.783333
+multimode,spike,"C host binary, no reorth",0.56,0.8
+multimode,spike,"C host binary, no reorth",0.57,0.808333
+multimode,spike,"C host binary, no reorth",0.58,0.808333
+multimode,spike,"C host binary, no reorth",0.59,0.808333
+multimode,spike,"C host binary, no reorth",0.6,0.833333
+multimode,spike,"C host binary, no reorth",0.61,0.833333
+multimode,spike,"C host binary, no reorth",0.62,0.85
+multimode,spike,"C host binary, no reorth",0.63,0.858333
+multimode,spike,"C host binary, no reorth",0.64,0.858333
+multimode,spike,"C host binary, no reorth",0.65,0.875
+multimode,spike,"C host binary, no reorth",0.66,0.883333
+multimode,spike,"C host binary, no reorth",0.67,0.9
+multimode,spike,"C host binary, no reorth",0.68,0.908333
+multimode,spike,"C host binary, no reorth",0.69,0.925
+multimode,spike,"C host binary, no reorth",0.7,0.95
+multimode,spike,"C host binary, no reorth",0.71,0.95
+multimode,spike,"C host binary, no reorth",0.72,0.958333
+multimode,spike,"C host binary, no reorth",0.73,0.966667
+multimode,spike,"C host binary, no reorth",0.74,0.966667
+multimode,spike,"C host binary, no reorth",0.75,0.966667
+multimode,spike,"C host binary, no reorth",0.76,0.966667
+multimode,spike,"C host binary, no reorth",0.77,0.966667
+multimode,spike,"C host binary, no reorth",0.78,0.966667
+multimode,spike,"C host binary, no reorth",0.79,0.975
+multimode,spike,"C host binary, no reorth",0.8,0.983333
+multimode,spike,"C host binary, no reorth",0.81,0.983333
+multimode,spike,"C host binary, no reorth",0.82,0.991667
+multimode,spike,"C host binary, no reorth",0.83,0.991667
+multimode,spike,"C host binary, no reorth",0.84,0.991667
+multimode,spike,"C host binary, no reorth",0.85,1.0
+multimode,spike,"C host binary, no reorth",0.86,1.0
+multimode,spike,"C host binary, no reorth",0.87,1.0
+multimode,spike,"C host binary, no reorth",0.88,1.0
+multimode,spike,"C host binary, no reorth",0.89,1.0
+multimode,spike,"C host binary, no reorth",0.9,1.0
+multimode,spike,"C host binary, no reorth",0.91,1.0
+multimode,spike,"C host binary, no reorth",0.92,1.0
+multimode,spike,"C host binary, no reorth",0.93,1.0
+multimode,spike,"C host binary, no reorth",0.94,1.0
+multimode,spike,"C host binary, no reorth",0.95,1.0
+multimode,spike,"C host binary, no reorth",0.96,1.0
+multimode,spike,"C host binary, no reorth",0.97,1.0
+multimode,spike,"C host binary, no reorth",0.98,1.0
+multimode,spike,"C host binary, no reorth",0.99,1.0
+multimode,spike,"C host binary, no reorth",1.0,1.0
+multimode,spike,"C host binary, float32, reorth",0.0,0.0
+multimode,spike,"C host binary, float32, reorth",0.01,0.025
+multimode,spike,"C host binary, float32, reorth",0.02,0.033333
+multimode,spike,"C host binary, float32, reorth",0.03,0.058333
+multimode,spike,"C host binary, float32, reorth",0.04,0.075
+multimode,spike,"C host binary, float32, reorth",0.05,0.091667
+multimode,spike,"C host binary, float32, reorth",0.06,0.1
+multimode,spike,"C host binary, float32, reorth",0.07,0.108333
+multimode,spike,"C host binary, float32, reorth",0.08,0.133333
+multimode,spike,"C host binary, float32, reorth",0.09,0.15
+multimode,spike,"C host binary, float32, reorth",0.1,0.166667
+multimode,spike,"C host binary, float32, reorth",0.11,0.183333
+multimode,spike,"C host binary, float32, reorth",0.12,0.191667
+multimode,spike,"C host binary, float32, reorth",0.13,0.225
+multimode,spike,"C host binary, float32, reorth",0.14,0.25
+multimode,spike,"C host binary, float32, reorth",0.15,0.258333
+multimode,spike,"C host binary, float32, reorth",0.16,0.266667
+multimode,spike,"C host binary, float32, reorth",0.17,0.275
+multimode,spike,"C host binary, float32, reorth",0.18,0.283333
+multimode,spike,"C host binary, float32, reorth",0.19,0.283333
+multimode,spike,"C host binary, float32, reorth",0.2,0.308333
+multimode,spike,"C host binary, float32, reorth",0.21,0.316667
+multimode,spike,"C host binary, float32, reorth",0.22,0.316667
+multimode,spike,"C host binary, float32, reorth",0.23,0.341667
+multimode,spike,"C host binary, float32, reorth",0.24,0.358333
+multimode,spike,"C host binary, float32, reorth",0.25,0.366667
+multimode,spike,"C host binary, float32, reorth",0.26,0.375
+multimode,spike,"C host binary, float32, reorth",0.27,0.383333
+multimode,spike,"C host binary, float32, reorth",0.28,0.4
+multimode,spike,"C host binary, float32, reorth",0.29,0.425
+multimode,spike,"C host binary, float32, reorth",0.3,0.45
+multimode,spike,"C host binary, float32, reorth",0.31,0.458333
+multimode,spike,"C host binary, float32, reorth",0.32,0.466667
+multimode,spike,"C host binary, float32, reorth",0.33,0.466667
+multimode,spike,"C host binary, float32, reorth",0.34,0.466667
+multimode,spike,"C host binary, float32, reorth",0.35,0.491667
+multimode,spike,"C host binary, float32, reorth",0.36,0.516667
+multimode,spike,"C host binary, float32, reorth",0.37,0.55
+multimode,spike,"C host binary, float32, reorth",0.38,0.566667
+multimode,spike,"C host binary, float32, reorth",0.39,0.575
+multimode,spike,"C host binary, float32, reorth",0.4,0.591667
+multimode,spike,"C host binary, float32, reorth",0.41,0.641667
+multimode,spike,"C host binary, float32, reorth",0.42,0.65
+multimode,spike,"C host binary, float32, reorth",0.43,0.658333
+multimode,spike,"C host binary, float32, reorth",0.44,0.658333
+multimode,spike,"C host binary, float32, reorth",0.45,0.658333
+multimode,spike,"C host binary, float32, reorth",0.46,0.658333
+multimode,spike,"C host binary, float32, reorth",0.47,0.658333
+multimode,spike,"C host binary, float32, reorth",0.48,0.666667
+multimode,spike,"C host binary, float32, reorth",0.49,0.691667
+multimode,spike,"C host binary, float32, reorth",0.5,0.708333
+multimode,spike,"C host binary, float32, reorth",0.51,0.716667
+multimode,spike,"C host binary, float32, reorth",0.52,0.75
+multimode,spike,"C host binary, float32, reorth",0.53,0.766667
+multimode,spike,"C host binary, float32, reorth",0.54,0.783333
+multimode,spike,"C host binary, float32, reorth",0.55,0.783333
+multimode,spike,"C host binary, float32, reorth",0.56,0.8
+multimode,spike,"C host binary, float32, reorth",0.57,0.808333
+multimode,spike,"C host binary, float32, reorth",0.58,0.808333
+multimode,spike,"C host binary, float32, reorth",0.59,0.808333
+multimode,spike,"C host binary, float32, reorth",0.6,0.833333
+multimode,spike,"C host binary, float32, reorth",0.61,0.833333
+multimode,spike,"C host binary, float32, reorth",0.62,0.85
+multimode,spike,"C host binary, float32, reorth",0.63,0.858333
+multimode,spike,"C host binary, float32, reorth",0.64,0.858333
+multimode,spike,"C host binary, float32, reorth",0.65,0.875
+multimode,spike,"C host binary, float32, reorth",0.66,0.883333
+multimode,spike,"C host binary, float32, reorth",0.67,0.9
+multimode,spike,"C host binary, float32, reorth",0.68,0.908333
+multimode,spike,"C host binary, float32, reorth",0.69,0.925
+multimode,spike,"C host binary, float32, reorth",0.7,0.95
+multimode,spike,"C host binary, float32, reorth",0.71,0.95
+multimode,spike,"C host binary, float32, reorth",0.72,0.958333
+multimode,spike,"C host binary, float32, reorth",0.73,0.966667
+multimode,spike,"C host binary, float32, reorth",0.74,0.966667
+multimode,spike,"C host binary, float32, reorth",0.75,0.966667
+multimode,spike,"C host binary, float32, reorth",0.76,0.966667
+multimode,spike,"C host binary, float32, reorth",0.77,0.966667
+multimode,spike,"C host binary, float32, reorth",0.78,0.966667
+multimode,spike,"C host binary, float32, reorth",0.79,0.975
+multimode,spike,"C host binary, float32, reorth",0.8,0.983333
+multimode,spike,"C host binary, float32, reorth",0.81,0.983333
+multimode,spike,"C host binary, float32, reorth",0.82,0.991667
+multimode,spike,"C host binary, float32, reorth",0.83,0.991667
+multimode,spike,"C host binary, float32, reorth",0.84,0.991667
+multimode,spike,"C host binary, float32, reorth",0.85,1.0
+multimode,spike,"C host binary, float32, reorth",0.86,1.0
+multimode,spike,"C host binary, float32, reorth",0.87,1.0
+multimode,spike,"C host binary, float32, reorth",0.88,1.0
+multimode,spike,"C host binary, float32, reorth",0.89,1.0
+multimode,spike,"C host binary, float32, reorth",0.9,1.0
+multimode,spike,"C host binary, float32, reorth",0.91,1.0
+multimode,spike,"C host binary, float32, reorth",0.92,1.0
+multimode,spike,"C host binary, float32, reorth",0.93,1.0
+multimode,spike,"C host binary, float32, reorth",0.94,1.0
+multimode,spike,"C host binary, float32, reorth",0.95,1.0
+multimode,spike,"C host binary, float32, reorth",0.96,1.0
+multimode,spike,"C host binary, float32, reorth",0.97,1.0
+multimode,spike,"C host binary, float32, reorth",0.98,1.0
+multimode,spike,"C host binary, float32, reorth",0.99,1.0
+multimode,spike,"C host binary, float32, reorth",1.0,1.0
+manymode,spike,batch full SVD (warm-up),0.0,0.0
+manymode,spike,batch full SVD (warm-up),0.01,0.016667
+manymode,spike,batch full SVD (warm-up),0.02,0.025
+manymode,spike,batch full SVD (warm-up),0.03,0.041667
+manymode,spike,batch full SVD (warm-up),0.04,0.041667
+manymode,spike,batch full SVD (warm-up),0.05,0.05
+manymode,spike,batch full SVD (warm-up),0.06,0.05
+manymode,spike,batch full SVD (warm-up),0.07,0.066667
+manymode,spike,batch full SVD (warm-up),0.08,0.108333
+manymode,spike,batch full SVD (warm-up),0.09,0.125
+manymode,spike,batch full SVD (warm-up),0.1,0.133333
+manymode,spike,batch full SVD (warm-up),0.11,0.133333
+manymode,spike,batch full SVD (warm-up),0.12,0.141667
+manymode,spike,batch full SVD (warm-up),0.13,0.141667
+manymode,spike,batch full SVD (warm-up),0.14,0.175
+manymode,spike,batch full SVD (warm-up),0.15,0.183333
+manymode,spike,batch full SVD (warm-up),0.16,0.183333
+manymode,spike,batch full SVD (warm-up),0.17,0.191667
+manymode,spike,batch full SVD (warm-up),0.18,0.2
+manymode,spike,batch full SVD (warm-up),0.19,0.216667
+manymode,spike,batch full SVD (warm-up),0.2,0.216667
+manymode,spike,batch full SVD (warm-up),0.21,0.225
+manymode,spike,batch full SVD (warm-up),0.22,0.225
+manymode,spike,batch full SVD (warm-up),0.23,0.241667
+manymode,spike,batch full SVD (warm-up),0.24,0.25
+manymode,spike,batch full SVD (warm-up),0.25,0.266667
+manymode,spike,batch full SVD (warm-up),0.26,0.275
+manymode,spike,batch full SVD (warm-up),0.27,0.3
+manymode,spike,batch full SVD (warm-up),0.28,0.3
+manymode,spike,batch full SVD (warm-up),0.29,0.316667
+manymode,spike,batch full SVD (warm-up),0.3,0.333333
+manymode,spike,batch full SVD (warm-up),0.31,0.333333
+manymode,spike,batch full SVD (warm-up),0.32,0.333333
+manymode,spike,batch full SVD (warm-up),0.33,0.358333
+manymode,spike,batch full SVD (warm-up),0.34,0.375
+manymode,spike,batch full SVD (warm-up),0.35,0.383333
+manymode,spike,batch full SVD (warm-up),0.36,0.4
+manymode,spike,batch full SVD (warm-up),0.37,0.408333
+manymode,spike,batch full SVD (warm-up),0.38,0.416667
+manymode,spike,batch full SVD (warm-up),0.39,0.433333
+manymode,spike,batch full SVD (warm-up),0.4,0.45
+manymode,spike,batch full SVD (warm-up),0.41,0.45
+manymode,spike,batch full SVD (warm-up),0.42,0.458333
+manymode,spike,batch full SVD (warm-up),0.43,0.458333
+manymode,spike,batch full SVD (warm-up),0.44,0.458333
+manymode,spike,batch full SVD (warm-up),0.45,0.466667
+manymode,spike,batch full SVD (warm-up),0.46,0.491667
+manymode,spike,batch full SVD (warm-up),0.47,0.491667
+manymode,spike,batch full SVD (warm-up),0.48,0.5
+manymode,spike,batch full SVD (warm-up),0.49,0.516667
+manymode,spike,batch full SVD (warm-up),0.5,0.516667
+manymode,spike,batch full SVD (warm-up),0.51,0.525
+manymode,spike,batch full SVD (warm-up),0.52,0.541667
+manymode,spike,batch full SVD (warm-up),0.53,0.541667
+manymode,spike,batch full SVD (warm-up),0.54,0.566667
+manymode,spike,batch full SVD (warm-up),0.55,0.566667
+manymode,spike,batch full SVD (warm-up),0.56,0.575
+manymode,spike,batch full SVD (warm-up),0.57,0.591667
+manymode,spike,batch full SVD (warm-up),0.58,0.6
+manymode,spike,batch full SVD (warm-up),0.59,0.6
+manymode,spike,batch full SVD (warm-up),0.6,0.608333
+manymode,spike,batch full SVD (warm-up),0.61,0.608333
+manymode,spike,batch full SVD (warm-up),0.62,0.608333
+manymode,spike,batch full SVD (warm-up),0.63,0.608333
+manymode,spike,batch full SVD (warm-up),0.64,0.641667
+manymode,spike,batch full SVD (warm-up),0.65,0.65
+manymode,spike,batch full SVD (warm-up),0.66,0.675
+manymode,spike,batch full SVD (warm-up),0.67,0.691667
+manymode,spike,batch full SVD (warm-up),0.68,0.708333
+manymode,spike,batch full SVD (warm-up),0.69,0.716667
+manymode,spike,batch full SVD (warm-up),0.7,0.75
+manymode,spike,batch full SVD (warm-up),0.71,0.783333
+manymode,spike,batch full SVD (warm-up),0.72,0.825
+manymode,spike,batch full SVD (warm-up),0.73,0.825
+manymode,spike,batch full SVD (warm-up),0.74,0.825
+manymode,spike,batch full SVD (warm-up),0.75,0.833333
+manymode,spike,batch full SVD (warm-up),0.76,0.858333
+manymode,spike,batch full SVD (warm-up),0.77,0.866667
+manymode,spike,batch full SVD (warm-up),0.78,0.875
+manymode,spike,batch full SVD (warm-up),0.79,0.883333
+manymode,spike,batch full SVD (warm-up),0.8,0.891667
+manymode,spike,batch full SVD (warm-up),0.81,0.9
+manymode,spike,batch full SVD (warm-up),0.82,0.916667
+manymode,spike,batch full SVD (warm-up),0.83,0.925
+manymode,spike,batch full SVD (warm-up),0.84,0.941667
+manymode,spike,batch full SVD (warm-up),0.85,0.966667
+manymode,spike,batch full SVD (warm-up),0.86,0.966667
+manymode,spike,batch full SVD (warm-up),0.87,0.966667
+manymode,spike,batch full SVD (warm-up),0.88,0.983333
+manymode,spike,batch full SVD (warm-up),0.89,0.983333
+manymode,spike,batch full SVD (warm-up),0.9,0.983333
+manymode,spike,batch full SVD (warm-up),0.91,0.983333
+manymode,spike,batch full SVD (warm-up),0.92,0.991667
+manymode,spike,batch full SVD (warm-up),0.93,0.991667
+manymode,spike,batch full SVD (warm-up),0.94,1.0
+manymode,spike,batch full SVD (warm-up),0.95,1.0
+manymode,spike,batch full SVD (warm-up),0.96,1.0
+manymode,spike,batch full SVD (warm-up),0.97,1.0
+manymode,spike,batch full SVD (warm-up),0.98,1.0
+manymode,spike,batch full SVD (warm-up),0.99,1.0
+manymode,spike,batch full SVD (warm-up),1.0,1.0
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.0,0.0
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.01,0.016667
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.02,0.033333
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.03,0.033333
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.04,0.05
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.05,0.058333
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.06,0.066667
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.07,0.083333
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.08,0.083333
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.09,0.1
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.1,0.125
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.11,0.133333
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.12,0.141667
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.13,0.15
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.14,0.158333
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.15,0.166667
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.16,0.166667
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.17,0.183333
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.18,0.183333
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.19,0.208333
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.2,0.233333
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.21,0.241667
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.22,0.258333
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.23,0.266667
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.24,0.275
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.25,0.291667
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.26,0.3
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.27,0.308333
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.28,0.308333
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.29,0.316667
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.3,0.316667
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.31,0.325
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.32,0.333333
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.33,0.341667
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.34,0.35
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.35,0.366667
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.36,0.366667
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.37,0.391667
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.38,0.408333
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.39,0.425
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.4,0.433333
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.41,0.441667
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.42,0.45
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.43,0.475
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.44,0.483333
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.45,0.491667
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.46,0.491667
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.47,0.491667
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.48,0.5
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.49,0.516667
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.5,0.516667
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.51,0.525
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.52,0.533333
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.53,0.541667
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.54,0.558333
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.55,0.566667
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.56,0.583333
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.57,0.583333
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.58,0.6
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.59,0.608333
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.6,0.608333
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.61,0.625
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.62,0.641667
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.63,0.65
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.64,0.65
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.65,0.675
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.66,0.675
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.67,0.691667
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.68,0.716667
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.69,0.716667
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.7,0.733333
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.71,0.758333
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.72,0.766667
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.73,0.791667
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.74,0.808333
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.75,0.825
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.76,0.833333
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.77,0.85
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.78,0.866667
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.79,0.883333
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.8,0.9
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.81,0.908333
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.82,0.925
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.83,0.933333
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.84,0.941667
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.85,0.941667
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.86,0.95
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.87,0.95
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.88,0.95
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.89,0.975
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.9,0.975
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.91,0.975
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.92,0.975
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.93,0.975
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.94,0.975
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.95,0.983333
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.96,1.0
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.97,1.0
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.98,1.0
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.99,1.0
+manymode,spike,"batch full SVD (all-normal, uses labels)",1.0,1.0
+manymode,spike,"incremental, reorth",0.0,0.0
+manymode,spike,"incremental, reorth",0.01,0.008333
+manymode,spike,"incremental, reorth",0.02,0.033333
+manymode,spike,"incremental, reorth",0.03,0.033333
+manymode,spike,"incremental, reorth",0.04,0.041667
+manymode,spike,"incremental, reorth",0.05,0.05
+manymode,spike,"incremental, reorth",0.06,0.058333
+manymode,spike,"incremental, reorth",0.07,0.083333
+manymode,spike,"incremental, reorth",0.08,0.083333
+manymode,spike,"incremental, reorth",0.09,0.108333
+manymode,spike,"incremental, reorth",0.1,0.116667
+manymode,spike,"incremental, reorth",0.11,0.125
+manymode,spike,"incremental, reorth",0.12,0.141667
+manymode,spike,"incremental, reorth",0.13,0.175
+manymode,spike,"incremental, reorth",0.14,0.183333
+manymode,spike,"incremental, reorth",0.15,0.183333
+manymode,spike,"incremental, reorth",0.16,0.183333
+manymode,spike,"incremental, reorth",0.17,0.208333
+manymode,spike,"incremental, reorth",0.18,0.225
+manymode,spike,"incremental, reorth",0.19,0.241667
+manymode,spike,"incremental, reorth",0.2,0.258333
+manymode,spike,"incremental, reorth",0.21,0.266667
+manymode,spike,"incremental, reorth",0.22,0.266667
+manymode,spike,"incremental, reorth",0.23,0.291667
+manymode,spike,"incremental, reorth",0.24,0.3
+manymode,spike,"incremental, reorth",0.25,0.308333
+manymode,spike,"incremental, reorth",0.26,0.325
+manymode,spike,"incremental, reorth",0.27,0.35
+manymode,spike,"incremental, reorth",0.28,0.35
+manymode,spike,"incremental, reorth",0.29,0.35
+manymode,spike,"incremental, reorth",0.3,0.358333
+manymode,spike,"incremental, reorth",0.31,0.358333
+manymode,spike,"incremental, reorth",0.32,0.366667
+manymode,spike,"incremental, reorth",0.33,0.383333
+manymode,spike,"incremental, reorth",0.34,0.383333
+manymode,spike,"incremental, reorth",0.35,0.4
+manymode,spike,"incremental, reorth",0.36,0.425
+manymode,spike,"incremental, reorth",0.37,0.45
+manymode,spike,"incremental, reorth",0.38,0.458333
+manymode,spike,"incremental, reorth",0.39,0.458333
+manymode,spike,"incremental, reorth",0.4,0.466667
+manymode,spike,"incremental, reorth",0.41,0.491667
+manymode,spike,"incremental, reorth",0.42,0.5
+manymode,spike,"incremental, reorth",0.43,0.508333
+manymode,spike,"incremental, reorth",0.44,0.533333
+manymode,spike,"incremental, reorth",0.45,0.533333
+manymode,spike,"incremental, reorth",0.46,0.533333
+manymode,spike,"incremental, reorth",0.47,0.533333
+manymode,spike,"incremental, reorth",0.48,0.541667
+manymode,spike,"incremental, reorth",0.49,0.558333
+manymode,spike,"incremental, reorth",0.5,0.575
+manymode,spike,"incremental, reorth",0.51,0.575
+manymode,spike,"incremental, reorth",0.52,0.6
+manymode,spike,"incremental, reorth",0.53,0.608333
+manymode,spike,"incremental, reorth",0.54,0.625
+manymode,spike,"incremental, reorth",0.55,0.625
+manymode,spike,"incremental, reorth",0.56,0.641667
+manymode,spike,"incremental, reorth",0.57,0.658333
+manymode,spike,"incremental, reorth",0.58,0.666667
+manymode,spike,"incremental, reorth",0.59,0.666667
+manymode,spike,"incremental, reorth",0.6,0.675
+manymode,spike,"incremental, reorth",0.61,0.683333
+manymode,spike,"incremental, reorth",0.62,0.708333
+manymode,spike,"incremental, reorth",0.63,0.733333
+manymode,spike,"incremental, reorth",0.64,0.75
+manymode,spike,"incremental, reorth",0.65,0.758333
+manymode,spike,"incremental, reorth",0.66,0.791667
+manymode,spike,"incremental, reorth",0.67,0.808333
+manymode,spike,"incremental, reorth",0.68,0.816667
+manymode,spike,"incremental, reorth",0.69,0.858333
+manymode,spike,"incremental, reorth",0.7,0.866667
+manymode,spike,"incremental, reorth",0.71,0.866667
+manymode,spike,"incremental, reorth",0.72,0.891667
+manymode,spike,"incremental, reorth",0.73,0.9
+manymode,spike,"incremental, reorth",0.74,0.9
+manymode,spike,"incremental, reorth",0.75,0.916667
+manymode,spike,"incremental, reorth",0.76,0.916667
+manymode,spike,"incremental, reorth",0.77,0.95
+manymode,spike,"incremental, reorth",0.78,0.958333
+manymode,spike,"incremental, reorth",0.79,0.966667
+manymode,spike,"incremental, reorth",0.8,0.975
+manymode,spike,"incremental, reorth",0.81,0.991667
+manymode,spike,"incremental, reorth",0.82,0.991667
+manymode,spike,"incremental, reorth",0.83,0.991667
+manymode,spike,"incremental, reorth",0.84,0.991667
+manymode,spike,"incremental, reorth",0.85,0.991667
+manymode,spike,"incremental, reorth",0.86,0.991667
+manymode,spike,"incremental, reorth",0.87,1.0
+manymode,spike,"incremental, reorth",0.88,1.0
+manymode,spike,"incremental, reorth",0.89,1.0
+manymode,spike,"incremental, reorth",0.9,1.0
+manymode,spike,"incremental, reorth",0.91,1.0
+manymode,spike,"incremental, reorth",0.92,1.0
+manymode,spike,"incremental, reorth",0.93,1.0
+manymode,spike,"incremental, reorth",0.94,1.0
+manymode,spike,"incremental, reorth",0.95,1.0
+manymode,spike,"incremental, reorth",0.96,1.0
+manymode,spike,"incremental, reorth",0.97,1.0
+manymode,spike,"incremental, reorth",0.98,1.0
+manymode,spike,"incremental, reorth",0.99,1.0
+manymode,spike,"incremental, reorth",1.0,1.0
+manymode,spike,"incremental, no reorth",0.0,0.0
+manymode,spike,"incremental, no reorth",0.01,0.008333
+manymode,spike,"incremental, no reorth",0.02,0.033333
+manymode,spike,"incremental, no reorth",0.03,0.033333
+manymode,spike,"incremental, no reorth",0.04,0.041667
+manymode,spike,"incremental, no reorth",0.05,0.05
+manymode,spike,"incremental, no reorth",0.06,0.058333
+manymode,spike,"incremental, no reorth",0.07,0.083333
+manymode,spike,"incremental, no reorth",0.08,0.083333
+manymode,spike,"incremental, no reorth",0.09,0.108333
+manymode,spike,"incremental, no reorth",0.1,0.116667
+manymode,spike,"incremental, no reorth",0.11,0.125
+manymode,spike,"incremental, no reorth",0.12,0.141667
+manymode,spike,"incremental, no reorth",0.13,0.175
+manymode,spike,"incremental, no reorth",0.14,0.183333
+manymode,spike,"incremental, no reorth",0.15,0.183333
+manymode,spike,"incremental, no reorth",0.16,0.183333
+manymode,spike,"incremental, no reorth",0.17,0.208333
+manymode,spike,"incremental, no reorth",0.18,0.225
+manymode,spike,"incremental, no reorth",0.19,0.241667
+manymode,spike,"incremental, no reorth",0.2,0.258333
+manymode,spike,"incremental, no reorth",0.21,0.266667
+manymode,spike,"incremental, no reorth",0.22,0.266667
+manymode,spike,"incremental, no reorth",0.23,0.291667
+manymode,spike,"incremental, no reorth",0.24,0.3
+manymode,spike,"incremental, no reorth",0.25,0.308333
+manymode,spike,"incremental, no reorth",0.26,0.325
+manymode,spike,"incremental, no reorth",0.27,0.35
+manymode,spike,"incremental, no reorth",0.28,0.35
+manymode,spike,"incremental, no reorth",0.29,0.35
+manymode,spike,"incremental, no reorth",0.3,0.358333
+manymode,spike,"incremental, no reorth",0.31,0.358333
+manymode,spike,"incremental, no reorth",0.32,0.366667
+manymode,spike,"incremental, no reorth",0.33,0.383333
+manymode,spike,"incremental, no reorth",0.34,0.383333
+manymode,spike,"incremental, no reorth",0.35,0.4
+manymode,spike,"incremental, no reorth",0.36,0.425
+manymode,spike,"incremental, no reorth",0.37,0.45
+manymode,spike,"incremental, no reorth",0.38,0.458333
+manymode,spike,"incremental, no reorth",0.39,0.458333
+manymode,spike,"incremental, no reorth",0.4,0.466667
+manymode,spike,"incremental, no reorth",0.41,0.491667
+manymode,spike,"incremental, no reorth",0.42,0.5
+manymode,spike,"incremental, no reorth",0.43,0.508333
+manymode,spike,"incremental, no reorth",0.44,0.533333
+manymode,spike,"incremental, no reorth",0.45,0.533333
+manymode,spike,"incremental, no reorth",0.46,0.533333
+manymode,spike,"incremental, no reorth",0.47,0.533333
+manymode,spike,"incremental, no reorth",0.48,0.541667
+manymode,spike,"incremental, no reorth",0.49,0.558333
+manymode,spike,"incremental, no reorth",0.5,0.575
+manymode,spike,"incremental, no reorth",0.51,0.575
+manymode,spike,"incremental, no reorth",0.52,0.6
+manymode,spike,"incremental, no reorth",0.53,0.608333
+manymode,spike,"incremental, no reorth",0.54,0.625
+manymode,spike,"incremental, no reorth",0.55,0.625
+manymode,spike,"incremental, no reorth",0.56,0.641667
+manymode,spike,"incremental, no reorth",0.57,0.658333
+manymode,spike,"incremental, no reorth",0.58,0.666667
+manymode,spike,"incremental, no reorth",0.59,0.666667
+manymode,spike,"incremental, no reorth",0.6,0.675
+manymode,spike,"incremental, no reorth",0.61,0.683333
+manymode,spike,"incremental, no reorth",0.62,0.708333
+manymode,spike,"incremental, no reorth",0.63,0.733333
+manymode,spike,"incremental, no reorth",0.64,0.75
+manymode,spike,"incremental, no reorth",0.65,0.758333
+manymode,spike,"incremental, no reorth",0.66,0.791667
+manymode,spike,"incremental, no reorth",0.67,0.808333
+manymode,spike,"incremental, no reorth",0.68,0.816667
+manymode,spike,"incremental, no reorth",0.69,0.858333
+manymode,spike,"incremental, no reorth",0.7,0.866667
+manymode,spike,"incremental, no reorth",0.71,0.866667
+manymode,spike,"incremental, no reorth",0.72,0.891667
+manymode,spike,"incremental, no reorth",0.73,0.9
+manymode,spike,"incremental, no reorth",0.74,0.9
+manymode,spike,"incremental, no reorth",0.75,0.916667
+manymode,spike,"incremental, no reorth",0.76,0.916667
+manymode,spike,"incremental, no reorth",0.77,0.95
+manymode,spike,"incremental, no reorth",0.78,0.958333
+manymode,spike,"incremental, no reorth",0.79,0.966667
+manymode,spike,"incremental, no reorth",0.8,0.975
+manymode,spike,"incremental, no reorth",0.81,0.991667
+manymode,spike,"incremental, no reorth",0.82,0.991667
+manymode,spike,"incremental, no reorth",0.83,0.991667
+manymode,spike,"incremental, no reorth",0.84,0.991667
+manymode,spike,"incremental, no reorth",0.85,0.991667
+manymode,spike,"incremental, no reorth",0.86,0.991667
+manymode,spike,"incremental, no reorth",0.87,1.0
+manymode,spike,"incremental, no reorth",0.88,1.0
+manymode,spike,"incremental, no reorth",0.89,1.0
+manymode,spike,"incremental, no reorth",0.9,1.0
+manymode,spike,"incremental, no reorth",0.91,1.0
+manymode,spike,"incremental, no reorth",0.92,1.0
+manymode,spike,"incremental, no reorth",0.93,1.0
+manymode,spike,"incremental, no reorth",0.94,1.0
+manymode,spike,"incremental, no reorth",0.95,1.0
+manymode,spike,"incremental, no reorth",0.96,1.0
+manymode,spike,"incremental, no reorth",0.97,1.0
+manymode,spike,"incremental, no reorth",0.98,1.0
+manymode,spike,"incremental, no reorth",0.99,1.0
+manymode,spike,"incremental, no reorth",1.0,1.0
+manymode,spike,"incremental, rank from gap criterion",0.0,0.0
+manymode,spike,"incremental, rank from gap criterion",0.01,0.0
+manymode,spike,"incremental, rank from gap criterion",0.02,0.0
+manymode,spike,"incremental, rank from gap criterion",0.03,0.016667
+manymode,spike,"incremental, rank from gap criterion",0.04,0.033333
+manymode,spike,"incremental, rank from gap criterion",0.05,0.058333
+manymode,spike,"incremental, rank from gap criterion",0.06,0.083333
+manymode,spike,"incremental, rank from gap criterion",0.07,0.108333
+manymode,spike,"incremental, rank from gap criterion",0.08,0.108333
+manymode,spike,"incremental, rank from gap criterion",0.09,0.125
+manymode,spike,"incremental, rank from gap criterion",0.1,0.133333
+manymode,spike,"incremental, rank from gap criterion",0.11,0.141667
+manymode,spike,"incremental, rank from gap criterion",0.12,0.15
+manymode,spike,"incremental, rank from gap criterion",0.13,0.166667
+manymode,spike,"incremental, rank from gap criterion",0.14,0.183333
+manymode,spike,"incremental, rank from gap criterion",0.15,0.183333
+manymode,spike,"incremental, rank from gap criterion",0.16,0.183333
+manymode,spike,"incremental, rank from gap criterion",0.17,0.191667
+manymode,spike,"incremental, rank from gap criterion",0.18,0.191667
+manymode,spike,"incremental, rank from gap criterion",0.19,0.2
+manymode,spike,"incremental, rank from gap criterion",0.2,0.208333
+manymode,spike,"incremental, rank from gap criterion",0.21,0.208333
+manymode,spike,"incremental, rank from gap criterion",0.22,0.216667
+manymode,spike,"incremental, rank from gap criterion",0.23,0.225
+manymode,spike,"incremental, rank from gap criterion",0.24,0.233333
+manymode,spike,"incremental, rank from gap criterion",0.25,0.25
+manymode,spike,"incremental, rank from gap criterion",0.26,0.258333
+manymode,spike,"incremental, rank from gap criterion",0.27,0.275
+manymode,spike,"incremental, rank from gap criterion",0.28,0.275
+manymode,spike,"incremental, rank from gap criterion",0.29,0.291667
+manymode,spike,"incremental, rank from gap criterion",0.3,0.3
+manymode,spike,"incremental, rank from gap criterion",0.31,0.308333
+manymode,spike,"incremental, rank from gap criterion",0.32,0.316667
+manymode,spike,"incremental, rank from gap criterion",0.33,0.316667
+manymode,spike,"incremental, rank from gap criterion",0.34,0.325
+manymode,spike,"incremental, rank from gap criterion",0.35,0.341667
+manymode,spike,"incremental, rank from gap criterion",0.36,0.341667
+manymode,spike,"incremental, rank from gap criterion",0.37,0.341667
+manymode,spike,"incremental, rank from gap criterion",0.38,0.383333
+manymode,spike,"incremental, rank from gap criterion",0.39,0.391667
+manymode,spike,"incremental, rank from gap criterion",0.4,0.4
+manymode,spike,"incremental, rank from gap criterion",0.41,0.4
+manymode,spike,"incremental, rank from gap criterion",0.42,0.408333
+manymode,spike,"incremental, rank from gap criterion",0.43,0.408333
+manymode,spike,"incremental, rank from gap criterion",0.44,0.416667
+manymode,spike,"incremental, rank from gap criterion",0.45,0.433333
+manymode,spike,"incremental, rank from gap criterion",0.46,0.433333
+manymode,spike,"incremental, rank from gap criterion",0.47,0.433333
+manymode,spike,"incremental, rank from gap criterion",0.48,0.441667
+manymode,spike,"incremental, rank from gap criterion",0.49,0.475
+manymode,spike,"incremental, rank from gap criterion",0.5,0.483333
+manymode,spike,"incremental, rank from gap criterion",0.51,0.508333
+manymode,spike,"incremental, rank from gap criterion",0.52,0.533333
+manymode,spike,"incremental, rank from gap criterion",0.53,0.533333
+manymode,spike,"incremental, rank from gap criterion",0.54,0.541667
+manymode,spike,"incremental, rank from gap criterion",0.55,0.558333
+manymode,spike,"incremental, rank from gap criterion",0.56,0.566667
+manymode,spike,"incremental, rank from gap criterion",0.57,0.575
+manymode,spike,"incremental, rank from gap criterion",0.58,0.591667
+manymode,spike,"incremental, rank from gap criterion",0.59,0.6
+manymode,spike,"incremental, rank from gap criterion",0.6,0.6
+manymode,spike,"incremental, rank from gap criterion",0.61,0.6
+manymode,spike,"incremental, rank from gap criterion",0.62,0.608333
+manymode,spike,"incremental, rank from gap criterion",0.63,0.616667
+manymode,spike,"incremental, rank from gap criterion",0.64,0.616667
+manymode,spike,"incremental, rank from gap criterion",0.65,0.641667
+manymode,spike,"incremental, rank from gap criterion",0.66,0.641667
+manymode,spike,"incremental, rank from gap criterion",0.67,0.658333
+manymode,spike,"incremental, rank from gap criterion",0.68,0.666667
+manymode,spike,"incremental, rank from gap criterion",0.69,0.675
+manymode,spike,"incremental, rank from gap criterion",0.7,0.683333
+manymode,spike,"incremental, rank from gap criterion",0.71,0.691667
+manymode,spike,"incremental, rank from gap criterion",0.72,0.716667
+manymode,spike,"incremental, rank from gap criterion",0.73,0.75
+manymode,spike,"incremental, rank from gap criterion",0.74,0.75
+manymode,spike,"incremental, rank from gap criterion",0.75,0.75
+manymode,spike,"incremental, rank from gap criterion",0.76,0.75
+manymode,spike,"incremental, rank from gap criterion",0.77,0.766667
+manymode,spike,"incremental, rank from gap criterion",0.78,0.775
+manymode,spike,"incremental, rank from gap criterion",0.79,0.775
+manymode,spike,"incremental, rank from gap criterion",0.8,0.783333
+manymode,spike,"incremental, rank from gap criterion",0.81,0.783333
+manymode,spike,"incremental, rank from gap criterion",0.82,0.791667
+manymode,spike,"incremental, rank from gap criterion",0.83,0.8
+manymode,spike,"incremental, rank from gap criterion",0.84,0.808333
+manymode,spike,"incremental, rank from gap criterion",0.85,0.808333
+manymode,spike,"incremental, rank from gap criterion",0.86,0.808333
+manymode,spike,"incremental, rank from gap criterion",0.87,0.816667
+manymode,spike,"incremental, rank from gap criterion",0.88,0.825
+manymode,spike,"incremental, rank from gap criterion",0.89,0.866667
+manymode,spike,"incremental, rank from gap criterion",0.9,0.875
+manymode,spike,"incremental, rank from gap criterion",0.91,0.883333
+manymode,spike,"incremental, rank from gap criterion",0.92,0.883333
+manymode,spike,"incremental, rank from gap criterion",0.93,0.9
+manymode,spike,"incremental, rank from gap criterion",0.94,0.933333
+manymode,spike,"incremental, rank from gap criterion",0.95,0.933333
+manymode,spike,"incremental, rank from gap criterion",0.96,0.941667
+manymode,spike,"incremental, rank from gap criterion",0.97,0.958333
+manymode,spike,"incremental, rank from gap criterion",0.98,0.975
+manymode,spike,"incremental, rank from gap criterion",0.99,0.991667
+manymode,spike,"incremental, rank from gap criterion",1.0,1.0
+manymode,spike,"C host binary, reorth",0.0,0.0
+manymode,spike,"C host binary, reorth",0.01,0.008333
+manymode,spike,"C host binary, reorth",0.02,0.033333
+manymode,spike,"C host binary, reorth",0.03,0.033333
+manymode,spike,"C host binary, reorth",0.04,0.041667
+manymode,spike,"C host binary, reorth",0.05,0.05
+manymode,spike,"C host binary, reorth",0.06,0.058333
+manymode,spike,"C host binary, reorth",0.07,0.083333
+manymode,spike,"C host binary, reorth",0.08,0.083333
+manymode,spike,"C host binary, reorth",0.09,0.108333
+manymode,spike,"C host binary, reorth",0.1,0.116667
+manymode,spike,"C host binary, reorth",0.11,0.125
+manymode,spike,"C host binary, reorth",0.12,0.141667
+manymode,spike,"C host binary, reorth",0.13,0.166667
+manymode,spike,"C host binary, reorth",0.14,0.183333
+manymode,spike,"C host binary, reorth",0.15,0.183333
+manymode,spike,"C host binary, reorth",0.16,0.183333
+manymode,spike,"C host binary, reorth",0.17,0.2
+manymode,spike,"C host binary, reorth",0.18,0.225
+manymode,spike,"C host binary, reorth",0.19,0.241667
+manymode,spike,"C host binary, reorth",0.2,0.25
+manymode,spike,"C host binary, reorth",0.21,0.266667
+manymode,spike,"C host binary, reorth",0.22,0.266667
+manymode,spike,"C host binary, reorth",0.23,0.291667
+manymode,spike,"C host binary, reorth",0.24,0.3
+manymode,spike,"C host binary, reorth",0.25,0.308333
+manymode,spike,"C host binary, reorth",0.26,0.325
+manymode,spike,"C host binary, reorth",0.27,0.35
+manymode,spike,"C host binary, reorth",0.28,0.35
+manymode,spike,"C host binary, reorth",0.29,0.35
+manymode,spike,"C host binary, reorth",0.3,0.358333
+manymode,spike,"C host binary, reorth",0.31,0.358333
+manymode,spike,"C host binary, reorth",0.32,0.366667
+manymode,spike,"C host binary, reorth",0.33,0.383333
+manymode,spike,"C host binary, reorth",0.34,0.383333
+manymode,spike,"C host binary, reorth",0.35,0.4
+manymode,spike,"C host binary, reorth",0.36,0.425
+manymode,spike,"C host binary, reorth",0.37,0.45
+manymode,spike,"C host binary, reorth",0.38,0.458333
+manymode,spike,"C host binary, reorth",0.39,0.458333
+manymode,spike,"C host binary, reorth",0.4,0.466667
+manymode,spike,"C host binary, reorth",0.41,0.491667
+manymode,spike,"C host binary, reorth",0.42,0.5
+manymode,spike,"C host binary, reorth",0.43,0.508333
+manymode,spike,"C host binary, reorth",0.44,0.533333
+manymode,spike,"C host binary, reorth",0.45,0.533333
+manymode,spike,"C host binary, reorth",0.46,0.533333
+manymode,spike,"C host binary, reorth",0.47,0.533333
+manymode,spike,"C host binary, reorth",0.48,0.541667
+manymode,spike,"C host binary, reorth",0.49,0.558333
+manymode,spike,"C host binary, reorth",0.5,0.575
+manymode,spike,"C host binary, reorth",0.51,0.575
+manymode,spike,"C host binary, reorth",0.52,0.6
+manymode,spike,"C host binary, reorth",0.53,0.608333
+manymode,spike,"C host binary, reorth",0.54,0.625
+manymode,spike,"C host binary, reorth",0.55,0.625
+manymode,spike,"C host binary, reorth",0.56,0.641667
+manymode,spike,"C host binary, reorth",0.57,0.658333
+manymode,spike,"C host binary, reorth",0.58,0.666667
+manymode,spike,"C host binary, reorth",0.59,0.666667
+manymode,spike,"C host binary, reorth",0.6,0.675
+manymode,spike,"C host binary, reorth",0.61,0.683333
+manymode,spike,"C host binary, reorth",0.62,0.708333
+manymode,spike,"C host binary, reorth",0.63,0.733333
+manymode,spike,"C host binary, reorth",0.64,0.75
+manymode,spike,"C host binary, reorth",0.65,0.758333
+manymode,spike,"C host binary, reorth",0.66,0.791667
+manymode,spike,"C host binary, reorth",0.67,0.808333
+manymode,spike,"C host binary, reorth",0.68,0.816667
+manymode,spike,"C host binary, reorth",0.69,0.858333
+manymode,spike,"C host binary, reorth",0.7,0.866667
+manymode,spike,"C host binary, reorth",0.71,0.866667
+manymode,spike,"C host binary, reorth",0.72,0.891667
+manymode,spike,"C host binary, reorth",0.73,0.9
+manymode,spike,"C host binary, reorth",0.74,0.9
+manymode,spike,"C host binary, reorth",0.75,0.916667
+manymode,spike,"C host binary, reorth",0.76,0.925
+manymode,spike,"C host binary, reorth",0.77,0.95
+manymode,spike,"C host binary, reorth",0.78,0.958333
+manymode,spike,"C host binary, reorth",0.79,0.966667
+manymode,spike,"C host binary, reorth",0.8,0.975
+manymode,spike,"C host binary, reorth",0.81,0.991667
+manymode,spike,"C host binary, reorth",0.82,0.991667
+manymode,spike,"C host binary, reorth",0.83,0.991667
+manymode,spike,"C host binary, reorth",0.84,0.991667
+manymode,spike,"C host binary, reorth",0.85,0.991667
+manymode,spike,"C host binary, reorth",0.86,0.991667
+manymode,spike,"C host binary, reorth",0.87,1.0
+manymode,spike,"C host binary, reorth",0.88,1.0
+manymode,spike,"C host binary, reorth",0.89,1.0
+manymode,spike,"C host binary, reorth",0.9,1.0
+manymode,spike,"C host binary, reorth",0.91,1.0
+manymode,spike,"C host binary, reorth",0.92,1.0
+manymode,spike,"C host binary, reorth",0.93,1.0
+manymode,spike,"C host binary, reorth",0.94,1.0
+manymode,spike,"C host binary, reorth",0.95,1.0
+manymode,spike,"C host binary, reorth",0.96,1.0
+manymode,spike,"C host binary, reorth",0.97,1.0
+manymode,spike,"C host binary, reorth",0.98,1.0
+manymode,spike,"C host binary, reorth",0.99,1.0
+manymode,spike,"C host binary, reorth",1.0,1.0
+manymode,spike,"C host binary, no reorth",0.0,0.0
+manymode,spike,"C host binary, no reorth",0.01,0.008333
+manymode,spike,"C host binary, no reorth",0.02,0.033333
+manymode,spike,"C host binary, no reorth",0.03,0.033333
+manymode,spike,"C host binary, no reorth",0.04,0.041667
+manymode,spike,"C host binary, no reorth",0.05,0.05
+manymode,spike,"C host binary, no reorth",0.06,0.058333
+manymode,spike,"C host binary, no reorth",0.07,0.083333
+manymode,spike,"C host binary, no reorth",0.08,0.083333
+manymode,spike,"C host binary, no reorth",0.09,0.108333
+manymode,spike,"C host binary, no reorth",0.1,0.116667
+manymode,spike,"C host binary, no reorth",0.11,0.125
+manymode,spike,"C host binary, no reorth",0.12,0.141667
+manymode,spike,"C host binary, no reorth",0.13,0.166667
+manymode,spike,"C host binary, no reorth",0.14,0.183333
+manymode,spike,"C host binary, no reorth",0.15,0.183333
+manymode,spike,"C host binary, no reorth",0.16,0.183333
+manymode,spike,"C host binary, no reorth",0.17,0.2
+manymode,spike,"C host binary, no reorth",0.18,0.225
+manymode,spike,"C host binary, no reorth",0.19,0.241667
+manymode,spike,"C host binary, no reorth",0.2,0.25
+manymode,spike,"C host binary, no reorth",0.21,0.266667
+manymode,spike,"C host binary, no reorth",0.22,0.266667
+manymode,spike,"C host binary, no reorth",0.23,0.291667
+manymode,spike,"C host binary, no reorth",0.24,0.3
+manymode,spike,"C host binary, no reorth",0.25,0.308333
+manymode,spike,"C host binary, no reorth",0.26,0.325
+manymode,spike,"C host binary, no reorth",0.27,0.35
+manymode,spike,"C host binary, no reorth",0.28,0.35
+manymode,spike,"C host binary, no reorth",0.29,0.35
+manymode,spike,"C host binary, no reorth",0.3,0.358333
+manymode,spike,"C host binary, no reorth",0.31,0.358333
+manymode,spike,"C host binary, no reorth",0.32,0.366667
+manymode,spike,"C host binary, no reorth",0.33,0.383333
+manymode,spike,"C host binary, no reorth",0.34,0.383333
+manymode,spike,"C host binary, no reorth",0.35,0.4
+manymode,spike,"C host binary, no reorth",0.36,0.425
+manymode,spike,"C host binary, no reorth",0.37,0.45
+manymode,spike,"C host binary, no reorth",0.38,0.458333
+manymode,spike,"C host binary, no reorth",0.39,0.458333
+manymode,spike,"C host binary, no reorth",0.4,0.466667
+manymode,spike,"C host binary, no reorth",0.41,0.491667
+manymode,spike,"C host binary, no reorth",0.42,0.5
+manymode,spike,"C host binary, no reorth",0.43,0.508333
+manymode,spike,"C host binary, no reorth",0.44,0.533333
+manymode,spike,"C host binary, no reorth",0.45,0.533333
+manymode,spike,"C host binary, no reorth",0.46,0.533333
+manymode,spike,"C host binary, no reorth",0.47,0.533333
+manymode,spike,"C host binary, no reorth",0.48,0.541667
+manymode,spike,"C host binary, no reorth",0.49,0.558333
+manymode,spike,"C host binary, no reorth",0.5,0.575
+manymode,spike,"C host binary, no reorth",0.51,0.575
+manymode,spike,"C host binary, no reorth",0.52,0.6
+manymode,spike,"C host binary, no reorth",0.53,0.608333
+manymode,spike,"C host binary, no reorth",0.54,0.625
+manymode,spike,"C host binary, no reorth",0.55,0.625
+manymode,spike,"C host binary, no reorth",0.56,0.641667
+manymode,spike,"C host binary, no reorth",0.57,0.658333
+manymode,spike,"C host binary, no reorth",0.58,0.666667
+manymode,spike,"C host binary, no reorth",0.59,0.666667
+manymode,spike,"C host binary, no reorth",0.6,0.675
+manymode,spike,"C host binary, no reorth",0.61,0.683333
+manymode,spike,"C host binary, no reorth",0.62,0.708333
+manymode,spike,"C host binary, no reorth",0.63,0.733333
+manymode,spike,"C host binary, no reorth",0.64,0.75
+manymode,spike,"C host binary, no reorth",0.65,0.758333
+manymode,spike,"C host binary, no reorth",0.66,0.791667
+manymode,spike,"C host binary, no reorth",0.67,0.808333
+manymode,spike,"C host binary, no reorth",0.68,0.816667
+manymode,spike,"C host binary, no reorth",0.69,0.858333
+manymode,spike,"C host binary, no reorth",0.7,0.866667
+manymode,spike,"C host binary, no reorth",0.71,0.866667
+manymode,spike,"C host binary, no reorth",0.72,0.891667
+manymode,spike,"C host binary, no reorth",0.73,0.9
+manymode,spike,"C host binary, no reorth",0.74,0.9
+manymode,spike,"C host binary, no reorth",0.75,0.916667
+manymode,spike,"C host binary, no reorth",0.76,0.925
+manymode,spike,"C host binary, no reorth",0.77,0.95
+manymode,spike,"C host binary, no reorth",0.78,0.958333
+manymode,spike,"C host binary, no reorth",0.79,0.966667
+manymode,spike,"C host binary, no reorth",0.8,0.975
+manymode,spike,"C host binary, no reorth",0.81,0.991667
+manymode,spike,"C host binary, no reorth",0.82,0.991667
+manymode,spike,"C host binary, no reorth",0.83,0.991667
+manymode,spike,"C host binary, no reorth",0.84,0.991667
+manymode,spike,"C host binary, no reorth",0.85,0.991667
+manymode,spike,"C host binary, no reorth",0.86,0.991667
+manymode,spike,"C host binary, no reorth",0.87,1.0
+manymode,spike,"C host binary, no reorth",0.88,1.0
+manymode,spike,"C host binary, no reorth",0.89,1.0
+manymode,spike,"C host binary, no reorth",0.9,1.0
+manymode,spike,"C host binary, no reorth",0.91,1.0
+manymode,spike,"C host binary, no reorth",0.92,1.0
+manymode,spike,"C host binary, no reorth",0.93,1.0
+manymode,spike,"C host binary, no reorth",0.94,1.0
+manymode,spike,"C host binary, no reorth",0.95,1.0
+manymode,spike,"C host binary, no reorth",0.96,1.0
+manymode,spike,"C host binary, no reorth",0.97,1.0
+manymode,spike,"C host binary, no reorth",0.98,1.0
+manymode,spike,"C host binary, no reorth",0.99,1.0
+manymode,spike,"C host binary, no reorth",1.0,1.0
+manymode,spike,"C host binary, float32, reorth",0.0,0.0
+manymode,spike,"C host binary, float32, reorth",0.01,0.008333
+manymode,spike,"C host binary, float32, reorth",0.02,0.033333
+manymode,spike,"C host binary, float32, reorth",0.03,0.033333
+manymode,spike,"C host binary, float32, reorth",0.04,0.041667
+manymode,spike,"C host binary, float32, reorth",0.05,0.05
+manymode,spike,"C host binary, float32, reorth",0.06,0.058333
+manymode,spike,"C host binary, float32, reorth",0.07,0.083333
+manymode,spike,"C host binary, float32, reorth",0.08,0.083333
+manymode,spike,"C host binary, float32, reorth",0.09,0.108333
+manymode,spike,"C host binary, float32, reorth",0.1,0.116667
+manymode,spike,"C host binary, float32, reorth",0.11,0.125
+manymode,spike,"C host binary, float32, reorth",0.12,0.141667
+manymode,spike,"C host binary, float32, reorth",0.13,0.166667
+manymode,spike,"C host binary, float32, reorth",0.14,0.183333
+manymode,spike,"C host binary, float32, reorth",0.15,0.183333
+manymode,spike,"C host binary, float32, reorth",0.16,0.183333
+manymode,spike,"C host binary, float32, reorth",0.17,0.2
+manymode,spike,"C host binary, float32, reorth",0.18,0.225
+manymode,spike,"C host binary, float32, reorth",0.19,0.241667
+manymode,spike,"C host binary, float32, reorth",0.2,0.25
+manymode,spike,"C host binary, float32, reorth",0.21,0.266667
+manymode,spike,"C host binary, float32, reorth",0.22,0.266667
+manymode,spike,"C host binary, float32, reorth",0.23,0.291667
+manymode,spike,"C host binary, float32, reorth",0.24,0.3
+manymode,spike,"C host binary, float32, reorth",0.25,0.308333
+manymode,spike,"C host binary, float32, reorth",0.26,0.325
+manymode,spike,"C host binary, float32, reorth",0.27,0.35
+manymode,spike,"C host binary, float32, reorth",0.28,0.35
+manymode,spike,"C host binary, float32, reorth",0.29,0.35
+manymode,spike,"C host binary, float32, reorth",0.3,0.358333
+manymode,spike,"C host binary, float32, reorth",0.31,0.358333
+manymode,spike,"C host binary, float32, reorth",0.32,0.366667
+manymode,spike,"C host binary, float32, reorth",0.33,0.383333
+manymode,spike,"C host binary, float32, reorth",0.34,0.383333
+manymode,spike,"C host binary, float32, reorth",0.35,0.4
+manymode,spike,"C host binary, float32, reorth",0.36,0.425
+manymode,spike,"C host binary, float32, reorth",0.37,0.45
+manymode,spike,"C host binary, float32, reorth",0.38,0.458333
+manymode,spike,"C host binary, float32, reorth",0.39,0.458333
+manymode,spike,"C host binary, float32, reorth",0.4,0.466667
+manymode,spike,"C host binary, float32, reorth",0.41,0.491667
+manymode,spike,"C host binary, float32, reorth",0.42,0.5
+manymode,spike,"C host binary, float32, reorth",0.43,0.508333
+manymode,spike,"C host binary, float32, reorth",0.44,0.533333
+manymode,spike,"C host binary, float32, reorth",0.45,0.533333
+manymode,spike,"C host binary, float32, reorth",0.46,0.533333
+manymode,spike,"C host binary, float32, reorth",0.47,0.533333
+manymode,spike,"C host binary, float32, reorth",0.48,0.541667
+manymode,spike,"C host binary, float32, reorth",0.49,0.558333
+manymode,spike,"C host binary, float32, reorth",0.5,0.575
+manymode,spike,"C host binary, float32, reorth",0.51,0.575
+manymode,spike,"C host binary, float32, reorth",0.52,0.6
+manymode,spike,"C host binary, float32, reorth",0.53,0.608333
+manymode,spike,"C host binary, float32, reorth",0.54,0.625
+manymode,spike,"C host binary, float32, reorth",0.55,0.625
+manymode,spike,"C host binary, float32, reorth",0.56,0.641667
+manymode,spike,"C host binary, float32, reorth",0.57,0.658333
+manymode,spike,"C host binary, float32, reorth",0.58,0.666667
+manymode,spike,"C host binary, float32, reorth",0.59,0.666667
+manymode,spike,"C host binary, float32, reorth",0.6,0.675
+manymode,spike,"C host binary, float32, reorth",0.61,0.683333
+manymode,spike,"C host binary, float32, reorth",0.62,0.708333
+manymode,spike,"C host binary, float32, reorth",0.63,0.733333
+manymode,spike,"C host binary, float32, reorth",0.64,0.75
+manymode,spike,"C host binary, float32, reorth",0.65,0.758333
+manymode,spike,"C host binary, float32, reorth",0.66,0.791667
+manymode,spike,"C host binary, float32, reorth",0.67,0.808333
+manymode,spike,"C host binary, float32, reorth",0.68,0.816667
+manymode,spike,"C host binary, float32, reorth",0.69,0.858333
+manymode,spike,"C host binary, float32, reorth",0.7,0.866667
+manymode,spike,"C host binary, float32, reorth",0.71,0.866667
+manymode,spike,"C host binary, float32, reorth",0.72,0.891667
+manymode,spike,"C host binary, float32, reorth",0.73,0.9
+manymode,spike,"C host binary, float32, reorth",0.74,0.9
+manymode,spike,"C host binary, float32, reorth",0.75,0.916667
+manymode,spike,"C host binary, float32, reorth",0.76,0.925
+manymode,spike,"C host binary, float32, reorth",0.77,0.95
+manymode,spike,"C host binary, float32, reorth",0.78,0.958333
+manymode,spike,"C host binary, float32, reorth",0.79,0.966667
+manymode,spike,"C host binary, float32, reorth",0.8,0.975
+manymode,spike,"C host binary, float32, reorth",0.81,0.991667
+manymode,spike,"C host binary, float32, reorth",0.82,0.991667
+manymode,spike,"C host binary, float32, reorth",0.83,0.991667
+manymode,spike,"C host binary, float32, reorth",0.84,0.991667
+manymode,spike,"C host binary, float32, reorth",0.85,0.991667
+manymode,spike,"C host binary, float32, reorth",0.86,0.991667
+manymode,spike,"C host binary, float32, reorth",0.87,1.0
+manymode,spike,"C host binary, float32, reorth",0.88,1.0
+manymode,spike,"C host binary, float32, reorth",0.89,1.0
+manymode,spike,"C host binary, float32, reorth",0.9,1.0
+manymode,spike,"C host binary, float32, reorth",0.91,1.0
+manymode,spike,"C host binary, float32, reorth",0.92,1.0
+manymode,spike,"C host binary, float32, reorth",0.93,1.0
+manymode,spike,"C host binary, float32, reorth",0.94,1.0
+manymode,spike,"C host binary, float32, reorth",0.95,1.0
+manymode,spike,"C host binary, float32, reorth",0.96,1.0
+manymode,spike,"C host binary, float32, reorth",0.97,1.0
+manymode,spike,"C host binary, float32, reorth",0.98,1.0
+manymode,spike,"C host binary, float32, reorth",0.99,1.0
+manymode,spike,"C host binary, float32, reorth",1.0,1.0

@@ -1,0 +1,34 @@
+{#
+  Κάρτα μαθήματος.
+
+  Περιμένει τη μεταβλητή `item` — ένα στοιχείο του collections.classes.
+  Χρήση:
+      {% for item in collections.classes %}
+        {% include "partials/class-card.njk" %}
+      {% endfor %}
+
+  (Τα includes του Nunjucks βλέπουν τις μεταβλητές του σημείου που τα καλεί,
+  γι' αυτό αρκεί να υπάρχει `item`.)
+
+  Όλα τα στοιχεία μέσα στο <a> είναι <span>: ο σύνδεσμος επιτρέπεται να
+  περιέχει μόνο κείμενο και ενσωματωμένα στοιχεία.
+#}
+<a class="class-card" href="{{ item.url }}">
+  <span class="class-card__media">
+    <img
+      class="class-card__image"
+      src="{{ item.data.image }}"
+      alt=""
+      width="900"
+      height="1125"
+      loading="lazy"
+    />
+    {# Το μετρικό του χορού — η πιο χαρακτηριστική πληροφορία κάθε είδους. #}
+    <span class="class-card__meter">{{ item.data.meter }}</span>
+  </span>
+
+  <span class="class-card__body">
+    <span class="class-card__title">{{ item.data.title }}</span>
+    <span class="class-card__meta">{{ item.data.ages }}</span>
+  </span>
+</a>

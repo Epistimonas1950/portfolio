@@ -1,0 +1,114 @@
+---
+layout: layouts/base.njk
+---
+{#
+  Προφίλ καθηγητή (src/kathigites/*.md).
+
+  Front matter: name, slug, role, image, order, studied, since, styles[]
+  Το `slug` πρέπει να ταιριάζει με το όνομα του αρχείου και με το πεδίο
+  `teacher` στο _data/schedule.js.
+#}
+
+{# Όλες οι ώρες που διδάσκει, και από αυτές τα διαφορετικά μαθήματα. #}
+{% set ownSessions = schedule.sessions | filterBy("teacher", slug) %}
+{% set ownClasses = ownSessions | uniqueBy("class") %}
+
+<article>
+  <header class="page-head">
+    <div class="wrap split split--wide-right">
+      <img
+        class="page-head__image page-head__image--portrait"
+        src="{{ image }}"
+        alt="{{ title }}"
+        width="800"
+        height="1000"
+      />
+
+      <div>
+        <p class="eyebrow">ΚΑΘΗΓΗΤΗΣ</p>
+        <h1 class="page-head__title">{{ title }}</h1>
+        <p class="page-head__lead">{{ role }}</p>
+
+        <ul class="facts">
+          <li class="facts__item">
+            <span class="facts__label">ΣΤΟ ΟΚΤΩ ΑΠΟ</span>
+            <span class="facts__value">{{ since }}</span>
+          </li>
+          <li class="facts__item">
+            <span class="facts__label">ΣΠΟΥΔΕΣ</span>
+            <span class="facts__value">{{ studied }}</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="section wrap split split--wide-left">
+    <div class="prose">{{ content | safe }}</div>
+
+    <aside class="stack-md">
+      <section class="aside-block">
+        <h2 class="eyebrow">ΔΙΔΑΣΚΕΙ</h2>
+        <ul class="pill-list">
+          {%- for session in ownClasses %}
+            {% set item = collections.classBySlug[session.class] %}
+            {%- if item %}
+              <li>
+                <a class="pill pill--light" href="{{ item.url }}">
+                  {{ item.data.title }}
+                  <span class="pill__meter">{{ item.data.meter }}</span>
+                </a>
+              </li>
+            {%- endif %}
+          {%- endfor %}
+        </ul>
+      </section>
+
+      <section class="aside-block">
+        <h2 class="eyebrow">ΩΡΕΣ ΤΗΝ ΕΒΔΟΜΑΔΑ</h2>
+        <ul class="times">
+          {%- for session in ownSessions %}
+            {% set day = schedule.days | findBy("key", session.day) %}
+            {% set item = collections.classBySlug[session.class] %}
+            <li class="times__row">
+              <span class="times__day">{{ day.label }}</span>
+              <span class="times__hours">{{ session.start }} – {{ session.end }}</span>
+              <span class="times__level">{{ item.data.title if item else session.class }}</span>
+            </li>
+          {%- endfor %}
+        </ul>
+      </section>
+    </aside>
+  </div>
+
+  <section class="section section--tight section--dark">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-head__text">
+          <p class="eyebrow">ΟΙ ΑΝΘΡΩΠΟΙ</p>
+          <h2>Οι υπόλοιποι καθηγητές</h2>
+        </div>
+        <a class="arrow-link" href="/kathigites/">Δες τους όλους</a>
+      </div>
+
+      <div class="grid grid--4">
+        {%- for person in collections.teachers %}
+          {%- if person.data.slug != slug %}
+            <a class="person-card" href="{{ person.url }}">
+              <img
+                class="person-card__image"
+                src="{{ person.data.image }}"
+                alt="{{ person.data.title }}"
+                width="800"
+                height="1000"
+                loading="lazy"
+              />
+              <span class="person-card__name">{{ person.data.title }}</span>
+              <span class="person-card__role">{{ person.data.role }}</span>
+            </a>
+          {%- endif %}
+        {%- endfor %}
+      </div>
+    </div>
+  </section>
+</article>

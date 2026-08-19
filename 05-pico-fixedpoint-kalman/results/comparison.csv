@@ -1,0 +1,10 @@
+implementation,drift_60s_deg,drift_rate_deg_per_s,max_abs_err_deg,rms_err_deg,rms_vs_truth_deg,max_sym_resid,min_eigenvalue,first_negative_step,n_negative_steps,saturation_events,note
+float64 reference (numpy),0,0,0,0,0.128563,0,2.04477e-06,-1,0,0,ground truth by definition; naive and Joseph agree to 3.33e-16 rad here
+fixed_joseph_gain_q1.30,0.000451783,1.90294e-06,0.0015128,0.000387283,0.12867,0,2.03438e-06,-1,0,0,the design as specified in qformat.h
+fixed_naive_gain_q1.30,0.000451783,1.90294e-06,0.0015128,0.000386373,0.128672,2.79397e-09,2.03487e-06,-1,0,0,"textbook update, nominal gain precision: survives, but P is already asymmetric"
+fixed_joseph_gain_q1.12,0.00241874,4.53095e-05,0.00641529,0.00219339,0.128388,0,2.03257e-06,-1,0,0,"gain cut to 12 fractional bits: suboptimal, still a covariance"
+fixed_naive_gain_q1.12,0.00198617,9.04769e-05,0.272054,0.0115886,0.127343,0.00125,-1.56249e-06,0,6,0,gain cut to 12 fractional bits: predicted to lose positive definiteness
+PREDICTED lower (independent roundings),6.79201e-05,0,6.79201e-05,6.79201e-05,nan,3.67628e-08,nan,-1,0,0,"variance propagation: every rounding independent and uniform. Under-predicts, because roundings in a deterministic recursion are correlated in time -- the diagnosis, not an excuse"
+PREDICTED upper (l1 bound),0.124559,0,0.124559,0.124559,nan,3.67628e-08,nan,-1,0,0,l1 gain of the closed loop with every rounding at its full half-ulp and perfectly aligned in time; a strict upper bound
+measured / PREDICTED lower,6.65168,nan,22.2732,5.70204,nan,0.0759998,nan,-1,0,0,how far the independent-rounding model under-predicts
+PREDICTED upper / measured,275.705,nan,82.3368,321.622,nan,13.1579,nan,-1,0,0,how far the bound over-predicts; the measurement is bracketed

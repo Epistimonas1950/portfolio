@@ -1,0 +1,140 @@
+---
+layout: layouts/base.njk
+---
+{#
+  Σελίδα ενός μαθήματος (src/mathimata/*.md).
+
+  Front matter που περιμένει:
+    title, slug, meter, meterNote, level, ages, duration, teachers[], image, summary
+
+  ΣΗΜΑΝΤΙΚΟ: το `slug` πρέπει να είναι ίδιο με το όνομα του αρχείου, γιατί με
+  αυτό βρίσκονται οι ώρες του μαθήματος μέσα στο _data/schedule.js.
+#}
+
+{# Οι ώρες αυτού του μαθήματος, στη σειρά που είναι γραμμένες στο schedule. #}
+{% set classSessions = schedule.sessions | filterBy("class", slug) %}
+
+<article>
+  <header class="page-head">
+    <div class="wrap split split--wide-left">
+      <div>
+        <p class="eyebrow">ΜΑΘΗΜΑ</p>
+        <h1 class="page-head__title">{{ title }}</h1>
+        <p class="page-head__lead">{{ summary }}</p>
+
+        <ul class="facts">
+          <li class="facts__item">
+            <span class="facts__label">ΜΕΤΡΙΚΟ</span>
+            <span class="facts__value">{{ meter }}</span>
+          </li>
+          <li class="facts__item">
+            <span class="facts__label">ΔΙΑΡΚΕΙΑ</span>
+            <span class="facts__value">{{ duration }}</span>
+          </li>
+          <li class="facts__item">
+            <span class="facts__label">ΗΛΙΚΙΕΣ</span>
+            <span class="facts__value">{{ ages }}</span>
+          </li>
+          <li class="facts__item">
+            <span class="facts__label">ΕΠΙΠΕΔΑ</span>
+            <span class="facts__value">{{ level }}</span>
+          </li>
+        </ul>
+
+        <div class="btn-row">
+          <a class="btn btn--accent" href="/epikoinonia/#dokimastiko">{{ site.cta.short }}</a>
+          <a class="btn btn--ghost" href="/programma/"><span>Όλο το πρόγραμμα</span></a>
+        </div>
+      </div>
+
+      <img
+        class="page-head__image"
+        src="{{ image }}"
+        alt="{{ title }} στη σχολή {{ site.name }}"
+        width="900"
+        height="1125"
+      />
+    </div>
+  </header>
+
+  <div class="section wrap split split--wide-left">
+    {# Το κείμενο του μαθήματος, όπως γράφτηκε στο Markdown. #}
+    <div class="prose">{{ content | safe }}</div>
+
+    <aside class="stack-md">
+      <section class="aside-block">
+        <h2 class="eyebrow">ΩΡΕΣ ΤΜΗΜΑΤΩΝ</h2>
+        <ul class="times">
+          {%- for session in classSessions %}
+            {% set day = schedule.days | findBy("key", session.day) %}
+            <li class="times__row">
+              <span class="times__day">{{ day.label }}</span>
+              <span class="times__hours">{{ session.start }} – {{ session.end }}</span>
+              <span class="times__level">
+                {{ schedule.levels[session.level] }}{% if session.note %} · {{ session.note }}{% endif %}
+              </span>
+            </li>
+          {%- endfor %}
+        </ul>
+      </section>
+
+      {# Το μετρικό δεν είναι διακόσμηση: εξηγεί πώς μετράει κανείς τη μουσική. #}
+      <section class="aside-block">
+        <h2 class="eyebrow">ΤΟ ΜΕΤΡΗΜΑ</h2>
+        <p class="meter-line">{{ meter }}</p>
+        <p class="meter-note">{{ meterNote }}</p>
+      </section>
+
+      <section class="aside-block">
+        <h2 class="eyebrow">ΔΙΔΑΣΚΟΥΝ</h2>
+        <ul class="mini-people">
+          {%- for teacherSlug in teachers %}
+            {% set teacher = collections.teacherBySlug[teacherSlug] %}
+            {%- if teacher %}
+              <li>
+                <a class="mini-person" href="{{ teacher.url }}">
+                  <img
+                    class="mini-person__image"
+                    src="{{ teacher.data.image }}"
+                    alt=""
+                    width="800"
+                    height="1000"
+                  />
+                  <span>
+                    <span class="mini-person__name">{{ teacher.data.title }}</span>
+                    <span class="mini-person__role">{{ teacher.data.role }}</span>
+                  </span>
+                </a>
+              </li>
+            {%- endif %}
+          {%- endfor %}
+        </ul>
+      </section>
+    </aside>
+  </div>
+
+  <section class="section section--tight section--dark">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-head__text">
+          <p class="eyebrow">ΚΑΙ ΚΑΤΙ ΑΛΛΟ</p>
+          <h2>Τα υπόλοιπα μαθήματα</h2>
+        </div>
+        <a class="arrow-link" href="/mathimata/">Δες τα όλα</a>
+      </div>
+
+      <ul class="pill-list">
+        {%- for item in collections.classes %}
+          {%- if item.data.slug != slug %}
+            <li>
+              <a class="pill" href="{{ item.url }}">
+                {{ item.data.title }}
+                <span class="pill__meter">{{ item.data.meter }}</span>
+              </a>
+            </li>
+          {%- endif %}
+        {%- endfor %}
+      </ul>
+    </div>
+  </section>
+</article>

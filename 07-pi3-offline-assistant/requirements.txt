@@ -1,0 +1,26 @@
+# The test suite and every CSV in results/ are produced with numpy alone. Nothing
+# below is needed to run `make test` or `make results`.
+#
+#   python3 -m venv .venv
+#   .venv/bin/pip install -r requirements.txt
+#
+# The system interpreter on the machine this was written on is PEP-668 externally
+# managed, so installing into it fails. Use the venv.
+
+numpy>=1.26            # the only hard requirement
+
+# --- plotting: bench/plot_results.py only ---------------------------------------
+matplotlib>=3.7        # every number it draws is already in results/*.csv
+
+# --- NOT pip-installable: the deployment itself ----------------------------------
+# The four things this project actually deploys are native binaries and model files,
+# not Python packages. They are built or fetched by setup/install.sh ON THE BOARD:
+#
+#   llama.cpp        https://github.com/ggerganov/llama.cpp     built from source
+#   whisper.cpp      https://github.com/ggerganov/whisper.cpp   built from source
+#   piper            https://github.com/rhasspy/piper           prebuilt aarch64
+#   ggml-tiny.en-q5_1.bin                                       whisper model
+#   <model>.gguf     exported by portfolio projects 01 + 02     COPIED FROM LAPTOP
+#
+# There is no pip line for any of them and there should not be. See STATUS.md for
+# what is blocked on which.

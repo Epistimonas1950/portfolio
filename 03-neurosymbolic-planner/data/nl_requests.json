@@ -1,0 +1,915 @@
+{
+  "about": "Hand-written natural-language delivery requests with gold JSON instance specs, authored for this repo. 20 are inside the grammar the RuleBackend targets; 11 are deliberately outside it, each labelled with the failure mode it is meant to provoke. The corpus was written before the parser, and the parser was not revised against the hard cases.",
+  "conventions": {
+    "times": "minutes from midnight; 08:00 = 480",
+    "defaults": "start_time 08:00, service 6 min/stop, reload 10 min, window [start_time, 18:00] when the request gives none",
+    "house_idioms": "'noon'/'midday' = 12:00, 'lunch' = 12:00, 'first thing' = before 09:00, 'this afternoon' = after 12:00",
+    "exact_match": "canonicalised field-by-field equality of the whole spec, with stops sorted by name"
+  },
+  "n_requests": 31,
+  "requests": [
+    {
+      "id": "p01",
+      "text": "Deliver two crates to Baker Street and one to Elm Avenue. The van holds four crates.",
+      "difficulty": "plain",
+      "failure_modes": [],
+      "note": "",
+      "gold": {
+        "capacity": 4,
+        "service_minutes": 6,
+        "reload_minutes": 10,
+        "start_time": 480,
+        "stops": [
+          {
+            "name": "baker street",
+            "demand": 2,
+            "earliest": 480,
+            "latest": 1080
+          },
+          {
+            "name": "elm avenue",
+            "demand": 1,
+            "earliest": 480,
+            "latest": 1080
+          }
+        ]
+      }
+    },
+    {
+      "id": "p02",
+      "text": "Three boxes to the harbour and two to Riverside Clinic. Riverside Clinic must be done before 12:00. Capacity is five.",
+      "difficulty": "plain",
+      "failure_modes": [],
+      "note": "",
+      "gold": {
+        "capacity": 5,
+        "service_minutes": 6,
+        "reload_minutes": 10,
+        "start_time": 480,
+        "stops": [
+          {
+            "name": "riverside clinic",
+            "demand": 2,
+            "earliest": 480,
+            "latest": 720
+          },
+          {
+            "name": "the harbour",
+            "demand": 3,
+            "earliest": 480,
+            "latest": 1080
+          }
+        ]
+      }
+    },
+    {
+      "id": "p03",
+      "text": "One parcel each to King's Cross, Old Mill Road and North Gate. The van holds three crates. Everything before 14:00.",
+      "difficulty": "plain",
+      "failure_modes": [],
+      "note": "",
+      "gold": {
+        "capacity": 3,
+        "service_minutes": 6,
+        "reload_minutes": 10,
+        "start_time": 480,
+        "stops": [
+          {
+            "name": "king's cross",
+            "demand": 1,
+            "earliest": 480,
+            "latest": 840
+          },
+          {
+            "name": "north gate",
+            "demand": 1,
+            "earliest": 480,
+            "latest": 840
+          },
+          {
+            "name": "old mill road",
+            "demand": 1,
+            "earliest": 480,
+            "latest": 840
+          }
+        ]
+      }
+    },
+    {
+      "id": "p04",
+      "text": "Two crates to St Anne's School between 09:00 and 10:30, one crate to The Cannery after 11:00. Our van holds four crates.",
+      "difficulty": "plain",
+      "failure_modes": [],
+      "note": "",
+      "gold": {
+        "capacity": 4,
+        "service_minutes": 6,
+        "reload_minutes": 10,
+        "start_time": 480,
+        "stops": [
+          {
+            "name": "st anne's school",
+            "demand": 2,
+            "earliest": 540,
+            "latest": 630
+          },
+          {
+            "name": "the cannery",
+            "demand": 1,
+            "earliest": 660,
+            "latest": 1080
+          }
+        ]
+      }
+    },
+    {
+      "id": "p05",
+      "text": "The van holds six crates. Send two to Victoria Market, two to Greenfield Park and two to Lower Quay, all before 16:00.",
+      "difficulty": "plain",
+      "failure_modes": [],
+      "note": "",
+      "gold": {
+        "capacity": 6,
+        "service_minutes": 6,
+        "reload_minutes": 10,
+        "start_time": 480,
+        "stops": [
+          {
+            "name": "greenfield park",
+            "demand": 2,
+            "earliest": 480,
+            "latest": 960
+          },
+          {
+            "name": "lower quay",
+            "demand": 2,
+            "earliest": 480,
+            "latest": 960
+          },
+          {
+            "name": "victoria market",
+            "demand": 2,
+            "earliest": 480,
+            "latest": 960
+          }
+        ]
+      }
+    },
+    {
+      "id": "p06",
+      "text": "Capacity 4. One crate to the Observatory by 15:00.",
+      "difficulty": "plain",
+      "failure_modes": [],
+      "note": "",
+      "gold": {
+        "capacity": 4,
+        "service_minutes": 6,
+        "reload_minutes": 10,
+        "start_time": 480,
+        "stops": [
+          {
+            "name": "the observatory",
+            "demand": 1,
+            "earliest": 480,
+            "latest": 900
+          }
+        ]
+      }
+    },
+    {
+      "id": "p07",
+      "text": "Our bike can carry two boxes. Deliver one box to Baker Street and one box to Greenfield Park. Each drop takes 4 minutes.",
+      "difficulty": "plain",
+      "failure_modes": [],
+      "note": "",
+      "gold": {
+        "capacity": 2,
+        "service_minutes": 4,
+        "reload_minutes": 10,
+        "start_time": 480,
+        "stops": [
+          {
+            "name": "baker street",
+            "demand": 1,
+            "earliest": 480,
+            "latest": 1080
+          },
+          {
+            "name": "greenfield park",
+            "demand": 1,
+            "earliest": 480,
+            "latest": 1080
+          }
+        ]
+      }
+    },
+    {
+      "id": "p08",
+      "text": "We start at 07:30. The van holds four crates. Two crates to North Gate before 09:00 and two to the harbour before 11:00.",
+      "difficulty": "plain",
+      "failure_modes": [],
+      "note": "",
+      "gold": {
+        "capacity": 4,
+        "service_minutes": 6,
+        "reload_minutes": 10,
+        "start_time": 450,
+        "stops": [
+          {
+            "name": "north gate",
+            "demand": 2,
+            "earliest": 450,
+            "latest": 540
+          },
+          {
+            "name": "the harbour",
+            "demand": 2,
+            "earliest": 450,
+            "latest": 660
+          }
+        ]
+      }
+    },
+    {
+      "id": "p09",
+      "text": "Three crates to the Cannery and one to Old Mill Road, between 10:00 and 12:00 for both. Van capacity is five crates.",
+      "difficulty": "plain",
+      "failure_modes": [],
+      "note": "",
+      "gold": {
+        "capacity": 5,
+        "service_minutes": 6,
+        "reload_minutes": 10,
+        "start_time": 480,
+        "stops": [
+          {
+            "name": "old mill road",
+            "demand": 1,
+            "earliest": 600,
+            "latest": 720
+          },
+          {
+            "name": "the cannery",
+            "demand": 3,
+            "earliest": 600,
+            "latest": 720
+          }
+        ]
+      }
+    },
+    {
+      "id": "p10",
+      "text": "The van holds four crates. Deliver one crate to Riverside Clinic no later than noon, one to St Anne's School no later than 13:00, and one to Elm Avenue.",
+      "difficulty": "plain",
+      "failure_modes": [],
+      "note": "",
+      "gold": {
+        "capacity": 4,
+        "service_minutes": 6,
+        "reload_minutes": 10,
+        "start_time": 480,
+        "stops": [
+          {
+            "name": "elm avenue",
+            "demand": 1,
+            "earliest": 480,
+            "latest": 1080
+          },
+          {
+            "name": "riverside clinic",
+            "demand": 1,
+            "earliest": 480,
+            "latest": 720
+          },
+          {
+            "name": "st anne's school",
+            "demand": 1,
+            "earliest": 480,
+            "latest": 780
+          }
+        ]
+      }
+    },
+    {
+      "id": "p11",
+      "text": "Two crates for the harbour, two for Lower Quay. The van holds three crates.",
+      "difficulty": "plain",
+      "failure_modes": [],
+      "note": "",
+      "gold": {
+        "capacity": 3,
+        "service_minutes": 6,
+        "reload_minutes": 10,
+        "start_time": 480,
+        "stops": [
+          {
+            "name": "lower quay",
+            "demand": 2,
+            "earliest": 480,
+            "latest": 1080
+          },
+          {
+            "name": "the harbour",
+            "demand": 2,
+            "earliest": 480,
+            "latest": 1080
+          }
+        ]
+      }
+    },
+    {
+      "id": "p12",
+      "text": "Capacity six. Two boxes to Victoria Market after 09:30, three boxes to King's Cross before 11:30, one box to North Gate.",
+      "difficulty": "plain",
+      "failure_modes": [],
+      "note": "",
+      "gold": {
+        "capacity": 6,
+        "service_minutes": 6,
+        "reload_minutes": 10,
+        "start_time": 480,
+        "stops": [
+          {
+            "name": "king's cross",
+            "demand": 3,
+            "earliest": 480,
+            "latest": 690
+          },
+          {
+            "name": "north gate",
+            "demand": 1,
+            "earliest": 480,
+            "latest": 1080
+          },
+          {
+            "name": "victoria market",
+            "demand": 2,
+            "earliest": 570,
+            "latest": 1080
+          }
+        ]
+      }
+    },
+    {
+      "id": "p13",
+      "text": "Deliver one crate to each of Baker Street, the Observatory and Lower Quay. Van holds two crates. Each drop takes 8 minutes.",
+      "difficulty": "plain",
+      "failure_modes": [],
+      "note": "",
+      "gold": {
+        "capacity": 2,
+        "service_minutes": 8,
+        "reload_minutes": 10,
+        "start_time": 480,
+        "stops": [
+          {
+            "name": "baker street",
+            "demand": 1,
+            "earliest": 480,
+            "latest": 1080
+          },
+          {
+            "name": "lower quay",
+            "demand": 1,
+            "earliest": 480,
+            "latest": 1080
+          },
+          {
+            "name": "the observatory",
+            "demand": 1,
+            "earliest": 480,
+            "latest": 1080
+          }
+        ]
+      }
+    },
+    {
+      "id": "p14",
+      "text": "The van holds five crates. Four crates to Greenfield Park between 08:30 and 09:30 and one crate to the Cannery before 17:00.",
+      "difficulty": "plain",
+      "failure_modes": [],
+      "note": "",
+      "gold": {
+        "capacity": 5,
+        "service_minutes": 6,
+        "reload_minutes": 10,
+        "start_time": 480,
+        "stops": [
+          {
+            "name": "greenfield park",
+            "demand": 4,
+            "earliest": 510,
+            "latest": 570
+          },
+          {
+            "name": "the cannery",
+            "demand": 1,
+            "earliest": 480,
+            "latest": 1020
+          }
+        ]
+      }
+    },
+    {
+      "id": "p15",
+      "text": "One parcel to Elm Avenue after 10:00 and one to the Observatory after 10:00. Capacity 2.",
+      "difficulty": "plain",
+      "failure_modes": [],
+      "note": "",
+      "gold": {
+        "capacity": 2,
+        "service_minutes": 6,
+        "reload_minutes": 10,
+        "start_time": 480,
+        "stops": [
+          {
+            "name": "elm avenue",
+            "demand": 1,
+            "earliest": 600,
+            "latest": 1080
+          },
+          {
+            "name": "the observatory",
+            "demand": 1,
+            "earliest": 600,
+            "latest": 1080
+          }
+        ]
+      }
+    },
+    {
+      "id": "p16",
+      "text": "Van capacity 4. Two crates to Old Mill Road before 10:00, one crate to Victoria Market between 11:00 and 13:00.",
+      "difficulty": "plain",
+      "failure_modes": [],
+      "note": "",
+      "gold": {
+        "capacity": 4,
+        "service_minutes": 6,
+        "reload_minutes": 10,
+        "start_time": 480,
+        "stops": [
+          {
+            "name": "old mill road",
+            "demand": 2,
+            "earliest": 480,
+            "latest": 600
+          },
+          {
+            "name": "victoria market",
+            "demand": 1,
+            "earliest": 660,
+            "latest": 780
+          }
+        ]
+      }
+    },
+    {
+      "id": "p17",
+      "text": "The van holds four crates. Deliver three crates to North Gate by 09:45.",
+      "difficulty": "plain",
+      "failure_modes": [],
+      "note": "",
+      "gold": {
+        "capacity": 4,
+        "service_minutes": 6,
+        "reload_minutes": 10,
+        "start_time": 480,
+        "stops": [
+          {
+            "name": "north gate",
+            "demand": 3,
+            "earliest": 480,
+            "latest": 585
+          }
+        ]
+      }
+    },
+    {
+      "id": "p18",
+      "text": "We start at 07:00 and the van holds six crates. Two crates to Baker Street, two to King's Cross and two to Riverside Clinic, all before 13:00. Each drop takes 5 minutes.",
+      "difficulty": "plain",
+      "failure_modes": [],
+      "note": "",
+      "gold": {
+        "capacity": 6,
+        "service_minutes": 5,
+        "reload_minutes": 10,
+        "start_time": 420,
+        "stops": [
+          {
+            "name": "baker street",
+            "demand": 2,
+            "earliest": 420,
+            "latest": 780
+          },
+          {
+            "name": "king's cross",
+            "demand": 2,
+            "earliest": 420,
+            "latest": 780
+          },
+          {
+            "name": "riverside clinic",
+            "demand": 2,
+            "earliest": 420,
+            "latest": 780
+          }
+        ]
+      }
+    },
+    {
+      "id": "p19",
+      "text": "Capacity is three crates. One crate to Lower Quay between 14:00 and 16:00, two crates to St Anne's School before 15:00.",
+      "difficulty": "plain",
+      "failure_modes": [],
+      "note": "",
+      "gold": {
+        "capacity": 3,
+        "service_minutes": 6,
+        "reload_minutes": 10,
+        "start_time": 480,
+        "stops": [
+          {
+            "name": "lower quay",
+            "demand": 1,
+            "earliest": 840,
+            "latest": 960
+          },
+          {
+            "name": "st anne's school",
+            "demand": 2,
+            "earliest": 480,
+            "latest": 900
+          }
+        ]
+      }
+    },
+    {
+      "id": "p20",
+      "text": "The van holds four crates. One crate to the harbour, one to North Gate, one to Greenfield Park and one to Victoria Market.",
+      "difficulty": "plain",
+      "failure_modes": [],
+      "note": "",
+      "gold": {
+        "capacity": 4,
+        "service_minutes": 6,
+        "reload_minutes": 10,
+        "start_time": 480,
+        "stops": [
+          {
+            "name": "greenfield park",
+            "demand": 1,
+            "earliest": 480,
+            "latest": 1080
+          },
+          {
+            "name": "north gate",
+            "demand": 1,
+            "earliest": 480,
+            "latest": 1080
+          },
+          {
+            "name": "the harbour",
+            "demand": 1,
+            "earliest": 480,
+            "latest": 1080
+          },
+          {
+            "name": "victoria market",
+            "demand": 1,
+            "earliest": 480,
+            "latest": 1080
+          }
+        ]
+      }
+    },
+    {
+      "id": "h01",
+      "text": "Get a couple of crates over to the docks before lunch. The van holds four crates.",
+      "difficulty": "hard",
+      "failure_modes": [
+        "unknown_location",
+        "relative_time",
+        "vague_quantity"
+      ],
+      "note": "'the docks' is an alias the gazetteer does not carry; 'a couple' and 'lunch' are both idiomatic",
+      "gold": {
+        "capacity": 4,
+        "service_minutes": 6,
+        "reload_minutes": 10,
+        "start_time": 480,
+        "stops": [
+          {
+            "name": "the harbour",
+            "demand": 2,
+            "earliest": 480,
+            "latest": 720
+          }
+        ]
+      }
+    },
+    {
+      "id": "h02",
+      "text": "One crate to Baker Street before 11:00 and one to Elm Avenue with the same window. Van holds two.",
+      "difficulty": "hard",
+      "failure_modes": [
+        "coreference"
+      ],
+      "note": "'the same window' refers back to a constraint on a different stop",
+      "gold": {
+        "capacity": 2,
+        "service_minutes": 6,
+        "reload_minutes": 10,
+        "start_time": 480,
+        "stops": [
+          {
+            "name": "baker street",
+            "demand": 1,
+            "earliest": 480,
+            "latest": 660
+          },
+          {
+            "name": "elm avenue",
+            "demand": 1,
+            "earliest": 480,
+            "latest": 660
+          }
+        ]
+      }
+    },
+    {
+      "id": "h03",
+      "text": "Six parcels split evenly between King's Cross, North Gate and the Cannery. The van holds four crates, everything before 15:00.",
+      "difficulty": "hard",
+      "failure_modes": [
+        "arithmetic"
+      ],
+      "note": "the per-stop demand has to be computed, not read off",
+      "gold": {
+        "capacity": 4,
+        "service_minutes": 6,
+        "reload_minutes": 10,
+        "start_time": 480,
+        "stops": [
+          {
+            "name": "king's cross",
+            "demand": 2,
+            "earliest": 480,
+            "latest": 900
+          },
+          {
+            "name": "north gate",
+            "demand": 2,
+            "earliest": 480,
+            "latest": 900
+          },
+          {
+            "name": "the cannery",
+            "demand": 2,
+            "earliest": 480,
+            "latest": 900
+          }
+        ]
+      }
+    },
+    {
+      "id": "h04",
+      "text": "Everything before 14:00 except the harbour, which can be any time. One crate each to the harbour, Old Mill Road and Victoria Market. Capacity three.",
+      "difficulty": "hard",
+      "failure_modes": [
+        "exception_scope"
+      ],
+      "note": "a global constraint with a carve-out; scope resolution",
+      "gold": {
+        "capacity": 3,
+        "service_minutes": 6,
+        "reload_minutes": 10,
+        "start_time": 480,
+        "stops": [
+          {
+            "name": "old mill road",
+            "demand": 1,
+            "earliest": 480,
+            "latest": 840
+          },
+          {
+            "name": "the harbour",
+            "demand": 1,
+            "earliest": 480,
+            "latest": 1080
+          },
+          {
+            "name": "victoria market",
+            "demand": 1,
+            "earliest": 480,
+            "latest": 840
+          }
+        ]
+      }
+    },
+    {
+      "id": "h05",
+      "text": "Do Riverside Clinic first, then the Observatory, then Lower Quay - one crate each, van holds three.",
+      "difficulty": "hard",
+      "failure_modes": [
+        "unrepresentable_constraint"
+      ],
+      "note": "the precedence constraint has no field in the schema; a parse that matches the gold has still silently dropped it",
+      "gold": {
+        "capacity": 3,
+        "service_minutes": 6,
+        "reload_minutes": 10,
+        "start_time": 480,
+        "stops": [
+          {
+            "name": "lower quay",
+            "demand": 1,
+            "earliest": 480,
+            "latest": 1080
+          },
+          {
+            "name": "riverside clinic",
+            "demand": 1,
+            "earliest": 480,
+            "latest": 1080
+          },
+          {
+            "name": "the observatory",
+            "demand": 1,
+            "earliest": 480,
+            "latest": 1080
+          }
+        ]
+      }
+    },
+    {
+      "id": "h06",
+      "text": "If the harbour is closed, skip it; otherwise one crate there. One crate to North Gate regardless. Capacity two.",
+      "difficulty": "hard",
+      "failure_modes": [
+        "conditional"
+      ],
+      "note": "gold takes the dispatcher's reading: plan for the stop, handle the exception on the road",
+      "gold": {
+        "capacity": 2,
+        "service_minutes": 6,
+        "reload_minutes": 10,
+        "start_time": 480,
+        "stops": [
+          {
+            "name": "north gate",
+            "demand": 1,
+            "earliest": 480,
+            "latest": 1080
+          },
+          {
+            "name": "the harbour",
+            "demand": 1,
+            "earliest": 480,
+            "latest": 1080
+          }
+        ]
+      }
+    },
+    {
+      "id": "h07",
+      "text": "Twelve kilograms to Greenfield Park and eight to Elm Avenue. The van takes 25 kg.",
+      "difficulty": "hard",
+      "failure_modes": [
+        "unit_mismatch"
+      ],
+      "note": "the schema counts crates; this request counts kilograms",
+      "gold": {
+        "capacity": 25,
+        "service_minutes": 6,
+        "reload_minutes": 10,
+        "start_time": 480,
+        "stops": [
+          {
+            "name": "elm avenue",
+            "demand": 8,
+            "earliest": 480,
+            "latest": 1080
+          },
+          {
+            "name": "greenfield park",
+            "demand": 12,
+            "earliest": 480,
+            "latest": 1080
+          }
+        ]
+      }
+    },
+    {
+      "id": "h08",
+      "text": "Two crates to the harbour first thing, and one to the Cannery this afternoon. Van holds three crates.",
+      "difficulty": "hard",
+      "failure_modes": [
+        "relative_time"
+      ],
+      "note": "house convention: 'first thing' = before 09:00, 'this afternoon' = after 12:00",
+      "gold": {
+        "capacity": 3,
+        "service_minutes": 6,
+        "reload_minutes": 10,
+        "start_time": 480,
+        "stops": [
+          {
+            "name": "the cannery",
+            "demand": 1,
+            "earliest": 720,
+            "latest": 1080
+          },
+          {
+            "name": "the harbour",
+            "demand": 2,
+            "earliest": 480,
+            "latest": 540
+          }
+        ]
+      }
+    },
+    {
+      "id": "h09",
+      "text": "The van's half full already - it holds four crates. One crate to St Anne's School and one to King's Cross before noon.",
+      "difficulty": "hard",
+      "failure_modes": [
+        "implicit_capacity"
+      ],
+      "note": "usable capacity is stated indirectly, as a fraction of the stated one",
+      "gold": {
+        "capacity": 2,
+        "service_minutes": 6,
+        "reload_minutes": 10,
+        "start_time": 480,
+        "stops": [
+          {
+            "name": "king's cross",
+            "demand": 1,
+            "earliest": 480,
+            "latest": 720
+          },
+          {
+            "name": "st anne's school",
+            "demand": 1,
+            "earliest": 480,
+            "latest": 720
+          }
+        ]
+      }
+    },
+    {
+      "id": "h10",
+      "text": "Nothing to Baker Street today. Two crates to the Observatory and two to North Gate, van holds four crates, all before 16:30.",
+      "difficulty": "hard",
+      "failure_modes": [
+        "negation"
+      ],
+      "note": "a gazetteer name appears in the text and must NOT become a stop",
+      "gold": {
+        "capacity": 4,
+        "service_minutes": 6,
+        "reload_minutes": 10,
+        "start_time": 480,
+        "stops": [
+          {
+            "name": "north gate",
+            "demand": 2,
+            "earliest": 480,
+            "latest": 990
+          },
+          {
+            "name": "the observatory",
+            "demand": 2,
+            "earliest": 480,
+            "latest": 990
+          }
+        ]
+      }
+    },
+    {
+      "id": "h11",
+      "text": "Same as yesterday's run but add one crate for Lower Quay. Capacity four.",
+      "difficulty": "hard",
+      "failure_modes": [
+        "missing_context"
+      ],
+      "note": "the request is not self-contained; the gold records only what is recoverable from the text alone",
+      "gold": {
+        "capacity": 4,
+        "service_minutes": 6,
+        "reload_minutes": 10,
+        "start_time": 480,
+        "stops": [
+          {
+            "name": "lower quay",
+            "demand": 1,
+            "earliest": 480,
+            "latest": 1080
+          }
+        ]
+      }
+    }
+  ]
+}

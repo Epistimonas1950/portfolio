@@ -1,0 +1,33 @@
+scenario,anomaly_kind,method,auc,n_positive,n_negative
+unimodal,spike,batch full SVD (warm-up),0.98484,120,1380
+unimodal,rotate,batch full SVD (warm-up),0.96631,500,1380
+unimodal,spike,"batch full SVD (all-normal, uses labels)",0.98487,120,1380
+unimodal,rotate,"batch full SVD (all-normal, uses labels)",0.96615,500,1380
+unimodal,spike,"incremental, reorth",0.98468,120,1380
+unimodal,rotate,"incremental, reorth",0.96367,500,1380
+unimodal,spike,"incremental, no reorth",0.98468,120,1380
+unimodal,rotate,"incremental, no reorth",0.96367,500,1380
+unimodal,spike,"incremental, rank from gap criterion",0.98468,120,1380
+unimodal,rotate,"incremental, rank from gap criterion",0.96367,500,1380
+unimodal,spike,"C host binary, reorth",0.98468,120,1380
+unimodal,rotate,"C host binary, reorth",0.96367,500,1380
+unimodal,spike,"C host binary, no reorth",0.98468,120,1380
+unimodal,rotate,"C host binary, no reorth",0.96367,500,1380
+unimodal,spike,"C host binary, float32, reorth",0.98468,120,1380
+unimodal,rotate,"C host binary, float32, reorth",0.96367,500,1380
+multimode,spike,batch full SVD (warm-up),0.64341,120,1880
+multimode,spike,"batch full SVD (all-normal, uses labels)",0.64733,120,1880
+multimode,spike,"incremental, reorth",0.648,120,1880
+multimode,spike,"incremental, no reorth",0.648,120,1880
+multimode,spike,"incremental, rank from gap criterion",0.98596,120,1880
+multimode,spike,"C host binary, reorth",0.648,120,1880
+multimode,spike,"C host binary, no reorth",0.648,120,1880
+multimode,spike,"C host binary, float32, reorth",0.648,120,1880
+manymode,spike,batch full SVD (warm-up),0.53746,120,1880
+manymode,spike,"batch full SVD (all-normal, uses labels)",0.53387,120,1880
+manymode,spike,"incremental, reorth",0.57952,120,1880
+manymode,spike,"incremental, no reorth",0.57952,120,1880
+manymode,spike,"incremental, rank from gap criterion",0.49366,120,1880
+manymode,spike,"C host binary, reorth",0.57949,120,1880
+manymode,spike,"C host binary, no reorth",0.57949,120,1880
+manymode,spike,"C host binary, float32, reorth",0.57949,120,1880

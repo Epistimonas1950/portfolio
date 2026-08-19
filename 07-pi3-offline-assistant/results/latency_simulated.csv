@@ -1,0 +1,8 @@
+source,stage,n,median_ms,p95_ms,p99_ms,min_ms,max_ms,mean_ms,analytic_median_ms,analytic_p95_ms,analytic_p99_ms,harness_overhead_median_ms,harness_overhead_p95_ms,sum_of_stage_p95_ms,p95_overstatement,note
+measured,capture,400,34.6108,46.4613,60.9894,8.009,88.3641,30.1757,,,,0.0,0.0,,,"measured on this host (real computation, real wall clock)"
+measured,vad,400,1.3369,1.9134,3.8338,1.1715,4.4003,1.4341,,,,0.0,0.0,,,"measured on this host (real computation, real wall clock)"
+SIMULATED,asr,400,1909.3502,2932.262,3386.5623,844.7824,4098.8204,1976.256,1920.0,3068.3413,3737.1667,0.013177,0.014895,,,SIMULATED draws from src.stages.PLACEHOLDER_MODELS; NOT a Raspberry Pi 3 measurement. capture/vad rows are real host measurements.
+SIMULATED,llm_prefill,400,944.0452,1468.3347,1751.3654,559.829,2102.1313,994.4398,960.0,1417.7825,1669.9876,0.005384,0.005926,,,SIMULATED draws from src.stages.PLACEHOLDER_MODELS; NOT a Raspberry Pi 3 measurement. capture/vad rows are real host measurements.
+SIMULATED,llm_decode,400,6328.2876,10580.8839,12338.5816,2151.5709,13769.3488,6498.7284,6200.0,10870.2366,13744.509,0.003553,0.003996,,,SIMULATED draws from src.stages.PLACEHOLDER_MODELS; NOT a Raspberry Pi 3 measurement. capture/vad rows are real host measurements.
+SIMULATED,tts,400,726.9973,1007.219,1201.5919,451.389,1321.7556,743.0187,740.0,1012.676,1154.7104,0.003297,0.00374,,,SIMULATED draws from src.stages.PLACEHOLDER_MODELS; NOT a Raspberry Pi 3 measurement. capture/vad rows are real host measurements.
+SIMULATED,end_to_end,400,10072.5911,14519.6692,16095.585,5924.0545,17811.1584,10244.0527,,,,,,16037.0744,1.1045,SIMULATED draws from src.stages.PLACEHOLDER_MODELS; NOT a Raspberry Pi 3 measurement. capture/vad rows are real host measurements.

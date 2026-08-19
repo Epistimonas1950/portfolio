@@ -1,0 +1,72 @@
+---
+layout: layouts/page.njk
+title: Μαθήματα
+eyebrow: ΤΑ ΜΑΘΗΜΑΤΑ
+lead: >-
+  Οκτώ είδη χορού, από τα τετράχρονα του δημιουργικού μέχρι το τμήμα
+  προχωρημένων που δουλεύει τη χορογραφία του Ιουνίου. Δίπλα σε κάθε μάθημα
+  θα βρεις το μετρικό του — τον τρόπο που μετριέται η μουσική του.
+eleventyNavigation:
+  key: Μαθήματα
+  order: 1
+---
+
+<section class="section">
+  <div class="wrap">
+    <div class="grid grid--4">
+      {%- for item in collections.classes %}
+        {% include "partials/class-card.njk" %}
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+{# Συγκεντρωτικός πίνακας: για όποιον θέλει να συγκρίνει γρήγορα. #}
+<section class="section section--tight section--ruled">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-head__text">
+        <p class="eyebrow">ΜΕ ΜΙΑ ΜΑΤΙΑ</p>
+        <h2>Ποιο ταιριάζει σε ποιον</h2>
+      </div>
+      <a class="arrow-link" href="/programma/">Ώρες και ημέρες</a>
+    </div>
+
+    <table class="rate-table">
+      <thead>
+        <tr>
+          <th scope="col">ΜΑΘΗΜΑ</th>
+          <th scope="col">ΜΕΤΡΙΚΟ</th>
+          <th scope="col">ΗΛΙΚΙΕΣ</th>
+          <th scope="col">ΕΠΙΠΕΔΑ</th>
+        </tr>
+      </thead>
+      <tbody>
+        {%- for item in collections.classes %}
+          <tr>
+            <td><a href="{{ item.url }}">{{ item.data.title }}</a></td>
+            <td class="mono">{{ item.data.meter }}</td>
+            <td class="rate-table__note">{{ item.data.ages }}</td>
+            <td class="rate-table__note">{{ item.data.level }}</td>
+          </tr>
+        {%- endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="section section--dark section--tight">
+  <div class="wrap cta-band">
+    <div>
+      <p class="eyebrow">ΔΕΝ ΞΕΡΕΙΣ ΤΙ ΝΑ ΔΙΑΛΕΞΕΙΣ;</p>
+      <h2>Δοκίμασε δύο, διάλεξε ένα</h2>
+      <p class="lead">
+        Το δοκιμαστικό μάθημα είναι δωρεάν σε κάθε τμήμα. Αν διστάζεις ανάμεσα
+        σε δύο είδη, έλα και στα δύο και αποφάσισε μετά.
+      </p>
+    </div>
+    <div class="btn-row">
+      <a class="btn btn--accent" href="/epikoinonia/#dokimastiko">{{ site.cta.short }}</a>
+    </div>
+  </div>
+</section>

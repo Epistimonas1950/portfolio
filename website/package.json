@@ -1,0 +1,17 @@
+{
+  "name": "okto-dance-site",
+  "version": "1.0.0",
+  "description": "Στατικός ιστότοπος σχολής χορού (Eleventy). Δοκιμαστικό περιεχόμενο.",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "images": "node tools/generate-images.mjs"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "type": "module",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.6",
+    "@11ty/eleventy-navigation": "^1.0.5"
+  }
+}

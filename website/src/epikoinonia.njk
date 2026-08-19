@@ -1,0 +1,156 @@
+---
+layout: layouts/page.njk
+title: Επικοινωνία
+eyebrow: ΕΛΑ ΝΑ ΤΑ ΠΟΥΜΕ
+lead: >-
+  Πάρε τηλέφωνο, γράψε μας ή πέρασε από τη γραμματεία. Το δοκιμαστικό μάθημα
+  κλείνεται σε δύο λεπτά.
+eleventyNavigation:
+  key: Επικοινωνία
+  order: 8
+---
+
+<section class="section">
+  <div class="wrap split split--wide-left">
+    <div>
+      <p class="eyebrow">ΣΤΟΙΧΕΙΑ</p>
+      <ul class="info-list">
+        <li class="info-list__item">
+          <span class="info-list__label">ΔΙΕΥΘΥΝΣΗ</span>
+          <span class="info-list__value">
+            {{ site.contact.street }}, {{ site.contact.area }}<br />
+            {{ site.contact.postal }} {{ site.contact.city }}
+          </span>
+        </li>
+        <li class="info-list__item">
+          <span class="info-list__label">ΤΗΛΕΦΩΝΑ</span>
+          <span class="info-list__value">
+            <a href="tel:{{ site.contact.phoneHref }}">{{ site.contact.phone }}</a><br />
+            <a href="tel:{{ site.contact.mobileHref }}">{{ site.contact.mobile }}</a>
+          </span>
+        </li>
+        <li class="info-list__item">
+          <span class="info-list__label">EMAIL</span>
+          <span class="info-list__value">
+            <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a>
+          </span>
+        </li>
+        <li class="info-list__item">
+          <span class="info-list__label">ΓΡΑΜΜΑΤΕΙΑ</span>
+          <span class="info-list__value">
+            {%- for slot in site.hours %}
+              {{ slot.days }}: {{ slot.time }}{% if not loop.last %}<br />{% endif %}
+            {%- endfor %}
+          </span>
+        </li>
+        <li class="info-list__item">
+          <span class="info-list__label">ΜΕΣΑ ΜΕΤΑΦΟΡΑΣ</span>
+          <span class="info-list__value">{{ site.contact.transport }}</span>
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      {#
+        ΘΕΣΗ ΧΑΡΤΗ.
+        Δεν ενσωματώνουμε χάρτη Google/OpenStreetMap γιατί απαιτεί σύνδεση στο
+        διαδίκτυο και θα εμφανιζόταν κενό πλαίσιο στην τοπική επίδειξη.
+        ΑΛΛΑΓΗ ΑΡΓΟΤΕΡΑ: αντικατέστησε ολόκληρο το <div class="map-placeholder">
+        με το <iframe> του χάρτη, κρατώντας το ίδιο aspect-ratio.
+      #}
+      <div class="map-placeholder">
+        <p class="map-placeholder__label">ΕΔΩ ΜΠΑΙΝΕΙ Ο ΧΑΡΤΗΣ</p>
+        <p>
+          {{ site.contact.street }}, {{ site.contact.area }} — {{ site.contact.transport }}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# =====================================================================
+   ΦΟΡΜΑ ΔΟΚΙΜΑΣΤΙΚΟΥ
+   ================================================================== #}
+<section class="section section--tight section--ruled" id="dokimastiko">
+  <div class="wrap split split--wide-left">
+    <div>
+      <p class="eyebrow">ΔΩΡΕΑΝ ΔΟΚΙΜΑΣΤΙΚΟ</p>
+      <h2>Κλείσε το πρώτο σου μάθημα</h2>
+      <p class="lead">
+        Συμπλήρωσε τι σε ενδιαφέρει και πότε μπορείς. Θα σε πάρουμε τηλέφωνο
+        την ίδια ή την επόμενη μέρα για να κλείσουμε ώρα.
+      </p>
+
+      <div class="notice">
+        <strong>Σημείωση επίδειξης:</strong> η φόρμα δεν στέλνει ακόμη μήνυμα.
+        Θα συνδεθεί με υπηρεσία αποστολής (π.χ. Formspree ή Netlify Forms)
+        όταν ανέβει ο ιστότοπος. Μέχρι τότε, το τηλέφωνο δουλεύει.
+      </div>
+    </div>
+
+    {#
+      ΑΛΛΑΓΗ ΑΡΓΟΤΕΡΑ: το action="#" αντικαθίσταται με τη διεύθυνση της
+      υπηρεσίας που θα λαμβάνει τα μηνύματα. Τα name="…" είναι ήδη έτοιμα.
+    #}
+    <form class="form" action="#" method="post">
+      <div class="form__row form__row--two">
+        <p class="field">
+          <label class="field__label" for="name">ΟΝΟΜΑ</label>
+          <input class="field__input" type="text" id="name" name="name" autocomplete="name" required />
+        </p>
+        <p class="field">
+          <label class="field__label" for="phone">ΤΗΛΕΦΩΝΟ</label>
+          <input class="field__input" type="tel" id="phone" name="phone" autocomplete="tel" required />
+        </p>
+      </div>
+
+      <p class="field">
+        <label class="field__label" for="email">EMAIL</label>
+        <input class="field__input" type="email" id="email" name="email" autocomplete="email" />
+      </p>
+
+      <p class="field">
+        <label class="field__label" for="class">ΜΕ ΕΝΔΙΑΦΕΡΕΙ</label>
+        <select class="field__select" id="class" name="class">
+          <option value="">Δεν έχω αποφασίσει ακόμη</option>
+          {%- for item in collections.classes %}
+            <option value="{{ item.data.slug }}">{{ item.data.title }}</option>
+          {%- endfor %}
+        </select>
+      </p>
+
+      <p class="field">
+        <label class="field__label" for="message">ΠΟΤΕ ΜΠΟΡΕΙΣ</label>
+        <textarea
+          class="field__textarea"
+          id="message"
+          name="message"
+          placeholder="π.χ. απογεύματα μετά τις 19:00, ή Σάββατο πρωί"
+        ></textarea>
+      </p>
+
+      <p>
+        <button class="btn btn--accent" type="submit">Στείλε το αίτημα</button>
+      </p>
+    </form>
+  </div>
+</section>
+
+{# =====================================================================
+   ΣΥΧΝΕΣ ΕΡΩΤΗΣΕΙΣ — από το _data/faq.js, χωρίς JavaScript
+   ================================================================== #}
+<section class="section section--tight">
+  <div class="wrap wrap--narrow">
+    <p class="eyebrow">ΣΥΧΝΕΣ ΕΡΩΤΗΣΕΙΣ</p>
+    <h2>Αυτά μας ρωτάνε πιο συχνά</h2>
+
+    <div class="faq">
+      {%- for entry in faq %}
+        <details class="faq__item">
+          <summary class="faq__question">{{ entry.question }}</summary>
+          <p class="faq__answer">{{ entry.answer | safe }}</p>
+        </details>
+      {%- endfor %}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,19 @@
+{#
+  Κάρτα άρθρου/ανακοίνωσης. Περιμένει τη μεταβλητή `post`
+  (ένα στοιχείο του collections.news).
+#}
+<a class="post-card" href="{{ post.url }}">
+  <img
+    class="post-card__image"
+    src="{{ post.data.image }}"
+    alt=""
+    width="1200"
+    height="675"
+    loading="lazy"
+  />
+  <span class="post-card__date">
+    <time datetime="{{ post.date | isoDate }}">{{ post.date | dateGR }}</time>
+  </span>
+  <span class="post-card__title">{{ post.data.title }}</span>
+  <span class="post-card__excerpt">{{ post.data.excerpt }}</span>
+</a>

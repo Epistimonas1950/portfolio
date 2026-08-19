@@ -1,0 +1,7 @@
+sampler,nfe_for_w1_le_0.020,speedup_nfe_for_w1_le_0.020,nfe_for_traj_rmse_le_1e-02,speedup_nfe_for_traj_rmse_le_1e-02,nfe_for_traj_rmse_le_3e-03,speedup_nfe_for_traj_rmse_le_3e-03,w1_floor
+euler_maruyama,64,0.75,not reached,,not reached,,4.4e-05
+euler_ode,48,1.0,128,1.0,384,1.0,4.4e-05
+heun,24,2.0,32,4.0,48,8.0,4.4e-05
+exponential_1,128,0.38,384,0.33,not reached,,4.4e-05
+exponential_2,48,1.0,64,2.0,128,3.0,4.4e-05
+adaptive,26,1.85,26,4.92,38,10.11,4.4e-05

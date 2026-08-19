@@ -1,0 +1,53 @@
+---
+layout: layouts/page.njk
+title: Φωτογραφίες
+eyebrow: Η ΑΙΘΟΥΣΑ ΚΑΙ ΟΙ ΑΝΘΡΩΠΟΙ
+lead: >-
+  Από τα μαθήματα, τις πρόβες και την παράσταση του Ιουνίου.
+eleventyNavigation:
+  key: Φωτογραφίες
+  order: 6
+---
+
+{#
+  Οι φωτογραφίες ορίζονται στο _data/gallery.js.
+  Το κλικ ανοίγει το <dialog> στο τέλος της σελίδας (assets/js/site.js).
+  Χωρίς JavaScript, τα κουμπιά απλώς δεν κάνουν τίποτα — οι εικόνες και οι
+  λεζάντες παραμένουν ορατές.
+#}
+<section class="section">
+  <div class="wrap">
+    <div class="gallery">
+      {%- for photo in gallery %}
+        <figure class="gallery__item gallery__item--{{ photo.shape }}">
+          <button
+            class="gallery__button"
+            type="button"
+            data-lightbox="/assets/img/gallery/{{ photo.file }}"
+            data-caption="{{ photo.caption }}"
+            data-alt="{{ photo.alt }}"
+          >
+            <img
+              class="gallery__image"
+              src="/assets/img/gallery/{{ photo.file }}"
+              alt="{{ photo.alt }}"
+              width="{% if photo.shape == 'landscape' %}1200{% else %}800{% endif %}"
+              height="{% if photo.shape == 'landscape' %}900{% else %}1200{% endif %}"
+              loading="lazy"
+            />
+          </button>
+          <figcaption class="gallery__caption">{{ photo.caption }}</figcaption>
+        </figure>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<dialog class="lightbox">
+  <img class="lightbox__image" src="" alt="" />
+  <div class="lightbox__bar">
+    <p class="lightbox__caption"></p>
+    <p class="lightbox__hint">← → επόμενη · Esc κλείσιμο</p>
+    <button class="lightbox__close" type="button">Κλείσιμο</button>
+  </div>
+</dialog>
